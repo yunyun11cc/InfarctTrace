@@ -1,0 +1,81 @@
+[
+  {
+    "path": "datasets/GSE252027/metadata/GSE252027_series.soft.txt",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252027&targ=self&form=text&view=full",
+    "bytes": 5713,
+    "sha256": "0ee49f6d2f1976023d0938a7d107bd76a3fe18fb1e32ce96c99c25a384839965",
+    "download_date": "2026-11-03",
+    "content_type": "geo/text",
+    "status": "downloaded"
+  },
+  {
+    "path": "datasets/GSE252027/metadata/GSE252027_family.soft.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE252nnn/GSE252027/soft/GSE252027_family.soft.gz",
+    "bytes": 8422,
+    "sha256": "be53d3f081d50a77693ab5a4ae68e9582d17d815c45820f6a5be3b8ecaa6ddf2",
+    "download_date": "2026-11-03",
+    "content_type": "application/x-gzip",
+    "status": "downloaded"
+  },
+  {
+    "path": "papers/GSE252027/PMC12089340_original.pdf",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12089340.1/PMC12089340.1.pdf",
+    "bytes": 2658932,
+    "sha256": "3e8fb5cbf242b94af8545a1fbfc65f91496969aab41d9103d6a969643cd9f600",
+    "download_date": "2026-11-03",
+    "content_type": "binary/octet-stream",
+    "status": "downloaded"
+  },
+  {
+    "path": "papers/GSE252027/PMC12089340_fulltext.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12089340/fullTextXML",
+    "bytes": 75082,
+    "sha256": "0a303e2c99ea3f978896cc03e9488a8d5d5cb349eaf9714e5ca7e07dc6d7ebc8",
+    "download_date": "2026-11-03",
+    "content_type": "application/xml",
+    "status": "downloaded"
+  },
+  {
+    "path": "papers/GSE252027/pmc_asset_list.xml",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12089340",
+    "bytes": 3128,
+    "sha256": "8aa5da8853e94c35bfcc60897a6bbef6d57a5a79dd047d129934cf68db07651e",
+    "download_date": "2026-11-03",
+    "content_type": "application/xml",
+    "status": "downloaded"
+  },
+  {
+    "path": "datasets/GSE252027/original/GSE252027_RAW.tar",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE252nnn/GSE252027/suppl/GSE252027_RAW.tar",
+    "bytes": 123955200,
+    "sha256": "e1111753c5ae83f233a56550378b562601b6bd310075e773a822ccee77444f34",
+    "download_date": "2026-11-03",
+    "content_type": "application/x-tar",
+    "status": "downloaded"
+  },
+  {
+    "path": "datasets/GSE252027/metadata/geo_supplement_filelist.txt",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE252nnn/GSE252027/suppl/filelist.txt",
+    "bytes": 7126,
+    "sha256": "8d6276d43245d602d182ba5c056b6a41674443b1df21f5a0ca71368a01c8ab3a",
+    "download_date": "2026-11-03",
+    "status": "downloaded",
+    "note": "HTTP Content-Encoding decompressed automatically"
+  },
+  {
+    "path": "datasets/GSE252027/metadata/zenodo_14929916.json",
+    "url": "https://zenodo.org/api/records/14929916",
+    "bytes": 5178,
+    "sha256": "dc15c1251c11b04fa93cc19f03a3f4e65cdf208e9ce0117b75fd61af36335c0e",
+    "download_date": "2026-11-03",
+    "status": "downloaded"
+  },
+  {
+    "path": "datasets/GSE252027/metadata/AMI_revised_submission.zip",
+    "url": "https://zenodo.org/api/records/14929916/files/AMI_revised_submission.zip/content",
+    "bytes": 294211,
+    "sha256": "2f5e8cc9c348b0ddd8584e81db5698e52af1b919d0ce1b18a23f916c337411c7",
+    "download_date": "2026-11-03",
+    "status": "downloaded"
+  }
+]

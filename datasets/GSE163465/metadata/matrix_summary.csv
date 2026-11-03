@@ -1,0 +1,8 @@
+GSM,prefix,genes,cells,nonzero_entries,matrix_header,features_lines,barcodes_lines,matrix_data_lines,gzip_full_read_crc_checked
+GSM4985022,GSM4985022_Sham,31053,2962,5826772,%%MatrixMarket matrix coordinate integer general,31053,2962,5826772,True
+GSM4985023,GSM4985023_Day_3,31053,7506,17373498,%%MatrixMarket matrix coordinate integer general,31053,7506,17373498,True
+GSM4985024,GSM4985024_Day_7,31053,5482,8375484,%%MatrixMarket matrix coordinate integer general,31053,5482,8375484,True
+GSM4985025,GSM4985025_Day_14,31053,3942,7473618,%%MatrixMarket matrix coordinate integer general,31053,3942,7473618,True
+GSM5513773,GSM5513773_Day_3_T,31053,3928,5629324,%%MatrixMarket matrix coordinate integer general,31053,3928,5629324,True
+GSM5513774,GSM5513774_Day_7_T,31053,6570,12233591,%%MatrixMarket matrix coordinate integer general,31053,6570,12233591,True
+GSM5513775,GSM5513775_Day_14_T,31053,7674,13219785,%%MatrixMarket matrix coordinate integer general,31053,7674,13219785,True

@@ -1,0 +1,49 @@
+{
+  "verified_date": "2026-11-03",
+  "source_file_count": 38,
+  "source_bytes": 476628708,
+  "all_source_sha256_verified": true,
+  "active_geo_datasets": [
+    "GSE252027",
+    "GSE111059",
+    "GSE236374",
+    "GSE163465"
+  ],
+  "no_h5ad_in_active_project": true,
+  "no_incomplete_part_files": true,
+  "readme_local_links_checked": 45,
+  "missing_links": [],
+  "pdfs": [
+    {
+      "path": "papers/GSE163465/Jin_2021_bioRxiv_preprint.pdf",
+      "pages": 47,
+      "bytes": 1154846
+    },
+    {
+      "path": "papers/GSE252027/PMC12089340_original.pdf",
+      "pages": 9,
+      "bytes": 2658932
+    },
+    {
+      "path": "papers/GSE236374/PMC10589712_original.pdf",
+      "pages": 11,
+      "bytes": 4150417
+    },
+    {
+      "path": "papers/GSE111059/Fu_2018_JCI98215_supplement.pdf",
+      "pages": 11,
+      "bytes": 14150292
+    },
+    {
+      "path": "papers/GSE111059/Fu_2018_JCI98215.pdf",
+      "pages": 17,
+      "bytes": 23279156
+    },
+    {
+      "path": "papers/GSE236374/supplementary/pnas.2302482120.sapp.pdf",
+      "pages": 29,
+      "bytes": 12085051
+    }
+  ],
+  "paper_access_note": "3 version-of-record main PDFs plus 1 corresponding author preprint PDF; GSE163465 version-of-record PDF not obtained."
+}

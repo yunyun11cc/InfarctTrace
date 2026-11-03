@@ -1,0 +1,5 @@
+# Preserve source metadata and CSV bytes, including official CRLF line endings.
+*.csv -text whitespace=cr-at-eol
+*.soft.txt -text whitespace=cr-at-eol
+# Keep the exact downloaded API response, including its trailing blank lines.
+/papers/GSE163465/preprint_metadata_biorxiv.json -text -whitespace

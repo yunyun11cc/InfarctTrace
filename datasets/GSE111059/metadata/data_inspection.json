@@ -1,0 +1,23 @@
+{
+  "series": "GSE111059",
+  "matrix_rows": 28846,
+  "matrix_samples": 14,
+  "row_identity": "GPL23038 probe/transcript-cluster identifiers, including control probes; not 28846 distinct genes",
+  "sample_ids_match_header": true,
+  "finite_values": true,
+  "minimum": 2.256427,
+  "maximum": 19.832,
+  "groups": {
+    "0": 3,
+    "3": 3,
+    "7": 3,
+    "14": 2,
+    "28": 3
+  },
+  "data_processing_source": "The .cel were created by Command Console (Affymetrix). The .cel files were analyzed by Expression Console (Affymetrix) to create .sst-rma-gene-full.chp files.",
+  "raw_archive_members": 14,
+  "raw_gzip_streams_all_read_to_EOF": true,
+  "platform_annotation_rows": 29129,
+  "platform_annotation_source": "extracted intact from GSE111059_family.soft.gz, GPL23038 platform_table",
+  "matrix_identifiers_without_platform_annotation": 0
+}

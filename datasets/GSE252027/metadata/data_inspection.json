@@ -1,0 +1,2283 @@
+{
+  "geo": "GSE252027",
+  "archive_file_count": 96,
+  "all_96_gsm_match_metadata": true,
+  "sample_groups": [
+    {
+      "cell_type_abbreviation": "CM",
+      "day": 0,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "CM",
+      "day": 1,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "CM",
+      "day": 3,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "CM",
+      "day": 7,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "CM",
+      "day": 14,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "CM",
+      "day": 28,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "EC",
+      "day": 0,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "EC",
+      "day": 1,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "EC",
+      "day": 3,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "EC",
+      "day": 7,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "EC",
+      "day": 14,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "EC",
+      "day": 28,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "FB",
+      "day": 0,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "FB",
+      "day": 1,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "FB",
+      "day": 3,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "FB",
+      "day": 7,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "FB",
+      "day": 14,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "FB",
+      "day": 28,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "HC",
+      "day": 0,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "HC",
+      "day": 1,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "HC",
+      "day": 3,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "HC",
+      "day": 7,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "HC",
+      "day": 14,
+      "libraries": 4
+    },
+    {
+      "cell_type_abbreviation": "HC",
+      "day": 28,
+      "libraries": 4
+    }
+  ],
+  "fb_libraries": 24,
+  "id_note": "Source files contain mixed feature levels despite quant.genes.sf filenames: CM/EC all transcript IDs, FB mostly gene IDs plus 369 transcript IDs, HC mixed across samples. Inspect IDs before constructing any combined matrix.",
+  "entries": [
+    {
+      "file": "GSM7992278_ctrl_CM_1.quant.genes.sf.gz",
+      "gsm": "GSM7992278",
+      "compressed_bytes": 1595480,
+      "sha256": "c73f57d1ab45fa91a3577c4358d0453bcf0ac570e1609378cf741e289a6a6d7e",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.3581440002,
+      "sum_NumReads": 34580079.147,
+      "fractional_NumReads_values": 29722
+    },
+    {
+      "file": "GSM7992279_ctrl_CM_2.quant.genes.sf.gz",
+      "gsm": "GSM7992279",
+      "compressed_bytes": 1653070,
+      "sha256": "9fac98f5f376b1242d09e58d3214ff57d814c04ea8de5722c729788d21e69765",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.058433,
+      "sum_NumReads": 41264858.537,
+      "fractional_NumReads_values": 36372
+    },
+    {
+      "file": "GSM7992280_ctrl_CM_3.quant.genes.sf.gz",
+      "gsm": "GSM7992280",
+      "compressed_bytes": 1572164,
+      "sha256": "a38da0aee44e3245568cdc9c9ca2f756d109ead1718784ea591d892bad0a2208",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.772009,
+      "sum_NumReads": 40110716.324999996,
+      "fractional_NumReads_values": 27030
+    },
+    {
+      "file": "GSM7992281_ctrl_CM_4.quant.genes.sf.gz",
+      "gsm": "GSM7992281",
+      "compressed_bytes": 1648069,
+      "sha256": "87d7274a8d157c8e4e950bb418f69c6176d1df1225c778aa92efd6e4d8f43a9c",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.8828489999,
+      "sum_NumReads": 44560229.63,
+      "fractional_NumReads_values": 35601
+    },
+    {
+      "file": "GSM7992282_d1_CM_1.quant.genes.sf.gz",
+      "gsm": "GSM7992282",
+      "compressed_bytes": 1580810,
+      "sha256": "ae45a86272ba875dc4c080c161e62235a8af3808e4c17b5f0b21c7a7d2d7f5ee",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.150065,
+      "sum_NumReads": 29979140.915,
+      "fractional_NumReads_values": 27744
+    },
+    {
+      "file": "GSM7992283_d1_CM_2.quant.genes.sf.gz",
+      "gsm": "GSM7992283",
+      "compressed_bytes": 1630649,
+      "sha256": "1539d63e155dcaa4bf0385f3413a6b536e834ec2d9ed13fcb133844091ab447f",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.822133,
+      "sum_NumReads": 32503678.915,
+      "fractional_NumReads_values": 33437
+    },
+    {
+      "file": "GSM7992284_d1_CM_3.quant.genes.sf.gz",
+      "gsm": "GSM7992284",
+      "compressed_bytes": 1579850,
+      "sha256": "0164d92db273bb4406cf31ca27fefdadd7bdb16bc18e4b9709d1392a500c59f3",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.820671,
+      "sum_NumReads": 55758470.706,
+      "fractional_NumReads_values": 28332
+    },
+    {
+      "file": "GSM7992285_d1_CM_4.quant.genes.sf.gz",
+      "gsm": "GSM7992285",
+      "compressed_bytes": 1609961,
+      "sha256": "dce6063e10f429e228be13c081420d3909abafc0dd253ede94783ab79e08e1f8",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.24762,
+      "sum_NumReads": 32877041.224,
+      "fractional_NumReads_values": 31054
+    },
+    {
+      "file": "GSM7992286_d3_CM_1.quant.genes.sf.gz",
+      "gsm": "GSM7992286",
+      "compressed_bytes": 1605507,
+      "sha256": "c4f264b2848ea79609f80a5b27e574ad1fd52cc3d415a23559daca7c221fd119",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.4146349999,
+      "sum_NumReads": 38019153.273,
+      "fractional_NumReads_values": 29946
+    },
+    {
+      "file": "GSM7992287_d3_CM_2.quant.genes.sf.gz",
+      "gsm": "GSM7992287",
+      "compressed_bytes": 1637745,
+      "sha256": "85f526f296f545e90e2ea3a8aebe9b49ce481e4461e3031cbac6655891b780fd",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.724446,
+      "sum_NumReads": 41387754.949,
+      "fractional_NumReads_values": 33819
+    },
+    {
+      "file": "GSM7992288_d3_CM_3.quant.genes.sf.gz",
+      "gsm": "GSM7992288",
+      "compressed_bytes": 1586196,
+      "sha256": "19e80ec6466408b712c3f1e649222b50526b635e03dc81f001e648cf321c8f53",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.0617889999,
+      "sum_NumReads": 36131873.135,
+      "fractional_NumReads_values": 27746
+    },
+    {
+      "file": "GSM7992289_d3_CM_4.quant.genes.sf.gz",
+      "gsm": "GSM7992289",
+      "compressed_bytes": 1594344,
+      "sha256": "6673c3a3c41741a9adeb0ad984980b959e84b46448c09583bcf6af6b5b2ba791",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.1284109999,
+      "sum_NumReads": 35073562.758999996,
+      "fractional_NumReads_values": 29065
+    },
+    {
+      "file": "GSM7992290_d7_CM_1.quant.genes.sf.gz",
+      "gsm": "GSM7992290",
+      "compressed_bytes": 1624443,
+      "sha256": "ec8afa29ef72117c32cc5c8b8db7aec91163f84c6b7539cd42d8825b162c220a",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.9226289999,
+      "sum_NumReads": 32255615.130000003,
+      "fractional_NumReads_values": 32343
+    },
+    {
+      "file": "GSM7992291_d7_CM_2.quant.genes.sf.gz",
+      "gsm": "GSM7992291",
+      "compressed_bytes": 1608923,
+      "sha256": "2334e51cfc7b4d9d5f9cd74b7e0e9a7d6fb802406f0cc85f9250e0ab196abd2f",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.1843189999,
+      "sum_NumReads": 25247833.529999997,
+      "fractional_NumReads_values": 30766
+    },
+    {
+      "file": "GSM7992292_d7_CM_3.quant.genes.sf.gz",
+      "gsm": "GSM7992292",
+      "compressed_bytes": 1611543,
+      "sha256": "63a39cfbe37bc9144decc316910ed5bac871eac424f17a4045db04ff8df41fe2",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.8551159999,
+      "sum_NumReads": 33331032.832999997,
+      "fractional_NumReads_values": 31373
+    },
+    {
+      "file": "GSM7992293_d7_CM_4.quant.genes.sf.gz",
+      "gsm": "GSM7992293",
+      "compressed_bytes": 1646748,
+      "sha256": "71b40cbe5945204a87ed0fd606178c34c933d1ac6fc6e47a073ac3cdf6ad6da3",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.111485,
+      "sum_NumReads": 28738323.306,
+      "fractional_NumReads_values": 35042
+    },
+    {
+      "file": "GSM7992294_d14_CM_1.quant.genes.sf.gz",
+      "gsm": "GSM7992294",
+      "compressed_bytes": 1606275,
+      "sha256": "1b42075b5eaa022c4447d610a3cc3ce5c6e1fccfd3538edad1777e771efb959c",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.0982639999,
+      "sum_NumReads": 34278318.245,
+      "fractional_NumReads_values": 30549
+    },
+    {
+      "file": "GSM7992295_d14_CM_2.quant.genes.sf.gz",
+      "gsm": "GSM7992295",
+      "compressed_bytes": 1672081,
+      "sha256": "4a99153645feee2d45272757244c06dcb5896d09db927949fbff662461c87bc5",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.8048869999,
+      "sum_NumReads": 34103493.889,
+      "fractional_NumReads_values": 37499
+    },
+    {
+      "file": "GSM7992296_d14_CM_3.quant.genes.sf.gz",
+      "gsm": "GSM7992296",
+      "compressed_bytes": 1632971,
+      "sha256": "707ac5dc23c9bcbf334ebcbadcc0ecb5374ae9c9bfec6bc48519809c887582cb",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.1854429999,
+      "sum_NumReads": 34789237.283,
+      "fractional_NumReads_values": 33476
+    },
+    {
+      "file": "GSM7992297_d14_CM_4.quant.genes.sf.gz",
+      "gsm": "GSM7992297",
+      "compressed_bytes": 1671724,
+      "sha256": "621c978bd19cdd39d17221ad2dd136aed4f8e87f2bd4055920280a08252088c8",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.421359,
+      "sum_NumReads": 39500114.783,
+      "fractional_NumReads_values": 37824
+    },
+    {
+      "file": "GSM7992298_d28_CM_1.quant.genes.sf.gz",
+      "gsm": "GSM7992298",
+      "compressed_bytes": 1598691,
+      "sha256": "c6f6c5ce1acde83c40e1c8257e8e4959a74153506397d2462896ef862459dfca",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.863638,
+      "sum_NumReads": 27480492.618,
+      "fractional_NumReads_values": 30942
+    },
+    {
+      "file": "GSM7992299_d28_CM_2.quant.genes.sf.gz",
+      "gsm": "GSM7992299",
+      "compressed_bytes": 1644653,
+      "sha256": "642204643cdf1a18460dc27cc41103473f717cd5a3914f2e192f9aecfe7ae5af",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.9256240001,
+      "sum_NumReads": 45524008.103,
+      "fractional_NumReads_values": 35827
+    },
+    {
+      "file": "GSM7992300_d28_CM_3.quant.genes.sf.gz",
+      "gsm": "GSM7992300",
+      "compressed_bytes": 1474494,
+      "sha256": "6c77e51cd515f8802393e34d55b7abb4f9a63c24b10d9af22fb2ff375d34eeb5",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.2531309999,
+      "sum_NumReads": 13503023.776999999,
+      "fractional_NumReads_values": 16184
+    },
+    {
+      "file": "GSM7992301_d28_CM_4.quant.genes.sf.gz",
+      "gsm": "GSM7992301",
+      "compressed_bytes": 1623582,
+      "sha256": "a5dd433b403ae87013637c7bc5323e1006d3393a6a3f70b158269000d38fffe7",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.92032,
+      "sum_NumReads": 46570709.216000006,
+      "fractional_NumReads_values": 33546
+    },
+    {
+      "file": "GSM7992302_ctrl_EC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992302",
+      "compressed_bytes": 1734144,
+      "sha256": "ce1c6f3790f990f6aea7cf5022f394633ca1d06f0120be917ef4328f34cba550",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.7664019999,
+      "sum_NumReads": 21946967.429,
+      "fractional_NumReads_values": 44534
+    },
+    {
+      "file": "GSM7992303_ctrl_EC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992303",
+      "compressed_bytes": 1755900,
+      "sha256": "d25f25ab78b49682fece7a06f67b576a050cb4a0c390e6953bef08654a254973",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.2413390002,
+      "sum_NumReads": 27537663.531,
+      "fractional_NumReads_values": 47774
+    },
+    {
+      "file": "GSM7992304_ctrl_EC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992304",
+      "compressed_bytes": 1772677,
+      "sha256": "965eeb9e17a3a254ff55e91a77e1ca921a876609ef08b98af1fbcb2faa9e8d63",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.855802,
+      "sum_NumReads": 26382830.749,
+      "fractional_NumReads_values": 48777
+    },
+    {
+      "file": "GSM7992305_ctrl_EC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992305",
+      "compressed_bytes": 1806670,
+      "sha256": "7ffc2e4ac57777d4445e2a49f2c1cb620f19b6ce9473f110d90e3107a999c285",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.111316,
+      "sum_NumReads": 28642346.04,
+      "fractional_NumReads_values": 52159
+    },
+    {
+      "file": "GSM7992306_d1_EC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992306",
+      "compressed_bytes": 1746116,
+      "sha256": "fe5a0b3c7b85790a36fcc0abcb92f78f200ac213021660a5406f42a70a1231cd",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.164249,
+      "sum_NumReads": 20500682.144,
+      "fractional_NumReads_values": 45927
+    },
+    {
+      "file": "GSM7992307_d1_EC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992307",
+      "compressed_bytes": 1787796,
+      "sha256": "2484cbd61b2116f6f761f9cf5d423b837794d8b5b94e7b956694bfdc58fbe4e0",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.980606,
+      "sum_NumReads": 24794523.588,
+      "fractional_NumReads_values": 50315
+    },
+    {
+      "file": "GSM7992308_d1_EC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992308",
+      "compressed_bytes": 1807127,
+      "sha256": "de4a424790ed7ea701cfc5dc5576524f3f7ccc5d781f7780f123b366f5e56585",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.60344,
+      "sum_NumReads": 28484807.194000002,
+      "fractional_NumReads_values": 52289
+    },
+    {
+      "file": "GSM7992309_d1_EC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992309",
+      "compressed_bytes": 1849048,
+      "sha256": "bf0c5dd10a15f63e91b5e0b7e152be1c66f5d8e20f3ea32c96d111f3401f0e4a",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.196802,
+      "sum_NumReads": 33868989.627000004,
+      "fractional_NumReads_values": 55938
+    },
+    {
+      "file": "GSM7992310_d3_EC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992310",
+      "compressed_bytes": 1809424,
+      "sha256": "8376a9b9bf9fc16b8983aab37a5ace07cb0ebd09ab5e8316bef7fd802728acc8",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.941905,
+      "sum_NumReads": 21405294.528,
+      "fractional_NumReads_values": 52421
+    },
+    {
+      "file": "GSM7992311_d3_EC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992311",
+      "compressed_bytes": 1769100,
+      "sha256": "3abe8df69e14b44ddf68ffcce0781f5c34003ceb0acea4978672c8083340add5",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.961073,
+      "sum_NumReads": 25334702.343999997,
+      "fractional_NumReads_values": 48900
+    },
+    {
+      "file": "GSM7992312_d3_EC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992312",
+      "compressed_bytes": 1849805,
+      "sha256": "decf321935d33657ca213f884a2a4fb80ee06c16cdbfeb4a0ea6c63a45023513",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.1776850001,
+      "sum_NumReads": 28349652.026,
+      "fractional_NumReads_values": 56864
+    },
+    {
+      "file": "GSM7992313_d3_EC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992313",
+      "compressed_bytes": 1798609,
+      "sha256": "1de3b11d481f3904becf9353877d14ff54076c9c2fe118e9d2eee7159b795ac8",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.0091269999,
+      "sum_NumReads": 25808588.75,
+      "fractional_NumReads_values": 51346
+    },
+    {
+      "file": "GSM7992314_d7_EC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992314",
+      "compressed_bytes": 1803904,
+      "sha256": "90cd566f388fcbe079ae51fb774dac040c9cf60918689f93c0764241cf8f8a83",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.828817,
+      "sum_NumReads": 21538884.527999997,
+      "fractional_NumReads_values": 51221
+    },
+    {
+      "file": "GSM7992315_d7_EC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992315",
+      "compressed_bytes": 1816767,
+      "sha256": "ff4a67b40a826a643437f6069548dd15ac6b2a66731f3d29d3bd31ba07f86db7",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.1838900001,
+      "sum_NumReads": 20521797.056,
+      "fractional_NumReads_values": 52526
+    },
+    {
+      "file": "GSM7992316_d7_EC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992316",
+      "compressed_bytes": 1831922,
+      "sha256": "2b817203589a0f2c76d3d9392a5f7df3d4dcc3639eb4b03c7b4fdbc88e0f30f0",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.9688489999,
+      "sum_NumReads": 20956752.020999998,
+      "fractional_NumReads_values": 53843
+    },
+    {
+      "file": "GSM7992317_d7_EC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992317",
+      "compressed_bytes": 1788858,
+      "sha256": "ca815131a49faae969f801ea6df5d2fc7b60903b3378e3b5ad2a6a3fcac64695",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.749711,
+      "sum_NumReads": 19717198.992,
+      "fractional_NumReads_values": 49613
+    },
+    {
+      "file": "GSM7992318_d14_EC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992318",
+      "compressed_bytes": 1831440,
+      "sha256": "b569620dd23f3368b69c8b679a2df194b4a84bd559a282065b896f3a69016383",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.029074,
+      "sum_NumReads": 23025930.047000002,
+      "fractional_NumReads_values": 54561
+    },
+    {
+      "file": "GSM7992319_d14_EC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992319",
+      "compressed_bytes": 1821751,
+      "sha256": "343b9f37582b851748405b5571c11a790eb686898108a7d519c899f55dd015f1",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.8015380001,
+      "sum_NumReads": 23289173.602,
+      "fractional_NumReads_values": 53270
+    },
+    {
+      "file": "GSM7992320_d14_EC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992320",
+      "compressed_bytes": 1823176,
+      "sha256": "8e90586a417444b941bf4a0a260a80c22a0fededc0e5a9ddcc3b5a5194bac8f7",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.95423,
+      "sum_NumReads": 19984631.47,
+      "fractional_NumReads_values": 53689
+    },
+    {
+      "file": "GSM7992321_d14_EC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992321",
+      "compressed_bytes": 1812817,
+      "sha256": "e9c4c374f3ef3e54a38b3ebb2349fbcebe7a372183420a9bfa87de81b281fb4a",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.975541,
+      "sum_NumReads": 19359356.305999998,
+      "fractional_NumReads_values": 52147
+    },
+    {
+      "file": "GSM7992322_d28_EC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992322",
+      "compressed_bytes": 1782978,
+      "sha256": "c14a1a988ad9511ab7dfa2eda2bf98979c731e6a099cbf86a081267f9154b17d",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.0360819999,
+      "sum_NumReads": 13262181.977000002,
+      "fractional_NumReads_values": 49040
+    },
+    {
+      "file": "GSM7992323_d28_EC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992323",
+      "compressed_bytes": 1765096,
+      "sha256": "4bd21ebd9ad75c57395b69afc7d13b34f06e5dea971535400862cf0f9ede62f3",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.9885229999,
+      "sum_NumReads": 12445123.754999999,
+      "fractional_NumReads_values": 47596
+    },
+    {
+      "file": "GSM7992324_d28_EC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992324",
+      "compressed_bytes": 1852732,
+      "sha256": "df5be74303f08ea6ca6d6736e06da47524a0d8eda45f7d1a7c2571d0debcf1eb",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.4949709999,
+      "sum_NumReads": 16746557.52,
+      "fractional_NumReads_values": 56027
+    },
+    {
+      "file": "GSM7992325_d28_EC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992325",
+      "compressed_bytes": 1800051,
+      "sha256": "c839b2fad0f3b8a649aac57c0659361d0b143689925da08dd0e8f2d2d0dce874",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.9652699999,
+      "sum_NumReads": 16457714.189,
+      "fractional_NumReads_values": 50996
+    },
+    {
+      "file": "GSM7992326_ctrl_FB_1.quant.genes.sf.gz",
+      "gsm": "GSM7992326",
+      "compressed_bytes": 682352,
+      "sha256": "2cccbc90baa552fb6a6f391168537ba2bab93ac0bc22fd16d6f8375f5a270d21",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.3526040001,
+      "sum_NumReads": 25913030.372,
+      "fractional_NumReads_values": 11879
+    },
+    {
+      "file": "GSM7992327_ctrl_FB_2.quant.genes.sf.gz",
+      "gsm": "GSM7992327",
+      "compressed_bytes": 685488,
+      "sha256": "a97371b00e89a0e4ac903a98affae1afa653fd8e4301f21ec840c8c91819cd8e",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.352579,
+      "sum_NumReads": 32962570.267,
+      "fractional_NumReads_values": 12220
+    },
+    {
+      "file": "GSM7992328_ctrl_FB_3.quant.genes.sf.gz",
+      "gsm": "GSM7992328",
+      "compressed_bytes": 689601,
+      "sha256": "cb55099512e1bc6f67e0f56cee12f0dd355244dcf424f6daab470c57aad47d09",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.211083,
+      "sum_NumReads": 31274549.114,
+      "fractional_NumReads_values": 12819
+    },
+    {
+      "file": "GSM7992329_ctrl_FB_4.quant.genes.sf.gz",
+      "gsm": "GSM7992329",
+      "compressed_bytes": 690723,
+      "sha256": "2debf51bcbf8daaad51803c54138f9d8e6dd2e2824acc881439244837b7ffd5e",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.6632129999,
+      "sum_NumReads": 36545715.31,
+      "fractional_NumReads_values": 12809
+    },
+    {
+      "file": "GSM7992330_d1_FB_1.quant.genes.sf.gz",
+      "gsm": "GSM7992330",
+      "compressed_bytes": 677128,
+      "sha256": "3ded56525e6d4044b47a8e07e443ca724e134f5f74ed0332bd466be4b08892a6",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.6539159999,
+      "sum_NumReads": 29349479.569,
+      "fractional_NumReads_values": 11490
+    },
+    {
+      "file": "GSM7992331_d1_FB_2.quant.genes.sf.gz",
+      "gsm": "GSM7992331",
+      "compressed_bytes": 681453,
+      "sha256": "1df1ad00a6078ffc17dd34bd71019ecb033b9d9fac2ef332e5cd885a7a2811a0",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.3443689999,
+      "sum_NumReads": 25604343.674000002,
+      "fractional_NumReads_values": 11957
+    },
+    {
+      "file": "GSM7992332_d1_FB_3.quant.genes.sf.gz",
+      "gsm": "GSM7992332",
+      "compressed_bytes": 677641,
+      "sha256": "4e4d8eaf3a804a204be5633aa603881ac617ed9b0e8a9a83dccaf1e43a7abd4a",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.6245410001,
+      "sum_NumReads": 26847285.255,
+      "fractional_NumReads_values": 11598
+    },
+    {
+      "file": "GSM7992333_d1_FB_4.quant.genes.sf.gz",
+      "gsm": "GSM7992333",
+      "compressed_bytes": 681466,
+      "sha256": "1892dce36c5923b38a4845f170ea9ab9eb49ed1f1fa5e316f8ef1944eed30e4a",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.4967669998,
+      "sum_NumReads": 26226489.433,
+      "fractional_NumReads_values": 12678
+    },
+    {
+      "file": "GSM7992334_d3_FB_1.quant.genes.sf.gz",
+      "gsm": "GSM7992334",
+      "compressed_bytes": 681898,
+      "sha256": "c637b99e059c8c3283b6ca83c670a02517fac0602427f45bae00c1167e437287",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.35669,
+      "sum_NumReads": 29057708.084,
+      "fractional_NumReads_values": 11914
+    },
+    {
+      "file": "GSM7992335_d3_FB_2.quant.genes.sf.gz",
+      "gsm": "GSM7992335",
+      "compressed_bytes": 615292,
+      "sha256": "7c7291316b36e43285c59ae5da38e9b445979e1ac893d17eaf99878feece8a2a",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.7071619999,
+      "sum_NumReads": 2664337.868,
+      "fractional_NumReads_values": 8234
+    },
+    {
+      "file": "GSM7992336_d3_FB_3.quant.genes.sf.gz",
+      "gsm": "GSM7992336",
+      "compressed_bytes": 624340,
+      "sha256": "caf2db3bce41dd1a02feb2ccbd612dbccfd895dc9d9908d4259c1994c9b32ad7",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.0859909999,
+      "sum_NumReads": 3508818.537,
+      "fractional_NumReads_values": 9104
+    },
+    {
+      "file": "GSM7992337_d3_FB_4.quant.genes.sf.gz",
+      "gsm": "GSM7992337",
+      "compressed_bytes": 663068,
+      "sha256": "2b694b5ce55dcc45c4c7bf3531be775be4d69ea51364174238bc4c3f8a5acf92",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.9242210002,
+      "sum_NumReads": 18528788.064999998,
+      "fractional_NumReads_values": 11016
+    },
+    {
+      "file": "GSM7992338_d7_FB_1.quant.genes.sf.gz",
+      "gsm": "GSM7992338",
+      "compressed_bytes": 687496,
+      "sha256": "0f73900c03a441c48f6ecbedb713e1225b9b163efaee313d69ad38a58bf75691",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.8320680001,
+      "sum_NumReads": 27750078.627000004,
+      "fractional_NumReads_values": 12241
+    },
+    {
+      "file": "GSM7992339_d7_FB_2.quant.genes.sf.gz",
+      "gsm": "GSM7992339",
+      "compressed_bytes": 686281,
+      "sha256": "c463ad2818d036d4b090a6f01b89cd0451726e5249088a91d7e78aa9beecefe5",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.1365080001,
+      "sum_NumReads": 23902583.843000002,
+      "fractional_NumReads_values": 12269
+    },
+    {
+      "file": "GSM7992340_d7_FB_3.quant.genes.sf.gz",
+      "gsm": "GSM7992340",
+      "compressed_bytes": 679707,
+      "sha256": "b8baa901585460ad9cd371884499d059e05de93dd8bf266c5e8193752f1f2afd",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.023956,
+      "sum_NumReads": 23423292.111,
+      "fractional_NumReads_values": 11999
+    },
+    {
+      "file": "GSM7992341_d7_FB_4.quant.genes.sf.gz",
+      "gsm": "GSM7992341",
+      "compressed_bytes": 685938,
+      "sha256": "0729bcf8d8d280fd3a7206c45de265ea6ed8753c995e0cb2602ee60326dbd2b1",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.404352,
+      "sum_NumReads": 26978868.82,
+      "fractional_NumReads_values": 12313
+    },
+    {
+      "file": "GSM7992342_d14_FB_1.quant.genes.sf.gz",
+      "gsm": "GSM7992342",
+      "compressed_bytes": 679286,
+      "sha256": "28ad461e5f5b1065f9b096f24b1e9f0320f27b0b98883b36fd305c1944ce8a6b",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.1211920001,
+      "sum_NumReads": 23681911.78,
+      "fractional_NumReads_values": 11747
+    },
+    {
+      "file": "GSM7992343_d14_FB_2.quant.genes.sf.gz",
+      "gsm": "GSM7992343",
+      "compressed_bytes": 677623,
+      "sha256": "b66d9346e66f276b360fbe5238a855976ff73f43854d359905aa255a7f8e0a77",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.7374039998,
+      "sum_NumReads": 24299667.651,
+      "fractional_NumReads_values": 12056
+    },
+    {
+      "file": "GSM7992344_d14_FB_3.quant.genes.sf.gz",
+      "gsm": "GSM7992344",
+      "compressed_bytes": 685262,
+      "sha256": "ea8445271f52ac718c3ba3fb92933bac5ef24a3dfc7450f45e19ccd77fd5fab3",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.830907,
+      "sum_NumReads": 23255184.138,
+      "fractional_NumReads_values": 12460
+    },
+    {
+      "file": "GSM7992345_d14_FB_4.quant.genes.sf.gz",
+      "gsm": "GSM7992345",
+      "compressed_bytes": 690837,
+      "sha256": "82c9ca00e5be570f2c8dbcd2c52070208600271930b48772238f9da45c1f1f4d",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.4579919998,
+      "sum_NumReads": 27188374.768999998,
+      "fractional_NumReads_values": 12942
+    },
+    {
+      "file": "GSM7992346_d28_FB_1.quant.genes.sf.gz",
+      "gsm": "GSM7992346",
+      "compressed_bytes": 693526,
+      "sha256": "32979913e15f0b8a756b832ceed5807817a8d83ffe771560675ea91a8286ea35",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.0737010001,
+      "sum_NumReads": 29400863.584,
+      "fractional_NumReads_values": 13120
+    },
+    {
+      "file": "GSM7992347_d28_FB_2.quant.genes.sf.gz",
+      "gsm": "GSM7992347",
+      "compressed_bytes": 689417,
+      "sha256": "004734b01c03848326f987726598ea3d5c6a97de2c5b95b228d7834e3a929fa4",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.6353600001,
+      "sum_NumReads": 26380871.534,
+      "fractional_NumReads_values": 12787
+    },
+    {
+      "file": "GSM7992348_d28_FB_3.quant.genes.sf.gz",
+      "gsm": "GSM7992348",
+      "compressed_bytes": 690350,
+      "sha256": "5ca6522a61b580142ccb8981f9f4f2bcf854012621c0c8f897b929bb6038347b",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.3015230001,
+      "sum_NumReads": 27488483.166,
+      "fractional_NumReads_values": 12966
+    },
+    {
+      "file": "GSM7992349_d28_FB_4.quant.genes.sf.gz",
+      "gsm": "GSM7992349",
+      "compressed_bytes": 712225,
+      "sha256": "b5772283060570e5fca7139038c246f44e6ba18dc5353e1288e46274a1c67494",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.2436540001,
+      "sum_NumReads": 26927432.266,
+      "fractional_NumReads_values": 16009
+    },
+    {
+      "file": "GSM7992350_ctrl_HC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992350",
+      "compressed_bytes": 676591,
+      "sha256": "ee701404cf6852a62b756e2077173ec22a8e86a40a7fbcc7bb5912f6d0053050",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.594238,
+      "sum_NumReads": 18518234.194,
+      "fractional_NumReads_values": 11951
+    },
+    {
+      "file": "GSM7992351_ctrl_HC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992351",
+      "compressed_bytes": 683404,
+      "sha256": "70b94fb6e388d7b4b27d2fead28d703cd3c621d23cf5c0fc4e0f1e63ecdb9882",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.144374,
+      "sum_NumReads": 26161405.945,
+      "fractional_NumReads_values": 12660
+    },
+    {
+      "file": "GSM7992352_ctrl_HC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992352",
+      "compressed_bytes": 672233,
+      "sha256": "6dcb081d4856a177fbd921c70b751057c2e33799c1c88f28268d5906695820b1",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.929239,
+      "sum_NumReads": 18777519.849,
+      "fractional_NumReads_values": 11919
+    },
+    {
+      "file": "GSM7992353_ctrl_HC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992353",
+      "compressed_bytes": 684064,
+      "sha256": "d54f56600a8c9d9c5a7e684a6c959d41d6aed31bc92c777939b6187548e91c12",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.070544,
+      "sum_NumReads": 26136451.652999997,
+      "fractional_NumReads_values": 12631
+    },
+    {
+      "file": "GSM7992354_d1_HC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992354",
+      "compressed_bytes": 1825129,
+      "sha256": "11bbf6b7dbcc27ba393af30a6d8ea415acc14ff4b984c53c2d1113e72d48379c",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.901818,
+      "sum_NumReads": 22967306.337,
+      "fractional_NumReads_values": 53791
+    },
+    {
+      "file": "GSM7992355_d1_HC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992355",
+      "compressed_bytes": 1832744,
+      "sha256": "1a7d4fa008ee754a13c1d6710ec87ad8c60b7f36e05828564643ce89049c8ac5",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.429589,
+      "sum_NumReads": 23664090.008,
+      "fractional_NumReads_values": 54064
+    },
+    {
+      "file": "GSM7992356_d1_HC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992356",
+      "compressed_bytes": 1806241,
+      "sha256": "87b89690993d3f9dc95db05363f9a36e823d703f7dc9944bff2ea04b05c1a56f",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.0198589999,
+      "sum_NumReads": 16214419.038000003,
+      "fractional_NumReads_values": 51352
+    },
+    {
+      "file": "GSM7992357_d1_HC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992357",
+      "compressed_bytes": 1798588,
+      "sha256": "0ab93332d6c59444e794d59722c26457ef1ac3930ae8de8a2e8dae12295d4e67",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.337328,
+      "sum_NumReads": 26307925.576,
+      "fractional_NumReads_values": 51996
+    },
+    {
+      "file": "GSM7992358_d3_HC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992358",
+      "compressed_bytes": 689303,
+      "sha256": "6b2e2c9ca4a2a5d250871d7f92e363f5170560ee6e9e072daf9affcd7dce533b",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.9091399999,
+      "sum_NumReads": 35248628.893,
+      "fractional_NumReads_values": 12945
+    },
+    {
+      "file": "GSM7992359_d3_HC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992359",
+      "compressed_bytes": 686706,
+      "sha256": "bd663ee61ec961bf93ed8182d2045efa56fd01cc66451bce4bb0e18503f9bc91",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.3872730001,
+      "sum_NumReads": 30863377.122,
+      "fractional_NumReads_values": 12755
+    },
+    {
+      "file": "GSM7992360_d3_HC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992360",
+      "compressed_bytes": 681076,
+      "sha256": "36b6a78473624eff91054ec655c52450e7f0578688412d4b8ca1f86f444f0c02",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.410998,
+      "sum_NumReads": 30011705.850999996,
+      "fractional_NumReads_values": 12097
+    },
+    {
+      "file": "GSM7992361_d3_HC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992361",
+      "compressed_bytes": 667632,
+      "sha256": "017167ef36ebc70d21f52801d93ba7374f946365c6346537e255e271c7a30b04",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.001503,
+      "sum_NumReads": 40395291.113,
+      "fractional_NumReads_values": 11182
+    },
+    {
+      "file": "GSM7992362_d7_HC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992362",
+      "compressed_bytes": 1829917,
+      "sha256": "2e2080f3d404b5cb54491b8f76e761d89671a90ffd36a7cff094b81aa146e04e",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.905158,
+      "sum_NumReads": 22744976.396,
+      "fractional_NumReads_values": 54107
+    },
+    {
+      "file": "GSM7992363_d7_HC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992363",
+      "compressed_bytes": 1851102,
+      "sha256": "29dd4cd86c7013c5b3711ea800af4d55d7dad93e4641873704cdb81d325456ef",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.0855029998,
+      "sum_NumReads": 25496260.627,
+      "fractional_NumReads_values": 56178
+    },
+    {
+      "file": "GSM7992364_d7_HC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992364",
+      "compressed_bytes": 1881298,
+      "sha256": "ce66eaf0778ee93a13e51074dc57cce88c86390956112e6208f4396113985886",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 1000000.1415350001,
+      "sum_NumReads": 28583143.139,
+      "fractional_NumReads_values": 58829
+    },
+    {
+      "file": "GSM7992365_d7_HC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992365",
+      "compressed_bytes": 1855318,
+      "sha256": "b45bd43fea158fe7d1904470b01ee7bbfc03da10a5ab89e5b1468e834c27b9dc",
+      "rows": 137734,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 137734,
+      "ensembl_transcript_rows": 137734,
+      "ensembl_gene_rows": 0,
+      "sum_TPM": 999999.687587,
+      "sum_NumReads": 24797097.964,
+      "fractional_NumReads_values": 56589
+    },
+    {
+      "file": "GSM7992366_d14_HC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992366",
+      "compressed_bytes": 685067,
+      "sha256": "add23e80b448e83643c324155de2962655f035cd45159a03ae60d3a9abba12d6",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.993493,
+      "sum_NumReads": 22714105.678999998,
+      "fractional_NumReads_values": 12419
+    },
+    {
+      "file": "GSM7992367_d14_HC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992367",
+      "compressed_bytes": 682861,
+      "sha256": "1fe3a230c8a5742f2c24e26cf9c981111718262cad8fd50c00e9614606b02a84",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.326266,
+      "sum_NumReads": 21679459.628,
+      "fractional_NumReads_values": 12341
+    },
+    {
+      "file": "GSM7992368_d14_HC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992368",
+      "compressed_bytes": 683655,
+      "sha256": "9a570155f8e142e4fb63abafe001d406094004aac6709f40993aa21f957129d5",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.043142,
+      "sum_NumReads": 22422409.082999997,
+      "fractional_NumReads_values": 12302
+    },
+    {
+      "file": "GSM7992369_d14_HC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992369",
+      "compressed_bytes": 688697,
+      "sha256": "6babcbdb4d4d21bc84484177ef52bdffc9c8b54aa5eba9c0da6d7e11f2758750",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.705575,
+      "sum_NumReads": 24796164.774,
+      "fractional_NumReads_values": 12973
+    },
+    {
+      "file": "GSM7992370_d28_HC_1.quant.genes.sf.gz",
+      "gsm": "GSM7992370",
+      "compressed_bytes": 681707,
+      "sha256": "2efd80f180e01617ada7fc4ab79974a206e6ef10f32ac0866c1cf31120cc8f37",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 999999.928976,
+      "sum_NumReads": 27941408.048,
+      "fractional_NumReads_values": 11775
+    },
+    {
+      "file": "GSM7992371_d28_HC_2.quant.genes.sf.gz",
+      "gsm": "GSM7992371",
+      "compressed_bytes": 727608,
+      "sha256": "592bc69726a9a73d8ec031090921fef23e2095e4d7754c90a8b422ee56097dc4",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.274321,
+      "sum_NumReads": 26599608.701,
+      "fractional_NumReads_values": 17539
+    },
+    {
+      "file": "GSM7992372_d28_HC_3.quant.genes.sf.gz",
+      "gsm": "GSM7992372",
+      "compressed_bytes": 692124,
+      "sha256": "74532b5ea1add5e7b99b0df1c00201c16fe68870563c587a62e51ddadfa6d622",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.582318,
+      "sum_NumReads": 34784029.784,
+      "fractional_NumReads_values": 13090
+    },
+    {
+      "file": "GSM7992373_d28_HC_4.quant.genes.sf.gz",
+      "gsm": "GSM7992373",
+      "compressed_bytes": 681061,
+      "sha256": "963a67dcd632fed40d2a10cf86d824cacc4b53104b233e5403e43cf889a1b0d9",
+      "rows": 51398,
+      "columns": [
+        "Name",
+        "Length",
+        "EffectiveLength",
+        "TPM",
+        "NumReads"
+      ],
+      "all_numeric_finite": true,
+      "all_numeric_nonnegative": true,
+      "unique_ids": 51398,
+      "ensembl_transcript_rows": 369,
+      "ensembl_gene_rows": 51029,
+      "sum_TPM": 1000000.052655,
+      "sum_NumReads": 29559080.810000002,
+      "fractional_NumReads_values": 12335
+    }
+  ],
+  "feature_layouts_by_celltype": {
+    "CM": [
+      {
+        "rows": 137734,
+        "ensembl_gene_rows": 0,
+        "ensembl_transcript_rows": 137734,
+        "libraries": 24
+      }
+    ],
+    "EC": [
+      {
+        "rows": 137734,
+        "ensembl_gene_rows": 0,
+        "ensembl_transcript_rows": 137734,
+        "libraries": 24
+      }
+    ],
+    "FB": [
+      {
+        "rows": 51398,
+        "ensembl_gene_rows": 51029,
+        "ensembl_transcript_rows": 369,
+        "libraries": 24
+      }
+    ],
+    "HC": [
+      {
+        "rows": 51398,
+        "ensembl_gene_rows": 51029,
+        "ensembl_transcript_rows": 369,
+        "libraries": 16
+      },
+      {
+        "rows": 137734,
+        "ensembl_gene_rows": 0,
+        "ensembl_transcript_rows": 137734,
+        "libraries": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "GSM": "GSM4985022",
+    "title": "CD45+ Sham",
+    "organism": "Mus musculus",
+    "source": "Cardiac immune cells",
+    "condition": "sham",
+    "days_after_MI": "",
+    "treatment": "no Tan IIA group",
+    "treatment_evidence": "GEO sample title; do not equate sham with unoperated control",
+    "biological_replicates_in_public_data": "1 GSM per condition/time; no per-mouse identifiers verified",
+    "supplementary_files": "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985022/suppl/GSM4985022_Sham_barcodes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985022/suppl/GSM4985022_Sham_features.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985022/suppl/GSM4985022_Sham_matrix.mtx.gz"
+  },
+  {
+    "GSM": "GSM4985023",
+    "title": "CD45+ Day_3",
+    "organism": "Mus musculus",
+    "source": "Cardiac immune cells",
+    "condition": "MI",
+    "days_after_MI": "3",
+    "treatment": "no Tan IIA group",
+    "treatment_evidence": "GEO sample title; do not equate sham with unoperated control",
+    "biological_replicates_in_public_data": "1 GSM per condition/time; no per-mouse identifiers verified",
+    "supplementary_files": "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985023/suppl/GSM4985023_Day_3_barcodes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985023/suppl/GSM4985023_Day_3_features.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985023/suppl/GSM4985023_Day_3_matrix.mtx.gz"
+  },
+  {
+    "GSM": "GSM4985024",
+    "title": "CD45+ Day_7",
+    "organism": "Mus musculus",
+    "source": "Cardiac immune cells",
+    "condition": "MI",
+    "days_after_MI": "7",
+    "treatment": "no Tan IIA group",
+    "treatment_evidence": "GEO sample title; do not equate sham with unoperated control",
+    "biological_replicates_in_public_data": "1 GSM per condition/time; no per-mouse identifiers verified",
+    "supplementary_files": "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985024/suppl/GSM4985024_Day_7_barcodes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985024/suppl/GSM4985024_Day_7_features.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985024/suppl/GSM4985024_Day_7_matrix.mtx.gz"
+  },
+  {
+    "GSM": "GSM4985025",
+    "title": "CD45+ Day_14",
+    "organism": "Mus musculus",
+    "source": "Cardiac immune cells",
+    "condition": "MI",
+    "days_after_MI": "14",
+    "treatment": "no Tan IIA group",
+    "treatment_evidence": "GEO sample title; do not equate sham with unoperated control",
+    "biological_replicates_in_public_data": "1 GSM per condition/time; no per-mouse identifiers verified",
+    "supplementary_files": "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985025/suppl/GSM4985025_Day_14_barcodes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985025/suppl/GSM4985025_Day_14_features.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4985nnn/GSM4985025/suppl/GSM4985025_Day_14_matrix.mtx.gz"
+  },
+  {
+    "GSM": "GSM5513773",
+    "title": "Cd45+ Day_3_T",
+    "organism": "Mus musculus",
+    "source": "Cardiac immune cells",
+    "condition": "MI",
+    "days_after_MI": "3",
+    "treatment": "tanshinone IIA",
+    "treatment_evidence": "author bioRxiv Fig6 and GEO _T title; protocol text is shared across groups",
+    "biological_replicates_in_public_data": "1 GSM per condition/time; no per-mouse identifiers verified",
+    "supplementary_files": "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513773/suppl/GSM5513773_Day_3_T_barcodes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513773/suppl/GSM5513773_Day_3_T_features.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513773/suppl/GSM5513773_Day_3_T_matrix.mtx.gz"
+  },
+  {
+    "GSM": "GSM5513774",
+    "title": "Cd45+ Day_7_T",
+    "organism": "Mus musculus",
+    "source": "Cardiac immune cells",
+    "condition": "MI",
+    "days_after_MI": "7",
+    "treatment": "tanshinone IIA",
+    "treatment_evidence": "author bioRxiv Fig6 and GEO _T title; protocol text is shared across groups",
+    "biological_replicates_in_public_data": "1 GSM per condition/time; no per-mouse identifiers verified",
+    "supplementary_files": "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513774/suppl/GSM5513774_Day_7_T_barcodes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513774/suppl/GSM5513774_Day_7_T_features.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513774/suppl/GSM5513774_Day_7_T_matrix.mtx.gz"
+  },
+  {
+    "GSM": "GSM5513775",
+    "title": "Cd45+ Day_14_T",
+    "organism": "Mus musculus",
+    "source": "Cardiac immune cells",
+    "condition": "MI",
+    "days_after_MI": "14",
+    "treatment": "tanshinone IIA",
+    "treatment_evidence": "author bioRxiv Fig6 and GEO _T title; protocol text is shared across groups",
+    "biological_replicates_in_public_data": "1 GSM per condition/time; no per-mouse identifiers verified",
+    "supplementary_files": "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513775/suppl/GSM5513775_Day_14_T_barcodes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513775/suppl/GSM5513775_Day_14_T_features.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5513nnn/GSM5513775/suppl/GSM5513775_Day_14_T_matrix.mtx.gz"
+  }
+]

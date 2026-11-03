@@ -1,0 +1,53 @@
+# Local datasets, expression matrices, raw arrays and downloaded archives
+/datasets/*/original/
+*.gz
+*.tar
+*.tgz
+*.zip
+*.bz2
+*.xz
+*.7z
+*.h5ad
+*.h5
+*.hdf5
+*.loom
+*.mtx
+*.CEL
+*.cel
+*.fastq
+*.fq
+*.bam
+*.cram
+
+# Downloaded paper full text: keep references and public download URLs in Git
+/papers/**/*.pdf
+/papers/**/*.xml
+/papers/**/*_preprint.extracted.md
+
+# Local-only project migration details
+/provenance/scope_correction_*.json
+
+# Generated experiments and environments
+/checkpoints/
+/runs/
+/outputs/
+*.pt
+*.pth
+*.ckpt
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local state, credentials and incomplete downloads
+.DS_Store
+._*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.part
+*.tmp
