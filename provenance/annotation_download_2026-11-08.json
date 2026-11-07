@@ -1,0 +1,18 @@
+{
+  "analysis_annotation": {
+    "path": "datasets/annotation/Mus_musculus.GRCm38.87.gtf.gz",
+    "source_url": "https://ftp.ensembl.org/pub/release-87/gtf/mus_musculus/Mus_musculus.GRCm38.87.gtf.gz",
+    "bytes": 29732098,
+    "sha256": "4e1e10e0a2e178a09f65c10514d65cc48c99401844d9b294d2ad981cf72e9efa",
+    "download_date": "2026-11-08",
+    "purpose": "Analysis annotation matching the discovery paper GRCm38.87; stable gene and transcript mapping"
+  },
+  "additional_not_used": {
+    "path": "datasets/annotation/gencode.vM25.basic.annotation.gtf.gz",
+    "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.basic.annotation.gtf.gz",
+    "bytes": 19833013,
+    "sha256": "f0b448e01037339379782a1cbc973c3d26756bba9a8e8d4eac0cb9ec4714f869",
+    "download_date": "2026-11-08",
+    "purpose": "GRCm38 stable gene ID and gene symbol mapping; not re-quantification"
+  }
+}

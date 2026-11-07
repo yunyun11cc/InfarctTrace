@@ -35,7 +35,7 @@ GSE252027 的主要分析对象是其中 FB 成纤维细胞的 24 个提交样�
 | GSE236374 | Yu、Song 等，PNAS 2023，[10.1073/pnas.2302482120](https://doi.org/10.1073/pnas.2302482120) | [PMC 正式 PDF](https://pmc-oa-opendata.s3.amazonaws.com/PMC10589712.1/PMC10589712.1.pdf) |
 | GSE163465 | Jin 等，Small Methods 2022，[10.1002/smtd.202100752](https://doi.org/10.1002/smtd.202100752) | [原作者 bioRxiv 2021 预印本 PDF](https://www.biorxiv.org/content/10.1101/2021.07.19.452902v1.full.pdf?download=1)；本次未获取正式出版 PDF |
 
-全文按下载清单中的路径保存到 `papers/<GSE编号>/`。GSE163465 的预印本 DOI 是 `10.1101/2021.07.19.452902`，不能将这个作者版本标为正式出版 PDF。完整书目见 [references.bib](../papers/references.bib)。补充材料与全文 XML 的来源也在下载清单中。
+全文按下载清单中的路径保存到 `papers/<GSE编号>/`。GSE163465 的预印本 DOI 是 `10.1101/2021.07.19.452902`，不能将这个作者版本标为正式出版 PDF。完整书目见 [references.bib](../../papers/references.bib)。补充材料与全文 XML 的来源也在下载清单中。
 
 ## 4 下载示例与校验
 
@@ -49,6 +49,6 @@ curl --fail --location --retry 3 \
 shasum -a 256 datasets/GSE236374/original/GSE236374_MI_FeatureCounts_matrix.txt.gz
 ```
 
-将结果与 [统一下载清单 CSV](../provenance/download_manifest.csv) 中同一路径的 `sha256` 比较。下载地址来自 GEO 官方或原论文公开来源，未替换为其他数据集。若站点返回 HTML 验证页或限流，请从对应 GEO／DOI 页面重试；不要把 HTTP 200 自动当作真实数据或 PDF。
+将结果与 [统一下载清单 CSV](../../provenance/download_manifest.csv) 中同一路径的 `sha256` 比较。下载地址来自 GEO 官方或原论文公开来源，未替换为其他数据集。若站点返回 HTML 验证页或限流，请从对应 GEO／DOI 页面重试；不要把 HTTP 200 自动当作真实数据或 PDF。
 
-[SHA256SUMS.txt](../provenance/SHA256SUMS.txt) 记录本次 38 个下载源文件的校验值。只有将清单中全部文件恢复到对应路径后，才运行 `shasum -a 256 -c provenance/SHA256SUMS.txt`；刚克隆仓库时数据文件缺失是预期状态。部分在线 API 元数据会更新，重新获取后应记录新版本，而不是强行把新响应说成与本次快照相同。
+[SHA256SUMS.txt](../../provenance/SHA256SUMS.txt) 记录本次 38 个下载源文件的校验值。只有将清单中全部文件恢复到对应路径后，才运行 `shasum -a 256 -c provenance/SHA256SUMS.txt`；刚克隆仓库时数据文件缺失是预期状态。部分在线 API 元数据会更新，重新获取后应记录新版本，而不是强行把新响应说成与本次快照相同。
