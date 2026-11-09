@@ -13,7 +13,6 @@
 | `go_reference.py`、`kegg_reference.py` | 准备小鼠注释和 KEGG 通路快照 |
 | `enrichment.py` | GO、KEGG 过度富集检验和 GSEA |
 | `visualize.py` | 生成中文质控图、热图、火山图和富集图 |
-| `baseline.py`、`run.py` | 原 D7 对 D0 的 Python 教学基线及兼容入口 |
 
 先按 [下载数据](../../scripts/README.md) 配置环境并恢复源文件，再从项目根目录按顺序执行。已有的注释快照可以复用。
 
@@ -28,10 +27,10 @@ uv run --locked python -X utf8 experiments\01_preprocessing_differential\visuali
 
 ## 结果与结论
 
-当前结果在 `outputs/01_preprocessing_differential/` 下按矩阵、表格、图和报告分类。各类输出中的 `r_reference/` 保存历史对照。
+当前结果在 `outputs/01_preprocessing_differential/` 下按矩阵、表格、图和报告分类。
 
 - [结果与读图](results.md)
-- [阶段结论](results.md#7-阶段结论)
+- [阶段结论](results.md#6-阶段结论)
 - [阶段输出索引](../../outputs/README.md)
 
 ## 方法参考

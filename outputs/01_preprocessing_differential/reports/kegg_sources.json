@@ -1,0 +1,18 @@
+{
+  "downloaded_at_utc": "2026-11-09T16:51:38.557476+00:00",
+  "files": {
+    "pathway_names.tsv": {
+      "url": "https://rest.kegg.jp/list/pathway/mmu",
+      "sha256": "41e385f1658be658f4f9205f816e03a105380dc7303356dfe39b754b9c2bec54"
+    },
+    "pathway_genes.tsv": {
+      "url": "https://rest.kegg.jp/link/pathway/mmu",
+      "sha256": "239aca7eaa3a796b5ce2333377ae4f0aa443dfbd8f6003613147992396d7abb9"
+    },
+    "release.txt": {
+      "url": "https://rest.kegg.jp/info/pathway",
+      "sha256": "524c81c161438e9e309916a5cc6f24d487e5d62c88959221fc8a93b4eccd290d"
+    }
+  },
+  "release": "pathway\tKEGG pathway maps\npath\t588 entries\n\tLast update 2026/11/09\n\tKanehisa Laboratories\n\nlinked db\tmodule\n\tko\n\t<org>\n\tgenome\n\tcompound\n\tglycan\n\treaction\n\trclass\n\trmodule\n\tenzyme\n\tnetwork\n\tntmap\n\tdisease\n\tdrug\n\tpubmed"
+}

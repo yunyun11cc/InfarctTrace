@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-11-09T16:36:11.143799+00:00",
+  "results": [
+    {
+      "path": "datasets/GSE252027/metadata/AMI_revised_submission.zip",
+      "source_url": "https://zenodo.org/api/records/14929916/files/AMI_revised_submission.zip/content",
+      "bytes": 294211,
+      "sha256": "2f5e8cc9c348b0ddd8584e81db5698e52af1b919d0ce1b18a23f916c337411c7",
+      "status": "existing_verified"
+    },
+    {
+      "path": "datasets/GSE252027/metadata/GSE252027_family.soft.gz",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE252nnn/GSE252027/soft/GSE252027_family.soft.gz",
+      "bytes": 8422,
+      "sha256": "be53d3f081d50a77693ab5a4ae68e9582d17d815c45820f6a5be3b8ecaa6ddf2",
+      "status": "existing_verified"
+    },
+    {
+      "path": "datasets/GSE252027/original/GSE252027_RAW.tar",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE252nnn/GSE252027/suppl/GSE252027_RAW.tar",
+      "bytes": 123955200,
+      "sha256": "e1111753c5ae83f233a56550378b562601b6bd310075e773a822ccee77444f34",
+      "status": "existing_verified"
+    },
+    {
+      "path": "datasets/annotation/Mus_musculus.GRCm38.87.gtf.gz",
+      "source_url": "https://ftp.ensembl.org/pub/release-87/gtf/mus_musculus/Mus_musculus.GRCm38.87.gtf.gz",
+      "bytes": 29732098,
+      "sha256": "4e1e10e0a2e178a09f65c10514d65cc48c99401844d9b294d2ad981cf72e9efa",
+      "status": "existing_verified"
+    },
+    {
+      "path": "papers/GSE252027/PMC12089340_fulltext.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12089340/fullTextXML",
+      "bytes": 75082,
+      "sha256": "0a303e2c99ea3f978896cc03e9488a8d5d5cb349eaf9714e5ca7e07dc6d7ebc8",
+      "status": "existing_verified"
+    }
+  ],
+  "failures": []
+}

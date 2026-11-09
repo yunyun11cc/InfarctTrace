@@ -1,0 +1,62 @@
+{
+  "差异模型基因数": 19312,
+  "一对一映射基因数": 16487,
+  "gseapy": "1.3.0",
+  "scipy": "1.17.1",
+  "注释来源": {
+    "小鼠注释": {
+      "DBSCHEMAVERSION": "2.1",
+      "Db type": "OrgDb",
+      "Supporting package": "AnnotationDbi",
+      "DBSCHEMA": "MOUSE_DB",
+      "ORGANISM": "Mus musculus",
+      "SPECIES": "Mouse",
+      "EGSOURCEDATE": "2025-Sep24",
+      "EGSOURCENAME": "Entrez Gene",
+      "EGSOURCEURL": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA",
+      "CENTRALID": "EG",
+      "TAXID": "10090",
+      "GOSOURCENAME": "Gene Ontology",
+      "GOSOURCEURL": "http://current.geneontology.org/ontology/go-basic.obo",
+      "GOSOURCEDATE": "2025-07-22",
+      "GOEGSOURCEDATE": "2025-Sep24",
+      "GOEGSOURCENAME": "Entrez Gene",
+      "GOEGSOURCEURL": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA",
+      "KEGGSOURCENAME": "KEGG GENOME",
+      "KEGGSOURCEURL": "ftp://ftp.genome.jp/pub/kegg/genomes",
+      "KEGGSOURCEDATE": "2011-Mar15",
+      "GPSOURCENAME": "UCSC Genome Bioinformatics (Mus musculus)",
+      "GPSOURCEURL": "ftp://hgdownload.cse.ucsc.edu/goldenPath/mm39/database",
+      "GPSOURCEDATE": "UTC-Sep26",
+      "ENSOURCEDATE": "2025-Sep03",
+      "ENSOURCENAME": "Ensembl",
+      "ENSOURCEURL": "ftp://ftp.ensembl.org/pub/current_fasta",
+      "UPSOURCENAME": "Uniprot",
+      "UPSOURCEURL": "http://www.UniProt.org/",
+      "UPSOURCEDATE": "Sat Oct  4 10:20:36 2025"
+    },
+    "GO注释": {
+      "GOSOURCENAME": "Gene Ontology",
+      "GOSOURCEURL": "http://current.geneontology.org/ontology/go-basic.obo",
+      "GOSOURCEDATE": "2025-07-22",
+      "Db type": "GODb",
+      "package": "AnnotationDbi",
+      "DBSCHEMA": "GO_DB",
+      "GOEGSOURCEDATE": "2025-Sep24",
+      "GOEGSOURCENAME": "Entrez Gene",
+      "GOEGSOURCEURL": "ftp://ftp.ncbi.nlm.nih.gov/gene/DATA",
+      "DBSCHEMAVERSION": "2.1"
+    }
+  },
+  "GSEA方法": "multilevel",
+  "GSEA集合大小范围": [
+    15,
+    500
+  ],
+  "GSEA基因集": "KEGG mmu",
+  "ORA集合大小范围": [
+    10,
+    500
+  ],
+  "校正方法": "各检验家族内 Benjamini–Hochberg"
+}

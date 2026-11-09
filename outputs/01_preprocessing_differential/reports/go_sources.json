@@ -1,0 +1,16 @@
+{
+  "org.Mm.eg.db": {
+    "version": "3.22.0",
+    "url": "https://bioconductor.org/packages/3.22/data/annotation/src/contrib/org.Mm.eg.db_3.22.0.tar.gz",
+    "archive_sha256": "63eb3ea5b0da0a1650007eaf6c27aa7de4738e7b3ff03c94851fbbb9da52919a",
+    "sqlite_file": "org.Mm.eg.sqlite",
+    "sqlite_sha256": "663501f1f2de03c1b2d4e30ad407607b65ec299242c9e0f4b3bced7e35c5b424"
+  },
+  "GO.db": {
+    "version": "3.22.0",
+    "url": "https://bioconductor.org/packages/3.22/data/annotation/src/contrib/GO.db_3.22.0.tar.gz",
+    "archive_sha256": "aec6fae909caaa323fde5cba15aedfc8a63ddfa3b47b0381550834c162a03ed2",
+    "sqlite_file": "GO.sqlite",
+    "sqlite_sha256": "ccdb10199a59103c051dabe04f4f89445be1fb804d7b8889eed4f75b0a9b787b"
+  }
+}

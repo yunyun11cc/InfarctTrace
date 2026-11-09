@@ -22,7 +22,6 @@
 |---|---|---|
 | 表 1 GSE252027 成纤维细胞提交文库及采样分组 | `tables/discovery_samples.csv` | 每行一个文库，共 24 个，D0 为未损伤对照 |
 | 表 2 成纤维细胞文库的表达定量质控统计 | `tables/discovery_qc.csv` | 按文库汇总特征行数、估计片段数和 TPM 分布信息 |
-| 表 3 心梗后第 7 天成纤维细胞的差异表达 | `tables/discovery_D7_vs_D0.tsv` | D7 与 D0 各 4 个文库。每行一个进入检验的基因。`通过差异筛选` 记录其是否达到绝对 log2 表达倍数变化 ≥ 1 且校正后 P 值 < 0.05 |
 | 图 1 成纤维细胞提交文库的主成分分析 | `figures/01_submitted_library_pca.png` | 24 个提交文库的描述性 PCA，标注待核对的样本 |
 | 图 2 主分析文库标准化前后的计数分布 | `figures/02_timecourse_normalization.png` | 对比同一批文库和基因的长度缩放计数与大小因子归一化计数 |
 | 图 3 标准化后成纤维细胞文库的主成分分析 | `figures/03_timecourse_pca.png` | 22 个主分析文库的 VST 表达 PCA |
@@ -31,5 +30,3 @@
 | 图 6 心梗后第 7 天的功能与通路富集 | `figures/06_enrichment_D7.png` | GO 生物过程、KEGG 上调过度富集和正负方向 GSEA |
 
 全时段的样本取舍、差异数量、敏感性与富集表如何阅读，见 [阶段 01 结果解读](../experiments/01_preprocessing_differential/results.md)。
-
-阶段 01 各类文件夹直接显示当前 Python 结果。`r_reference/` 子目录保存旧版对照，`tables/timecourse_python_vs_r.tsv` 记录本机的两版入选重合与效应相关。

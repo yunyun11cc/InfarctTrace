@@ -54,3 +54,7 @@ __pycache__/
 *.key
 *.part
 *.tmp
+
+# Stage 01 outputs are committed with the analysis; other stages stay local
+!/outputs/01_preprocessing_differential/
+!/outputs/01_preprocessing_differential/**
