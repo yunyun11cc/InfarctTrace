@@ -1,54 +1,12 @@
-# 数据与论文下载指南
+# GSE252027 数据下载和恢复
 
-本项目按导师原方案使用以下四个独立的小鼠转录组队列。Git 仓库只保存说明、公开样本分组和获取记录；表达矩阵、压缩包和已下载论文全文不上传。下载文件保存到表中相对于项目根目录的位置。
+当前分析使用 GSE252027 总 RNA 系列。仓库记录源地址与 SHA-256。大体积定量归档、基因注释和本地论文全文由下载脚本恢复。
 
-## 1 四个数据集
-
-| 数据集与官方页面 | 官方直接下载 | 保存位置 |
-|---|---|---|
-| [GSE252027](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252027) | [96 份 Salmon 定量归档，123,955,200 字节](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE252nnn/GSE252027/suppl/GSE252027_RAW.tar) | `datasets/GSE252027/original/GSE252027_RAW.tar` |
-| [GSE111059](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111059) | [处理后芯片矩阵，1,743,208 字节](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE111nnn/GSE111059/matrix/GSE111059_series_matrix.txt.gz)；[14 份 CEL 归档，16,568,320 字节](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE111nnn/GSE111059/suppl/GSE111059_RAW.tar) | `datasets/GSE111059/original/` 下保持官方文件名 |
-| [GSE236374](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236374) | [FeatureCounts 矩阵，379,384 字节](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE236nnn/GSE236374/suppl/GSE236374_MI_FeatureCounts_matrix.txt.gz) | `datasets/GSE236374/original/GSE236374_MI_FeatureCounts_matrix.txt.gz` |
-| [GSE163465](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE163465) | [7 个文库的 MTX/TSV 归档，268,195,840 字节](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE163465&format=file) | `datasets/GSE163465/original/GSE163465_RAW.tar` |
-
-GSE252027 的主要分析对象是其中 FB 成纤维细胞的 24 个提交样本，不能把全部 96 个当成 FB。GSE163465 的 `_T` 为丹参酮 IIA 干预，单列为治疗条件。每个队列的详细分组和限制见对应的 `datasets/<GSE编号>/README.md`。
-
-这些 TAR 的 `RAW` 命名不表示本项目下载了 FASTQ；GSE252027 和 GSE163465 归档内是作者提交的定量文件或表达矩阵。不要将四个平台直接拼接。
-
-## 2 GEO 元数据、注释与作者代码
-
-每个队列的完整 family SOFT 可通过下面的官方目录下载：
-
-- [GSE252027 SOFT](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE252nnn/GSE252027/soft/GSE252027_family.soft.gz)。
-- [GSE111059 SOFT](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE111nnn/GSE111059/soft/GSE111059_family.soft.gz)：含 GPL23038 平台注释与样本数据，完整文件也按数据文件排除；仓库保留的 `samples.csv` 是样本说明。
-- [GSE236374 SOFT](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE236nnn/GSE236374/soft/GSE236374_family.soft.gz)。
-- [GSE163465 SOFT](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE163nnn/GSE163465/soft/GSE163465_family.soft.gz)。
-
-上述文件放在各自的 `metadata/`。GSE252027 原作者代码来自 [Zenodo 14929916](https://zenodo.org/records/14929916)，对应 `AMI_revised_submission.zip`；这是第三方原始代码归档，不是本项目已经实现的分析流程。
-
-## 3 对应原论文
-
-| 数据集 | 原论文与正式 DOI | 可公开获取的全文 |
-|---|---|---|
-| GSE252027 | Maji 等，Scientific Data 2025，[10.1038/s41597-025-05061-1](https://doi.org/10.1038/s41597-025-05061-1) | [PMC 正式 PDF](https://pmc-oa-opendata.s3.amazonaws.com/PMC12089340.1/PMC12089340.1.pdf) |
-| GSE111059 | Fu 等，JCI 2018，[10.1172/JCI98215](https://doi.org/10.1172/JCI98215) | [PMC 正式 PDF](https://pmc-oa-opendata.s3.amazonaws.com/PMC5957472.1/PMC5957472.1.pdf) |
-| GSE236374 | Yu、Song 等，PNAS 2023，[10.1073/pnas.2302482120](https://doi.org/10.1073/pnas.2302482120) | [PMC 正式 PDF](https://pmc-oa-opendata.s3.amazonaws.com/PMC10589712.1/PMC10589712.1.pdf) |
-| GSE163465 | Jin 等，Small Methods 2022，[10.1002/smtd.202100752](https://doi.org/10.1002/smtd.202100752) | [原作者 bioRxiv 2021 预印本 PDF](https://www.biorxiv.org/content/10.1101/2021.07.19.452902v1.full.pdf?download=1)；本次未获取正式出版 PDF |
-
-全文按下载清单中的路径保存到 `papers/<GSE编号>/`。GSE163465 的预印本 DOI 是 `10.1101/2021.07.19.452902`，不能将这个作者版本标为正式出版 PDF。完整书目见 [references.bib](../../papers/references.bib)。补充材料与全文 XML 的来源也在下载清单中。
-
-## 4 下载示例与校验
-
-在项目根目录执行下面的命令，可以先获取最小的 GSE236374 计数矩阵：
-
-```sh
-mkdir -p datasets/GSE236374/original
-curl --fail --location --retry 3 \
-  'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE236nnn/GSE236374/suppl/GSE236374_MI_FeatureCounts_matrix.txt.gz' \
-  --output datasets/GSE236374/original/GSE236374_MI_FeatureCounts_matrix.txt.gz
-shasum -a 256 datasets/GSE236374/original/GSE236374_MI_FeatureCounts_matrix.txt.gz
+```powershell
+uv sync --locked
+uv run --locked python -X utf8 scripts\download_data.py
 ```
 
-将结果与 [统一下载清单 CSV](../../provenance/download_manifest.csv) 中同一路径的 `sha256` 比较。下载地址来自 GEO 官方或原论文公开来源，未替换为其他数据集。若站点返回 HTML 验证页或限流，请从对应 GEO／DOI 页面重试；不要把 HTTP 200 自动当作真实数据或 PDF。
+脚本按 [下载清单](../../provenance/download_manifest.csv) 和 [注释来源记录](../../provenance/annotation_download_2026-11-08.json) 恢复定量归档、family SOFT、作者代码、可获得的论文 XML 与 GRCm38.87 注释。已有文件按 SHA-256 校验，运行记录写到 `outputs/01_preprocessing_differential/reports/download_verification.json`。
 
-[SHA256SUMS.txt](../../provenance/SHA256SUMS.txt) 记录本次 38 个下载源文件的校验值。只有将清单中全部文件恢复到对应路径后，才运行 `shasum -a 256 -c provenance/SHA256SUMS.txt`；刚克隆仓库时数据文件缺失是预期状态。部分在线 API 元数据会更新，重新获取后应记录新版本，而不是强行把新响应说成与本次快照相同。
+每个源文件及其用途见 [GSE252027 数据手册](../../datasets/GSE252027/README.md)。源清单同时保留论文 PDF 等参考来源，实际分析所需文件由脚本筛选。

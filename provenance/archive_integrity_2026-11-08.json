@@ -8,25 +8,5 @@
       "GSM7992281_ctrl_CM_4.quant.genes.sf.gz"
     ],
     "gzip_files_checked": 96
-  },
-  "GSE111059": {
-    "files": 14,
-    "first_names": [
-      "GSM3021170_1_TMCM_NG_GFP_plus_uninjured_LV_Clariom_S_Mouse_.CEL.gz",
-      "GSM3021171_1_TMCM_NG_GFP_plus_uninjured_1_Clariom_S_Mouse_.CEL.gz",
-      "GSM3021172_4_TMCM_NG_GFP_plus_uninjured_4_Clariom_S_Mouse_.CEL.gz",
-      "GSM3021173_2_TMCM_NG_GFP_plus_3D_MI_scar_Clariom_S_Mouse_.CEL.gz"
-    ],
-    "gzip_files_checked": 14
-  },
-  "GSE163465": {
-    "files": 21,
-    "first_names": [
-      "GSM4985022_Sham_barcodes.tsv.gz",
-      "GSM4985022_Sham_features.tsv.gz",
-      "GSM4985022_Sham_matrix.mtx.gz",
-      "GSM4985023_Day_3_barcodes.tsv.gz"
-    ],
-    "gzip_files_checked": 21
   }
 }

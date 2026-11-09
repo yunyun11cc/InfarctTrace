@@ -1,4 +1,4 @@
-"""Restore source data without changing the historical download manifest."""
+"""恢复并校验 GSE252027 源文件及分析所需的基因注释。"""
 import concurrent.futures
 import csv
 import hashlib
@@ -16,6 +16,7 @@ def sha256(path):
 
 
 def download(row):
+    # 文件完整通过历史哈希校验后才将临时下载移入正式位置。
     target = (ROOT / row['path']).resolve()
     if not target.is_relative_to(ROOT):
         raise ValueError(f'Download path escapes project: {row["path"]!r} -> {target}')
@@ -48,13 +49,11 @@ def download(row):
 def main():
     with (ROOT / 'provenance/download_manifest.csv').open(encoding='utf-8-sig', newline='') as stream:
         rows = list(csv.DictReader(stream))
-    wanted = [r for r in rows if '/original/' in r['path'] or
-              r['path'].endswith('_family.soft.gz') or
-              r['path'].endswith('AMI_revised_submission.zip') or
-              (r['path'].endswith('.xml') and 'fulltext' in r['path'].lower())]
-    # The direct GEO FTP archive avoids the interactive geo/download endpoint.
-    wanted = [dict(r, source_url='https://ftp.ncbi.nlm.nih.gov/geo/series/GSE163nnn/GSE163465/suppl/GSE163465_RAW.tar')
-              if r['path'].endswith('GSE163465_RAW.tar') else r for r in wanted]
+    # 论文 PDF 等历史记录保留用于追溯，这里只恢复实验输入及相关说明。
+    wanted = [r for r in rows if r['geo'] == 'GSE252027' and (
+        '/original/' in r['path'] or r['path'].endswith('_family.soft.gz') or
+        r['path'].endswith('AMI_revised_submission.zip') or
+        (r['path'].endswith('.xml') and 'fulltext' in r['path'].lower()))]
     annotation_record = ROOT / 'provenance/annotation_download_2026-11-08.json'
     if annotation_record.exists():
         wanted.append(json.loads(annotation_record.read_text())['analysis_annotation'])
@@ -69,7 +68,8 @@ def main():
                 print(f'FAILED: {exc}', flush=True)
     report = dict(checked_at_utc=datetime.now(timezone.utc).isoformat(),
                   results=sorted(results, key=lambda r: r['path']), failures=failures)
-    out = ROOT / 'provenance/download_verification_2026-11-08.json'
+    out = ROOT / 'outputs/01_preprocessing_differential/reports/download_verification.json'
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     if failures:
         raise SystemExit(f'{len(failures)} downloads failed; see {out}')

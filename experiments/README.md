@@ -1,11 +1,12 @@
-# Experiments
+# 工程实验
 
-每个目录对应一个明确的实验问题，编号按开展顺序递增。
+四个阶段均使用 GSE252027 成纤维细胞数据。每个阶段的工程代码和分析说明放在这里，学习材料集中在 [notebooks](../notebooks/README.md)。结果按同名阶段写入 [outputs](../outputs/README.md)。
 
-| 实验 | 问题 | 状态 |
+| 阶段 | 工作与交付 | 当前状态 |
 |---|---|---|
-| [01_fibroblast_screening](01_fibroblast_screening/README.md) | 心梗后 D7 的成纤维细胞表达变化能否在独立队列复现？ | 已完成探索性基线，含中文教程与已执行 notebook |
+| [01 数据处理与差异分析](01_preprocessing_differential/README.md) | 样本质控、计数导入、时间差异及功能富集 | 已完成六组分析、D28 敏感性分析和五个时间对比的富集 |
+| [02 特征筛选](02_feature_selection/README.md) | 明确筛选目标，比较候选基因及稳定性 | 待开展 |
+| [03 候选验证](03_validation/README.md) | 队列内复现、样本敏感性与时间趋势检查 | 待开展 |
+| [04 候选优选](04_prioritization/README.md) | 综合效应、阶段信息、稳定性和通路证据 | 待开展 |
 
-实验目录保存 `README.md`、`protocol.md`、`run.py`，有教学需求时增加 `tutorial.md` 和 `notebook.ipynb`。设计写明输入、比较、阈值和解释边界；结果输出到项目根目录 `outputs/<实验目录名>/`。后续实验直接引用 `datasets/` 下的源数据，不各自复制下载文件。
-
-当前代码仍集中在具体实验中。只有多个实验实际共用某段计算代码时，再提取公共模块。
+工程代码用中文注释解释样本口径和统计操作。输出表头与图的说明用中文，保留可追溯的基因 ID、GSM 编号和指标缩写。

@@ -1,10 +1,9 @@
-# Documentation
+# 项目文档
 
-| 文档 | 用途 |
-|---|---|
-| [下载指南](guides/data-download.md) | 公开数据、论文来源与恢复方法 |
-| [数据与论文参考](guides/dataset-reference.md) | 四个队列的用途、原始论文及数据检查事项 |
-| [选题初筛](research/topic-screening-2026-11-05.md) | 计算机研究候选方向、已有方法、评价与淘汰条件 |
-| [历史可行性评估](research/proposal-feasibility-2026-11-02.md) | 导师原方案的前期论证，保留历史语境 |
+- [原始 Word 实验方案](<基于转录组与机器学习的心肌梗死后炎症(1).docx>)保留原件，阶段 01 对应其中的 2.2。当前四个阶段的数据范围以项目 README 为准。
+- [数据下载和恢复](guides/data-download.md)
+- [数据和原始论文参考](guides/dataset-reference.md)
+- [GSE252027 数据手册](../datasets/GSE252027/README.md)
+- [项目当前范围与后续计划](../README.md)
 
-当前进度见[项目入口](../README.md)。每项实验的设计、教学材料、notebook 和代码统一放在 [experiments/](../experiments/README.md)，不再散放于本目录。
+工程设计和运行方式见 [experiments](../experiments/README.md)，教学说明与 Notebook 见 [notebooks](../notebooks/README.md)。
