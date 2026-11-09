@@ -30,11 +30,14 @@
 # Generated experiments and environments
 /checkpoints/
 /runs/
-/outputs/
+/outputs/*
+!/outputs/README.md
 *.pt
 *.pth
 *.ckpt
 .venv/
+/.tools/
+/datasets/annotation/kegg_mmu/
 venv/
 __pycache__/
 *.py[cod]

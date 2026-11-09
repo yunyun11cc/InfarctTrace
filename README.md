@@ -1,78 +1,60 @@
 # InfarctTrace
 
-**Cross-Cohort Transcriptomics of Post-Infarction Cardiac Repair**
+**Time-course Transcriptomics of Post-Infarction Cardiac Fibroblasts**
 
-心梗后修复的跨队列转录组研究。以公开小鼠心梗数据为起点，研究表达变化如何随时间和细胞类型变化，以及这些信号能否在独立队列中复现。当前重点是计算机方法选题预研与可重复的分析基线，允许根据研究问题补充公开数据。
+本项目分析小鼠心肌梗死后成纤维细胞的表达变化。自 2026-11-10 起，**数据处理、特征筛选、验证和优选四阶段均只使用 GSE252027**。主要研究对象是成纤维细胞（FB），观察时间覆盖 D0、D1、D3、D7、D14、D28。阶段 03 的验证指 GSE252027 队列内部的验证。
 
 ## 从哪里开始
 
-- **学习当前实验：** [实验 01 入口](experiments/01_fibroblast_screening/README.md) → [中文教程](experiments/01_fibroblast_screening/tutorial.md) → [可运行 notebook](experiments/01_fibroblast_screening/notebook.ipynb)。
-- **理解筛选依据：** [实验设计与筛选规则](experiments/01_fibroblast_screening/protocol.md)。
-- **了解研究方向：** [选题初筛](docs/research/topic-screening-2026-11-05.md)。其中的推荐仍是待验证假设，最终方法题目尚未确定。
-- **恢复公开数据：** [下载指南](docs/guides/data-download.md)与[数据及论文参考](docs/guides/dataset-reference.md)。
+- [GSE252027 数据手册](datasets/GSE252027/README.md) 解释样本、原始文件、三张元数据 CSV、表达量和筛选状态。
+- [实验总览](experiments/README.md) 说明四个工程阶段的输入与交付物。
+- [教学笔记](notebooks/README.md) 帮助阅读数据、理解筛选基线和解释图表。
+- [输出目录索引](outputs/README.md) 说明矩阵、表格、图和报告的位置。
+- [数据恢复指南](docs/guides/data-download.md) 记录源文件与校验入口。
 
 ## 项目结构
 
 ```text
-InfarctTrace/                         # 项目名称；当前工作区目录为 mi-dna-choice
-├── README.md                        # 总入口与当前进度
-├── datasets/                        # 按 GEO 编号保存源数据、样本表和说明
-│   ├── GSE252027/                    # 发现队列：重点使用 FB 成纤维细胞
-│   ├── GSE111059/                    # 外部复核：成纤维细胞芯片
-│   ├── GSE236374/                    # 补充证据：全心组织 RNA-seq
-│   ├── GSE163465/                    # 补充证据：免疫细胞单细胞 RNA-seq
-│   └── annotation/                   # 基因及转录本注释源文件
+InfarctTrace/
+├── datasets/
+│   ├── GSE252027/                # 主队列的定量归档、元数据与详细手册
+│   └── annotation/              # 小鼠基因注释
 ├── experiments/
-│   ├── README.md                    # 实验目录与编号约定
-│   └── 01_fibroblast_screening/
-│       ├── README.md                # 本实验的输入、运行和结果入口
-│       ├── protocol.md              # 先于分析确定的设计与筛选规则
-│       ├── tutorial.md              # 中文数据阅读与结果讲解
-│       ├── notebook.ipynb           # 分步运行的教学笔记
-│       └── run.py                   # 完整分析入口
-├── scripts/
-│   └── download_data.py             # 公共数据下载与完整性校验
-├── docs/
-│   ├── README.md                    # 文档导航
-│   ├── guides/                      # 下载指南和数据参考
-│   └── research/                    # 选题与历史可行性论证
-├── papers/                          # 论文引用、元数据与本地全文
-├── provenance/                      # 下载来源、校验值和操作记录
-├── requirements/
-│   ├── analysis.txt                 # 直接分析与 notebook 依赖
-│   └── analysis-lock.txt            # 当前环境的完整依赖快照
-└── outputs/                         # 本地生成结果，不进入 Git
-    └── 01_fibroblast_screening/       # 表达矩阵、候选表、QC、图与 summary.json
+│   ├── 01_preprocessing_differential/  # 数据处理与差异分析
+│   ├── 02_feature_selection/          # 特征筛选
+│   ├── 03_validation/                 # 主队列内部验证
+│   └── 04_prioritization/             # 候选基因优选
+├── notebooks/                   # 教学说明和 Jupyter 笔记
+├── outputs/                     # 与四个实验阶段同名，分 matrices、tables、figures、reports
+├── scripts/                     # 主队列下载和源文件校验
+├── docs/                        # 工程文档和数据恢复指南
+├── papers/                      # 主队列的论文和引用
+├── provenance/                  # 主队列的下载记录和历史校验
+├── pyproject.toml               # Python 版本和依赖
+└── uv.lock                      # uv 锁定版本
 ```
 
-每个实验的设计、代码和学习材料集中存放；输出使用同名目录。源数据按队列保存，公共下载脚本由各实验共用。目前只有一个分析实验，暂不引入额外的包结构或通用训练框架。
+## 当前基线与运行方式
 
-## 运行
+主队列已整理 24 个 FB 提交文库、51,029 个基因的 TPM、估计片段数和有效长度矩阵。阶段 01 已完成 22 文库主分析、D28r4 排除敏感性分析和五个时间对比的 GO、KEGG、GSEA。19,312 个基因进入全时段模型，11,489 个达到总体时间效应门槛。阶段 02–04 待开展。 [结果解读](experiments/01_preprocessing_differential/results.md)
 
-在项目根目录使用 PowerShell。新环境先准备 Python 3.11 与依赖：
+阶段 01 的正式分析按 [模块运行说明](experiments/01_preprocessing_differential/README.md) 执行。原 D7 对 D0 的 Python 教学基线仍可通过下面的入口复现。
 
 ```powershell
-uv venv --python 3.11 .venv
-uv pip install --python .venv\Scripts\python.exe -r requirements\analysis.txt
+uv sync --locked
+uv run --locked python -X utf8 scripts\download_data.py
+uv run --locked python -X utf8 experiments\01_preprocessing_differential\run.py
+uv run --locked jupyter lab
 ```
 
-下载数据并运行当前实验：
+项目使用 `.python-version` 和 `uv.lock`，教学笔记选择项目 `.venv` 的 Python 内核。下载脚本只恢复或校验 GSE252027 及其分析注释。分析脚本生成中文表格和带中文图题、坐标及图注的图片，系统需要有可用的中文字体。源归档和生成结果保存在本地，Git 跟踪源说明、代码、教学资料和输出目录索引。
 
-```powershell
-.\.venv\Scripts\python.exe -X utf8 scripts\download_data.py
-.\.venv\Scripts\python.exe -X utf8 experiments\01_fibroblast_screening\run.py
-```
+## 后续计划
 
-已有本地环境可直接运行。下载脚本核对已有文件并保留历史清单；分析脚本重建本实验输出。Notebook 使用项目 `.venv` 中的 Python 内核。
+当前四阶段均限定 GSE252027。完成主队列分析后，以下三个队列可作为**另行启动的拓展计划**，具体比较和启用时间另行确定。
 
-## 当前结果与范围
-
-实验 01 比较 GSE252027 FB 的 D7 与 D0（各 4 个提交文库），再用 GSE111059 的同时间比较（各 3 个样本）复核。首轮结果为：**17,622 个基因进入发现检验 → 1,501 个通过发现门槛 → 4 个通过预设跨队列门槛**。Cthrc1、Ltbp2、Crlf1 上调，Gstm1 下调。
-
-这是探索性表达关联，尚未建立预测模型或证明因果与药物直接作用。芯片复核本轮使用 Welch 检验，后续需以 limma 复核。四个队列的细胞类型、平台和条件不同，按队列分别分析；所有当前队列均为小鼠数据。
-
-## 数据与可追溯性
-
-源表达文件、原始芯片、压缩包、论文全文和批量结果保存在本地，由 `.gitignore` 排除。代码、教学 notebook、样本信息、研究文档和校验记录进入版本管理。
-
-2026-11-08 已校验 14 个分析所需源文件，见[下载校验记录](provenance/download_verification_2026-11-08.json)和[归档完整性检查](provenance/archive_integrity_2026-11-08.json)。历史[下载清单](provenance/download_manifest.csv)还包含未在当前副本恢复的论文文件，因此不能把清单状态直接当作当前文件是否存在的证明。原始数据和历史清单的路径在本次整理中保持一致。
+| 暂缓队列 | 后续可回答的问题 |
+|---|---|
+| GSE111059 | 在独立成纤维细胞芯片研究的共有时间点复核表达方向 |
+| GSE236374 | 检查候选信号在 D7 和 D28 的全心组织层面是否同向 |
+| GSE163465 | 查看候选在心脏免疫细胞及巨噬细胞亚群中的表达分布 |
