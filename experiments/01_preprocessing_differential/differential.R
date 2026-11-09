@@ -1,4 +1,5 @@
-# 对 GSE252027 的六个时间组拟合负二项模型，再比较各时间点与 D0。
+# 历史 R 对照。当前 GSE252027 流程使用 differential.py。
+# 此脚本会写入同名正式输出，重现旧版时应在独立工作副本执行。
 source('experiments/01_preprocessing_differential/common.R', encoding = 'UTF-8')
 suppressPackageStartupMessages(library(DESeq2))
 

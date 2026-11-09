@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 from sklearn.decomposition import PCA
 
-from paths import FIGURES, MATRICES, TABLES
+from paths import ROOT, FIGURES, MATRICES, TABLES
 
 TERM_ZH = {
     'GO:0001501': '骨骼系统发育', 'GO:0007094': '有丝分裂纺锤体组装检查点信号',
@@ -35,60 +35,29 @@ def configure_plot_font():
     raise RuntimeError('未找到中文字体。请安装 Noto Sans CJK SC 后重新运行。')
 
 
-def baseline_plots(meta, tpm, result):
-    # PCA 用于描述 24 个提交文库。差异检验仍只使用 D0 和 D7。
+def submitted_library_pca(meta, tpm):
+    # 图 1 使用全部提交文库，标出需要结合作者记录核对的样本。
+    if not tpm.columns.equals(meta.index):
+        raise ValueError('提交文库的 TPM 列和样本表未对齐。')
     logtpm = np.log2(tpm + 1)
     variable = logtpm.var(axis=1).nlargest(1000).index
     pca = PCA(n_components=2)
     coordinates = pca.fit_transform(logtpm.loc[variable].T)
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5.4), layout='constrained')
-    fig.suptitle('图 1  小鼠心梗后成纤维细胞表达谱质控及差异分析', fontsize=15)
+    fig, ax = plt.subplots(figsize=(8.8, 5.4), layout='constrained')
     for day in sorted(meta.day.unique()):
         mask = meta.day.to_numpy() == day
-        axes[0].scatter(coordinates[mask, 0], coordinates[mask, 1], label=f'D{day}', s=38)
-    # 只标出需核对作者取舍的文库，避免拥挤区域的文字互相遮挡。
+        ax.scatter(coordinates[mask, 0], coordinates[mask, 1], label=f'D{day}', s=42)
     for i, (_, row) in enumerate(meta.iterrows()):
         if (row.day, row.replicate) in {(3, 2), (3, 3), (28, 4)}:
-            axes[0].annotate(f'D{row.day}r{row.replicate}', coordinates[i], fontsize=8,
-                             xytext=(3, 5), textcoords='offset points')
-    axes[0].margins(x=0.12)
-    axes[0].set(xlabel=f'第一主成分（{pca.explained_variance_ratio_[0]:.1%}）',
-                ylabel=f'第二主成分（{pca.explained_variance_ratio_[1]:.1%}）',
-                title='A  24 个提交文库的主成分分析')
-    axes[0].legend(ncol=2, fontsize=8)
-
-    data = result.dropna(subset=['pvalue'])
-    y = -np.log10(np.maximum(data.pvalue, 1e-300))
-    selected = data.discovery_pass
-    axes[1].scatter(data.log2FoldChange, y, s=4, color='#aeb8c2', alpha=0.45)
-    axes[1].scatter(data.loc[selected, 'log2FoldChange'], y[selected], s=8, color='#b94b35',
-                    label='通过预设差异筛选')
-    for cutoff in (-1, 1):
-        axes[1].axvline(cutoff, color='gray', linestyle='--', linewidth=0.8)
-    axes[1].set(xlabel='log2 表达倍数变化（D7 相对 D0）', ylabel='−log10（未校正 P 值）',
-                title='B  D7 对未损伤对照的差异表达')
-    axes[1].legend(fontsize=9)
-    fig.supxlabel('每组 4 个文库用于 D7 对 D0。筛选门槛为 |log2FC| ≥ 1 且校正后 P 值 < 0.05。', fontsize=9)
-    fig.savefig(FIGURES / '01_qc_and_screen.png', dpi=180)
-    plt.close(fig)
-
-    # 固定 Cthrc1 作为数据阅读示例，折线连接时间组均值。
-    gene_id = 'ENSMUSG00000054196'
-    if gene_id not in logtpm.index:
-        return
-    fig, ax = plt.subplots(figsize=(8.5, 4.6), layout='constrained')
-    days = sorted(meta.day.unique())
-    means = []
-    for day in days:
-        values = logtpm.loc[gene_id, meta.index[meta.day == day]].to_numpy()
-        ax.scatter(day + np.linspace(-0.13, 0.13, len(values)), values, s=30, color='#246785', zorder=3)
-        means.append(values.mean())
-    ax.plot(days, means, color='#283f54', linewidth=1.4, label='各时间点均值')
-    ax.set(xticks=days, xticklabels=[f'D{day}' for day in days], xlabel='采样时间（D0 为未损伤对照）',
-           ylabel='相对表达量 log2(TPM + 1)', title='图 2  心梗后成纤维细胞 Cthrc1 表达的时间分布')
-    ax.legend()
-    fig.supxlabel('散点为 24 个提交文库，含待核查的 D3 和 D28 文库。折线为组均值。', fontsize=9)
-    fig.savefig(FIGURES / '02_cthrc1_time_profile.png', dpi=180)
+            ax.annotate(f'D{row.day}r{row.replicate}', coordinates[i], fontsize=8,
+                        xytext=(3, 5), textcoords='offset points')
+    ax.margins(x=0.12)
+    ax.set(xlabel=f'第一主成分（{pca.explained_variance_ratio_[0]:.1%}）',
+           ylabel=f'第二主成分（{pca.explained_variance_ratio_[1]:.1%}）',
+           title='图 1  成纤维细胞提交文库的主成分分析')
+    ax.legend(ncol=2, fontsize=9)
+    fig.supxlabel('每个点代表一个提交文库。基于 log2（TPM + 1）方差最大的 1,000 个基因进行 PCA。', fontsize=9)
+    fig.savefig(FIGURES / '01_submitted_library_pca.png', dpi=180)
     plt.close(fig)
 
 
@@ -112,9 +81,9 @@ def timecourse_qc(meta, counts, normalized, vst):
         ax.set_title(title, loc='left')
         ax.set_ylabel('log2（计数 + 1）')
         ax.tick_params(axis='x', labelrotation=45)
-    fig.suptitle('图 3  主分析文库标准化前后的计数分布', fontsize=14)
-    fig.supxlabel('每个箱体对应一个纳入主分析的文库。两图采用相同基因。')
-    fig.savefig(FIGURES / '03_timecourse_normalization.png', dpi=180)
+    fig.suptitle('图 2  主分析文库标准化前后的计数分布', fontsize=14)
+    fig.supxlabel('每个箱体对应一个主分析文库。两图采用相同基因，大小因子由 PyDESeq2 估计。')
+    fig.savefig(FIGURES / '02_timecourse_normalization.png', dpi=180)
     plt.close(fig)
 
     variable = vst.var(axis=1).nlargest(500).index
@@ -126,10 +95,10 @@ def timecourse_qc(meta, counts, normalized, vst):
         ax.scatter(pcs[mask, 0], pcs[mask, 1], s=52, label=f'D{day}', color=color)
     ax.set(xlabel=f'第一主成分（{pca.explained_variance_ratio_[0]:.1%}）',
            ylabel=f'第二主成分（{pca.explained_variance_ratio_[1]:.1%}）',
-           title='图 4  标准化后成纤维细胞文库的主成分分析')
+           title='图 3  标准化后成纤维细胞文库的主成分分析')
     ax.legend(ncol=3)
-    fig.supxlabel('22 个主分析文库。按 VST 方差选取前 500 个基因，颜色表示采样组。')
-    fig.savefig(FIGURES / '04_timecourse_pca.png', dpi=180)
+    fig.supxlabel('22 个主分析文库。按 PyDESeq2 VST 方差选取前 500 个基因，颜色表示采样组。')
+    fig.savefig(FIGURES / '03_timecourse_pca.png', dpi=180)
     plt.close(fig)
 
 
@@ -150,9 +119,9 @@ def timecourse_heatmap(meta, vst, lrt):
                 yticks=range(len(genes)), yticklabels=genes, ylabel='基因符号')
     axes[1].tick_params(axis='x', labelrotation=55)
     fig.colorbar(image, ax=axes, shrink=0.84, label='基因行内标准分数')
-    fig.suptitle('图 5  总体时间效应排名前 25 个基因的表达模式', fontsize=14)
-    fig.supxlabel('按总体 LRT 校正后 P 值排序。颜色比较同一基因在不同文库中的 VST 表达。')
-    fig.savefig(FIGURES / '05_timecourse_heatmap.png', dpi=180)
+    fig.suptitle('图 4  总体时间效应排名前 25 个基因的表达模式', fontsize=14)
+    fig.supxlabel('按 Python 总体 LRT 校正后 P 值排序。颜色比较同一基因在不同文库中的 VST 表达。')
+    fig.savefig(FIGURES / '04_timecourse_heatmap.png', dpi=180)
     plt.close(fig)
 
 
@@ -176,9 +145,9 @@ def timecourse_volcano(wald):
     axes.flat[-1].axis('off')
     axes.flat[-1].legend(handles=[Line2D([], [], marker='o', linestyle='', color=color, label=label)
                                  for label, color in colors.items()], loc='center', frameon=False)
-    fig.suptitle('图 6  心梗后各时间点相对未损伤对照的差异表达', fontsize=14)
-    fig.supxlabel('每个点为一个有有限校正 P 值的基因。筛选门槛为 |log2FC| ≥ 1 且校正后 P 值 < 0.05。')
-    fig.savefig(FIGURES / '06_timecourse_volcano.png', dpi=180)
+    fig.suptitle('图 5  心梗后各时间点相对未损伤对照的差异表达', fontsize=14)
+    fig.supxlabel('每点为一个 PyDESeq2 Wald 检验基因。筛选门槛为 |log2FC| ≥ 1 且校正后 P 值 < 0.05。')
+    fig.savefig(FIGURES / '05_timecourse_volcano.png', dpi=180)
     plt.close(fig)
 
 
@@ -210,15 +179,17 @@ def enrichment_overview():
         ax.barh(range(len(top)), top[value], color=np.where(top[value] > 0, '#b24b3f', '#32789f'))
         ax.set(yticks=range(len(top)), yticklabels=labels, xlabel=value)
         ax.xaxis.set_major_locator(MaxNLocator(nbins=6))
-    fig.suptitle('图 7  心梗后第 7 天的功能与通路富集', fontsize=14)
-    fig.supxlabel('按校正后 P 值 < 0.05 排序。A、B 各取前 5 项，C 在正负方向各取前 3 项。')
-    fig.savefig(FIGURES / '07_enrichment_D7.png', dpi=180)
+    fig.suptitle('图 6  心梗后第 7 天的功能与通路富集', fontsize=14)
+    fig.supxlabel('基于 Python 差异结果。校正后 P 值 < 0.05 的条目中，A、B 各取前 5 项，C 正负方向各取前 3 项。')
+    fig.savefig(FIGURES / '06_enrichment_D7.png', dpi=180)
     plt.close(fig)
 
 
 def main():
     configure_plot_font()
     FIGURES.mkdir(parents=True, exist_ok=True)
+    submitted = pd.read_csv(ROOT / 'datasets/GSE252027/metadata/samples_FB.csv').set_index('gsm')
+    submitted_library_pca(submitted, read_result(MATRICES / 'FB_TPM.tsv.gz'))
     counts, normalized, vst = [read_result(MATRICES / name) for name in (
         'timecourse_length_scaled_counts.tsv.gz', 'timecourse_normalized_counts.tsv.gz', 'timecourse_vst.tsv.gz')]
     meta = pd.read_csv(TABLES / 'sample_inclusion.csv').set_index('GSM编号').loc[counts.columns]

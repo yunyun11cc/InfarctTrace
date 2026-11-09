@@ -70,7 +70,7 @@ GSE252027 是小鼠心肌梗死后心脏细胞的总 RNA 表达数据。本项�
 |---|---|
 | 样本和数值质控 | 24 个文库完成文件、ID 和数值检查。主分析排除 D3r2、D3r3，纳入 22 个。D28r4 另做排除敏感性分析 |
 | 计数导入和标准化 | 按 22 个主分析文库生成长度缩放计数、归一化计数和 VST 矩阵 |
-| 差异分析 | 19,312 个基因进入全时段模型。总体时间效应达门槛 11,489 个，另有五个时间点与 D0 的对比结果 |
+| 差异分析 | 19,312 个基因进入 Python 全时段模型。总体时间效应达门槛 11,480 个，另有五个时间点与 D0 的 PyDESeq2 Wald 对比结果 |
 | GO、KEGG、GSEA | 已对五个时间对比分别完成 GO、KEGG 过度富集与 KEGG GSEA |
 
 全时段差异模型读取 **长度缩放后的整数计数矩阵和六组样本分组表**。代码使用 TPM、平均有效长度和估计片段总量生成计数，再由模型进行文库大小归一化。`timecourse_length_scaled_counts.tsv.gz` 保存模型输入，`timecourse_normalized_counts.tsv.gz` 保存拟合后的归一化计数。此前 D7 对 D0 的 Python 教学基线仍保留，文件名以 `D0_D7` 开头。TPM 时间图用于阅读相对表达。 [工程分析方案](../../experiments/01_preprocessing_differential/protocol.md) · [全时段结果解读](../../experiments/01_preprocessing_differential/results.md) · [tximport 文档](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html)

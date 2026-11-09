@@ -9,7 +9,7 @@ from pydeseq2.ds import DeseqStats
 
 from paths import MATRICES, TABLES, FIGURES, REPORTS
 from prepare import annotation, length_scaled_counts, load_fb, save_gene_table
-from visualize import configure_plot_font, baseline_plots
+from visualize import configure_plot_font, submitted_library_pca
 
 
 def discovery(meta, matrices, gene_info):
@@ -59,7 +59,7 @@ def main():
                    discovery_pass=int(result.discovery_pass.sum()),
                    annotation='Ensembl GRCm38 release 87',
                    interpretation='GSE252027 成纤维细胞 D7 对 D0 的探索性差异表达结果')
-    baseline_plots(meta, matrices['TPM'], result)
+    submitted_library_pca(meta, matrices['TPM'])
     (REPORTS / 'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f"{tested:,} 个基因进入检验，{summary['discovery_pass']:,} 个通过差异筛选。", flush=True)
 
