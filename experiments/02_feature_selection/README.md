@@ -28,9 +28,11 @@ uv run --locked python -m unittest discover -s experiments/02_feature_selection 
 
 | 文件 | 内容 |
 |---|---|
-| `tables/feature_ranking.tsv` | 1,141 个基因的排名、两个相对 D0 的 Wald 结果、D7−D3 的 VST 均值差、方向一致率和四种方法的分数与频率 |
-| `tables/perturbation_selections.tsv` | 每个文库扰动组合下各方法入选的基因及分数 |
-| `reports/selection_summary.json` | 实际文库编号、各模型参数、每次入选数量以及与全样本名单的 Jaccard 指数 |
-| `figures/` | 差异基因交集、前八基因逐文库表达、四种方法的筛选稳定性三张 PNG 图 |
+| [完整基因排序](../../outputs/02_feature_selection/tables/feature_ranking.tsv) | 1,141 个基因的排名、两个相对 D0 的 Wald 结果、D7−D3 的 VST 均值差、方向一致率和四种方法的分数与频率 |
+| [八次扰动明细](../../outputs/02_feature_selection/tables/perturbation_selections.tsv) | 每个文库扰动组合下各方法入选的基因及分数 |
+| [运行摘要](../../outputs/02_feature_selection/reports/selection_summary.json) | 实际文库编号、各模型参数、每次入选数量以及与全样本名单的 Jaccard 指数 |
+| [差异基因交集](../../outputs/02_feature_selection/figures/01_candidate_intersection.png) | 显示交集规模和两个相对 D0 的表达变化方向 |
+| [前八基因逐文库表达](../../outputs/02_feature_selection/figures/02_candidate_expression.png) | 显示 D3、D7 的文库表达值与组均值 |
+| [筛选稳定性](../../outputs/02_feature_selection/figures/03_selection_stability.png) | 比较四种方法在八次扰动中的名单重合度和实际入选数 |
 
 [阶段 02 结果解读](results.md)
