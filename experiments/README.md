@@ -5,7 +5,7 @@
 | 阶段 | 输入与交付 | 状态 |
 |---|---|---|
 | [01 数据处理与差异分析](01_preprocessing_differential/README.md) | 源数据和注释 → 质控、归一化、时间差异和富集结果 | Completed |
-| [02 特征筛选](02_feature_selection/README.md) | 阶段 01 的表达特征与统计证据 → 候选特征与筛选稳定性 | Pending |
+| [02 特征筛选](02_feature_selection/README.md) | D3/D7 差异基因交集 → 候选排序与文库扰动稳定性 | Completed |
 | [03 候选验证](03_validation/README.md) | 候选特征与文库级数据 → 队列内稳定性与时间趋势证据 | Pending |
 | [04 候选优选](04_prioritization/README.md) | 时间效应、稳定性与通路证据 → 排序与候选清单 | Pending |
 

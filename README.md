@@ -57,7 +57,7 @@ InfarctTrace/
 | 阶段 | 模块入口 | 交付物 | 状态 |
 |---|---|---|---|
 | 01 | [数据处理与差异分析](experiments/01_preprocessing_differential/README.md) | 样本质控、归一化矩阵、时序差异和通路富集 | Completed |
-| 02 | [特征筛选](experiments/02_feature_selection/README.md) | 候选特征与筛选稳定性记录 | Pending |
+| 02 | [特征筛选](experiments/02_feature_selection/README.md) | D3/D7 差异基因交集、候选排序与文库扰动稳定性 | Completed |
 | 03 | [候选验证](experiments/03_validation/README.md) | GSE252027 队列内的稳定性与时间趋势证据 | Pending |
 | 04 | [候选优选](experiments/04_prioritization/README.md) | 候选排序、入选依据和证据摘要 | Pending |
 
