@@ -30,8 +30,6 @@
 # Generated experiments and environments
 /checkpoints/
 /runs/
-/outputs/*
-!/outputs/README.md
 *.pt
 *.pth
 *.ckpt
@@ -55,7 +53,5 @@ __pycache__/
 *.part
 *.tmp
 
-# Stage 01 outputs are committed with the analysis; other stages stay local
-!/outputs/01_preprocessing_differential/
-!/outputs/01_preprocessing_differential/**
-/outputs/01_preprocessing_differential/**/.DS_Store
+# Compressed experiment tables and matrices are versioned with the results
+!/outputs/**/*.tsv.gz

@@ -31,7 +31,7 @@ InfarctTrace/
 │   ├── 02_feature_selection/
 │   ├── 03_validation/
 │   └── 04_prioritization/
-├── outputs/                                # 与实验阶段同名的本地生成结果
+├── outputs/                                # 与实验阶段同名的结果目录
 │   ├── README.md                           # 图表和文件索引
 │   └── 01_preprocessing_differential/
 │       ├── matrices/                       # 表达与计数矩阵
@@ -48,7 +48,7 @@ InfarctTrace/
 └── uv.lock                                 # 锁定的 Python 依赖版本
 ```
 
-上图列出主要目录和入口。数据下载脚本准备源文件，实验模块读取这些输入并生成同名阶段的输出。Git 保存代码、样本说明、下载校验和结果解读。源归档与批量输出按对应 README 的命令在本地生成。
+上图列出主要目录和入口。数据下载脚本在本地准备源文件，实验模块读取这些输入并生成同名阶段的输出。Git 保存代码、样本说明、下载校验、实验输出和结果解读。
 
 ## 实验框架
 
