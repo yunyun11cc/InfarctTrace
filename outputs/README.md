@@ -12,7 +12,7 @@
 | 阶段 | 状态 | 输出入口 |
 |---|---|---|
 | `01_preprocessing_differential/` | Completed | [阶段 01 结果与结论](../experiments/01_preprocessing_differential/results.md) |
-| `02_feature_selection/` | Pending | [阶段 02 README](../experiments/02_feature_selection/README.md) |
+| `02_feature_selection/` | Completed | [阶段 02 结果](../experiments/02_feature_selection/results.md) |
 | `03_validation/` | Pending | [阶段 03 README](../experiments/03_validation/README.md) |
 | `04_prioritization/` | Pending | [阶段 04 README](../experiments/04_prioritization/README.md) |
 
