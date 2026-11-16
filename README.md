@@ -34,7 +34,10 @@ InfarctTrace/
 ├── outputs/                                # 与实验阶段同名的结果目录
 │   ├── README.md                           # 图表和文件索引
 │   ├── 01_preprocessing_differential/      # 表达矩阵、差异统计表、图片与报告
-│   └── 02_feature_selection/               # 候选排序、扰动明细、图片与报告
+│   └── 02_feature_selection/               # 阶段 02 全部结果
+│       ├── intersection_6/                # 原始六文库交集筛选
+│       ├── intersection_22/               # 全部主分析文库的交集筛选
+│       └── union_22/                       # 并集筛选与 ssGSEA 相关性
 ├── provenance/                             # 数据来源、下载清单与 SHA-256
 ├── papers/                                 # 论文元数据和参考文献
 ├── docs/                                   # 实验方案、数据指南和数学原理
@@ -60,14 +63,18 @@ InfarctTrace/
 
 ## 阶段 02 结果
 
-阶段 02 取 **D3 vs D0 和 D7 vs D0 的 1,141 个共同差异基因**，以 D7−D3 的 VST 表达均值差筛选，并与 LASSO、Elastic Net 和随机森林比较。D3 有 2 份文库，D7 有 4 份。各移除一份 D3 和 D7 文库，共得到 8 种扰动组合，有 **8 个基因在每次扰动中都进入均值差绝对值前 20**。这反映固定候选池内的排序稳定性。 [结果解读](experiments/02_feature_selection/results.md)
+三版结果集中在同一目录。22 文库并集版另附前八基因与七条炎症及纤维化通路的 ssGSEA 相关性。 [阶段 02 输出索引](outputs/02_feature_selection/README.md) · [ssGSEA 热图](outputs/02_feature_selection/union_22/figures/04_ssgsea_correlation.png)
 
-- [差异基因交集](outputs/02_feature_selection/figures/01_candidate_intersection.png)
-- [前八基因的逐文库表达](outputs/02_feature_selection/figures/02_candidate_expression.png)
-- [四种方法的筛选稳定性](outputs/02_feature_selection/figures/03_selection_stability.png)
-- [完整基因排序](outputs/02_feature_selection/tables/feature_ranking.tsv) · [八次扰动明细](outputs/02_feature_selection/tables/perturbation_selections.tsv) · [运行摘要](outputs/02_feature_selection/reports/selection_summary.json)
+22 文库并集版还提供 4 折 × 50 次分层交叉验证，以及 1,000 次分层 Bootstrap 的筛选稳定性。 [交叉验证与 Bootstrap 结果](outputs/02_feature_selection/README.md#22-文库并集的重复交叉验证与-bootstrap)
 
-已有阶段 01 输出时，可在项目根目录重跑阶段 02。绘图需要中文字体。
+22 文库版比较 D7 的 4 份文库与其他五个时点的 18 份文库。以 D3 vs D0 和 D7 vs D0 的差异基因生成候选池，**交集含 1,141 个基因，并集含 3,907 个基因**。分别有 15 个和 14 个基因在全部 8 次扰动中进入 VST 均值差绝对值前 20。原始六文库版比较 D7 与 D3，有 8 个基因在全部扰动中进入前 20。 [版本说明与输出](experiments/02_feature_selection/README.md) · [22 文库交集排序](outputs/02_feature_selection/intersection_22/tables/feature_ranking.tsv) · [22 文库并集排序](outputs/02_feature_selection/union_22/tables/feature_ranking.tsv) · [六文库结果解读](experiments/02_feature_selection/results.md)
+
+- [差异基因交集](outputs/02_feature_selection/intersection_6/figures/01_candidate_intersection.png)
+- [前八基因的逐文库表达](outputs/02_feature_selection/intersection_6/figures/02_candidate_expression.png)
+- [四种方法的筛选稳定性](outputs/02_feature_selection/intersection_6/figures/03_selection_stability.png)
+- [完整基因排序](outputs/02_feature_selection/intersection_6/tables/feature_ranking.tsv) · [八次扰动明细](outputs/02_feature_selection/intersection_6/tables/perturbation_selections.tsv) · [运行摘要](outputs/02_feature_selection/intersection_6/reports/selection_summary.json)
+
+上方图表为原始六文库版。已有阶段 01 输出时，可在项目根目录重跑 22 文库交集版。两个命令都加 `--union` 可复跑并集版。绘图需要中文字体。
 
 ```sh
 uv run --locked python experiments/02_feature_selection/select_features.py

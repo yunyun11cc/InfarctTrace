@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from select_features import OUTPUT, STAGE_ONE
+from select_features import OUTPUT, STAGE_ONE, UNION_OUTPUT
 
 
 BLUE = '#235F84'
@@ -21,9 +21,10 @@ LIGHT = '#DFE5EA'
 CHINESE_FONTS = ('Noto Sans CJK SC', 'PingFang SC', 'Microsoft YaHei', 'Source Han Sans SC', 'SimHei')
 
 
-def plot_intersection(ranking, wald):
+def plot_candidate_pool(ranking, wald, use_union=False):
     passed = wald[wald['通过差异筛选'].eq('是')]['比较'].value_counts()
-    overlap = len(ranking)
+    shared = ranking.loc[ranking['D3通过差异筛选'] & ranking['D7通过差异筛选']] if use_union else ranking
+    overlap = len(shared)
     counts = [passed['D3_vs_D0'] - overlap, overlap, passed['D7_vs_D0'] - overlap]
     fig, (bars, scatter) = plt.subplots(1, 2, figsize=(10.4, 5.1), layout='constrained',
                                        gridspec_kw={'width_ratios': [1, 1.65]})
@@ -37,8 +38,12 @@ def plot_intersection(ranking, wald):
     directions = [('均上调', '均上调', BLUE), ('均下调', '均下调', GRAY),
                   ('D3下调_D7上调', 'D3 下调、D7 上调', ORANGE),
                   ('D3上调_D7下调', 'D3 上调、D7 下调', ORANGE)]
+    if use_union:
+        single = ranking.loc[~ranking.index.isin(shared.index)]
+        scatter.scatter(single['D3对D0_log2FC'], single['D7对D0_log2FC'], color=GRAY,
+                        s=8, alpha=0.18, edgecolor='none', label=f'仅一个时点达标（{len(single):,}）')
     for key, label, color in directions:
-        genes = ranking[ranking['相对D0方向'].eq(key)]
+        genes = shared[shared['相对D0方向'].eq(key)]
         reverse = key.startswith('D3')
         scatter.scatter(genes['D3对D0_log2FC'], genes['D7对D0_log2FC'], color=color,
                         s=32 if reverse else 10, marker='D' if reverse else 'o',
@@ -46,32 +51,36 @@ def plot_intersection(ranking, wald):
                         label=f'{label}（{len(genes):,}）')
     scatter.axhline(0, color=LIGHT, zorder=0)
     scatter.axvline(0, color=LIGHT, zorder=0)
-    scatter.set(xlabel='D3 对 D0 的 log₂FC', ylabel='D7 对 D0 的 log₂FC', title='B  交集内的效应方向')
+    pool = '并集' if use_union else '交集'
+    scatter.set(xlabel='D3 对 D0 的 log₂FC', ylabel='D7 对 D0 的 log₂FC', title=f'B  {pool}内的效应方向')
     scatter.legend(loc='lower right', fontsize=8, frameon=True, facecolor='white', framealpha=0.93)
-    fig.suptitle(f'D3 与 D7 相对 D0 的差异基因交集共有 {overlap:,} 个基因', fontweight='bold')
+    fig.suptitle(f'D3 与 D7 相对 D0 的差异基因{pool}共有 {len(ranking):,} 个基因', fontweight='bold')
     return fig
 
 
 def plot_expression(ranking, vst, libraries, repeats):
     genes = ranking.nsmallest(8, '排名')
     fig, panels = plt.subplots(2, 4, figsize=(11, 6), layout='constrained', sharey=True)
-    days = ('3', '7')
+    days = sorted(libraries, key=int)
+    reference_label = 'D3' if days == ['3', '7'] else '非D7'
     for ax, (gene_id, gene) in zip(panels.flat, genes.iterrows()):
-        for x, day, color in zip(range(2), days, (GRAY, BLUE)):
+        for x, day in enumerate(days):
+            color = BLUE if day == '7' else GRAY
             values = vst.loc[gene_id, libraries[day]].to_numpy()
             offsets = np.linspace(-0.13, 0.13, len(values))
             ax.scatter(x + offsets, values, color=color, s=27, zorder=3)
             ax.hlines(values.mean(), x - 0.24, x + 0.24, color='#182833', linewidth=1.5, zorder=4)
-        effect = gene['D7减D3_VST均值差']
+        effect = gene[f'D7减{reference_label}_VST均值差']
         count = round(gene['均值差入选频率'] * repeats)
         label = gene['基因符号'] if pd.notna(gene['基因符号']) else gene_id
-        ax.set_title(f'{label}\nD7−D3 {effect:+.2f}，入选 {count}/{repeats}', fontsize=10)
-        ax.set(xticks=[0, 1], xticklabels=['D3', 'D7'], xlim=(-0.45, 1.45))
+        ax.set_title(f'{label}\nD7−{reference_label} {effect:+.2f}，入选 {count}/{repeats}', fontsize=10)
+        ax.set(xticks=range(len(days)), xticklabels=[f'D{day}' for day in days], xlim=(-0.45, len(days) - 0.55))
         ax.grid(axis='y', color=LIGHT, linewidth=0.7)
         ax.tick_params(axis='x', length=0)
     fig.suptitle('主排序前八个基因的逐文库表达', fontweight='bold')
     fig.supylabel('VST 表达值')
-    fig.supxlabel('每点为一份文库，短线为组均值。D3 有 2 份，D7 有 4 份。', fontsize=10)
+    counts = '、'.join(f'D{day} {len(libraries[day])} 份' for day in days)
+    fig.supxlabel(f'每点为一份文库，短线为各时点均值。{counts}。', fontsize=10)
     return fig
 
 
@@ -116,7 +125,9 @@ def visualize(output):
     vst = pd.read_csv(STAGE_ONE / 'matrices/timecourse_vst.tsv.gz', sep='\t', index_col='基因ID')
     figures = output / 'figures'
     figures.mkdir(parents=True, exist_ok=True)
-    for name, fig in [('01_candidate_intersection', plot_intersection(ranking, wald)),
+    use_union = '并集基因数' in summary
+    pool_figure = '01_candidate_union' if use_union else '01_candidate_intersection'
+    for name, fig in [(pool_figure, plot_candidate_pool(ranking, wald, use_union=use_union)),
                       ('02_candidate_expression', plot_expression(ranking, vst, summary['文库'], summary['重抽样次数'])),
                       ('03_selection_stability', plot_stability(summary))]:
         fig.savefig(figures / f'{name}.png', dpi=180)
@@ -125,5 +136,7 @@ def visualize(output):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output-dir', type=Path, default=OUTPUT)
-    visualize(parser.parse_args().output_dir)
+    parser.add_argument('--union', action='store_true', help='绘制全部 22 份文库的并集筛选结果')
+    parser.add_argument('--output-dir', type=Path)
+    args = parser.parse_args()
+    visualize(args.output_dir or (UNION_OUTPUT if args.union else OUTPUT))

@@ -1,0 +1,47 @@
+{
+  "GSEApy": "1.3.0",
+  "VST_shape": [
+    19312,
+    22
+  ],
+  "Core_genes": {
+    "ENSMUSG00000058914": "C1qtnf3",
+    "ENSMUSG00000054196": "Cthrc1",
+    "ENSMUSG00000026494": "Kif26b",
+    "ENSMUSG00000028197": "Col24a1",
+    "ENSMUSG00000052353": "Cemip",
+    "ENSMUSG00000022865": "Cxadr",
+    "ENSMUSG00000005124": "Wisp1",
+    "ENSMUSG00000027750": "Postn"
+  },
+  "library_counts": {
+    "0": 4,
+    "1": 4,
+    "3": 2,
+    "7": 4,
+    "14": 4,
+    "28": 4
+  },
+  "score": "ssGSEA NES, rank/rank, weight 0.25, permutation_num 0",
+  "gene_set_sizes": [
+    5,
+    500
+  ],
+  "permutations": 19999,
+  "seed": 252027,
+  "P_value": "Two-sided Spearman pairing permutation, all 22 libraries pooled",
+  "BH_tests": 56,
+  "pathway_sources": {
+    "species": "Mus musculus",
+    "retrieved_utc": "2026-11-16T08:24:39.168187+00:00",
+    "KEGG": {
+      "url": "https://rest.kegg.jp/link/mmu/mmu04064+mmu04668+mmu04060+mmu04350",
+      "sha256": "7865acc241ecd6f8e8dd525ba71ad47e41cf2c07ac13842930c0e04c8120528d"
+    },
+    "Reactome": {
+      "url": "https://reactome.org/download/current/NCBI2Reactome_All_Levels.txt",
+      "version": "98",
+      "sha256": "272ca73c16eb285be1698e07c81912335a1d3804e125f789f5160dff150be243"
+    }
+  }
+}

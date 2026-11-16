@@ -4,9 +4,9 @@
 
 | 图 | 怎么读 |
 |---|---|
-| [图 1 差异基因交集](../../outputs/02_feature_selection/figures/01_candidate_intersection.png) | 左图为各集合的基因数，右图为交集内每个基因在两个相对 D0 对比中的 log₂FC。橙色菱形标记 3 个方向相反的基因。 |
-| [图 2 前八基因逐文库表达](../../outputs/02_feature_selection/figures/02_candidate_expression.png) | 每点是一份文库，短横线为组均值。各面板使用相同纵轴，标题给出 D7−D3 的 VST 均值差和前 20 入选次数。 |
-| [图 3 筛选稳定性](../../outputs/02_feature_selection/figures/03_selection_stability.png) | 每点是一种各移除一份 D3、D7 文库的组合。左图为与全样本名单的 Jaccard 重合度，右图为实际入选基因数。 |
+| [图 1 差异基因交集](../../outputs/02_feature_selection/intersection_6/figures/01_candidate_intersection.png) | 左图为各集合的基因数，右图为交集内每个基因在两个相对 D0 对比中的 log₂FC。橙色菱形标记 3 个方向相反的基因。 |
+| [图 2 前八基因逐文库表达](../../outputs/02_feature_selection/intersection_6/figures/02_candidate_expression.png) | 每点是一份文库，短横线为组均值。各面板使用相同纵轴，标题给出 D7−D3 的 VST 均值差和前 20 入选次数。 |
+| [图 3 筛选稳定性](../../outputs/02_feature_selection/intersection_6/figures/03_selection_stability.png) | 每点是一种各移除一份 D3、D7 文库的组合。左图为与全样本名单的 Jaccard 重合度，右图为实际入选基因数。 |
 
 ## 各方法在文库扰动下的表现
 

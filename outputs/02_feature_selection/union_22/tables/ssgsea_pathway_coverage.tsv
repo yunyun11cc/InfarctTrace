@@ -1,0 +1,8 @@
+﻿PathwayID	Pathway	Group	Database	Source_genes	Genes_in_VST
+mmu04064	NF-κB signaling	Inflammation	KEGG	107	89
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	10	9
+mmu04668	TNF signaling	Inflammation	KEGG	118	113
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	294	187
+mmu04350	TGF-β signaling	Fibrosis	KEGG	112	102
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	247	213
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	71	66

@@ -1,0 +1,960 @@
+PathwayID	Pathway	Group	Database	EntrezID
+mmu04064	NF-κB signaling	Inflammation	KEGG	11545
+mmu04064	NF-κB signaling	Inflammation	KEGG	11796
+mmu04064	NF-κB signaling	Inflammation	KEGG	11797
+mmu04064	NF-κB signaling	Inflammation	KEGG	11798
+mmu04064	NF-κB signaling	Inflammation	KEGG	11920
+mmu04064	NF-κB signaling	Inflammation	KEGG	12042
+mmu04064	NF-κB signaling	Inflammation	KEGG	12043
+mmu04064	NF-κB signaling	Inflammation	KEGG	12044
+mmu04064	NF-κB signaling	Inflammation	KEGG	12045
+mmu04064	NF-κB signaling	Inflammation	KEGG	12046
+mmu04064	NF-κB signaling	Inflammation	KEGG	12047
+mmu04064	NF-κB signaling	Inflammation	KEGG	12048
+mmu04064	NF-κB signaling	Inflammation	KEGG	12229
+mmu04064	NF-κB signaling	Inflammation	KEGG	12475
+mmu04064	NF-κB signaling	Inflammation	KEGG	12633
+mmu04064	NF-κB signaling	Inflammation	KEGG	12675
+mmu04064	NF-κB signaling	Inflammation	KEGG	12995
+mmu04064	NF-κB signaling	Inflammation	KEGG	13000
+mmu04064	NF-κB signaling	Inflammation	KEGG	13001
+mmu04064	NF-κB signaling	Inflammation	KEGG	13197
+mmu04064	NF-κB signaling	Inflammation	KEGG	13607
+mmu04064	NF-κB signaling	Inflammation	KEGG	13608
+mmu04064	NF-κB signaling	Inflammation	KEGG	14825
+mmu04064	NF-κB signaling	Inflammation	KEGG	15894
+mmu04064	NF-κB signaling	Inflammation	KEGG	16150
+mmu04064	NF-κB signaling	Inflammation	KEGG	16151
+mmu04064	NF-κB signaling	Inflammation	KEGG	16176
+mmu04064	NF-κB signaling	Inflammation	KEGG	16177
+mmu04064	NF-κB signaling	Inflammation	KEGG	16179
+mmu04064	NF-κB signaling	Inflammation	KEGG	16797
+mmu04064	NF-κB signaling	Inflammation	KEGG	16803
+mmu04064	NF-κB signaling	Inflammation	KEGG	16818
+mmu04064	NF-κB signaling	Inflammation	KEGG	16992
+mmu04064	NF-κB signaling	Inflammation	KEGG	16994
+mmu04064	NF-κB signaling	Inflammation	KEGG	17000
+mmu04064	NF-κB signaling	Inflammation	KEGG	17060
+mmu04064	NF-κB signaling	Inflammation	KEGG	17087
+mmu04064	NF-κB signaling	Inflammation	KEGG	17096
+mmu04064	NF-κB signaling	Inflammation	KEGG	17873
+mmu04064	NF-κB signaling	Inflammation	KEGG	17874
+mmu04064	NF-κB signaling	Inflammation	KEGG	18033
+mmu04064	NF-κB signaling	Inflammation	KEGG	18034
+mmu04064	NF-κB signaling	Inflammation	KEGG	18035
+mmu04064	NF-κB signaling	Inflammation	KEGG	18751
+mmu04064	NF-κB signaling	Inflammation	KEGG	18761
+mmu04064	NF-κB signaling	Inflammation	KEGG	18792
+mmu04064	NF-κB signaling	Inflammation	KEGG	18803
+mmu04064	NF-κB signaling	Inflammation	KEGG	18829
+mmu04064	NF-κB signaling	Inflammation	KEGG	19225
+mmu04064	NF-κB signaling	Inflammation	KEGG	19697
+mmu04064	NF-κB signaling	Inflammation	KEGG	19698
+mmu04064	NF-κB signaling	Inflammation	KEGG	19766
+mmu04064	NF-κB signaling	Inflammation	KEGG	20303
+mmu04064	NF-κB signaling	Inflammation	KEGG	20310
+mmu04064	NF-κB signaling	Inflammation	KEGG	20315
+mmu04064	NF-κB signaling	Inflammation	KEGG	20963
+mmu04064	NF-κB signaling	Inflammation	KEGG	21898
+mmu04064	NF-κB signaling	Inflammation	KEGG	21926
+mmu04064	NF-κB signaling	Inflammation	KEGG	21929
+mmu04064	NF-κB signaling	Inflammation	KEGG	21934
+mmu04064	NF-κB signaling	Inflammation	KEGG	21937
+mmu04064	NF-κB signaling	Inflammation	KEGG	21939
+mmu04064	NF-κB signaling	Inflammation	KEGG	21943
+mmu04064	NF-κB signaling	Inflammation	KEGG	21947
+mmu04064	NF-κB signaling	Inflammation	KEGG	22029
+mmu04064	NF-κB signaling	Inflammation	KEGG	22030
+mmu04064	NF-κB signaling	Inflammation	KEGG	22031
+mmu04064	NF-κB signaling	Inflammation	KEGG	22033
+mmu04064	NF-κB signaling	Inflammation	KEGG	22034
+mmu04064	NF-κB signaling	Inflammation	KEGG	22196
+mmu04064	NF-κB signaling	Inflammation	KEGG	22329
+mmu04064	NF-κB signaling	Inflammation	KEGG	22637
+mmu04064	NF-κB signaling	Inflammation	KEGG	23882
+mmu04064	NF-κB signaling	Inflammation	KEGG	24047
+mmu04064	NF-κB signaling	Inflammation	KEGG	24099
+mmu04064	NF-κB signaling	Inflammation	KEGG	26409
+mmu04064	NF-κB signaling	Inflammation	KEGG	50930
+mmu04064	NF-κB signaling	Inflammation	KEGG	53859
+mmu04064	NF-κB signaling	Inflammation	KEGG	57913
+mmu04064	NF-κB signaling	Inflammation	KEGG	59004
+mmu04064	NF-κB signaling	Inflammation	KEGG	66513
+mmu04064	NF-κB signaling	Inflammation	KEGG	66724
+mmu04064	NF-κB signaling	Inflammation	KEGG	68652
+mmu04064	NF-κB signaling	Inflammation	KEGG	71609
+mmu04064	NF-κB signaling	Inflammation	KEGG	72049
+mmu04064	NF-κB signaling	Inflammation	KEGG	74256
+mmu04064	NF-κB signaling	Inflammation	KEGG	105844
+mmu04064	NF-κB signaling	Inflammation	KEGG	106759
+mmu04064	NF-κB signaling	Inflammation	KEGG	108723
+mmu04064	NF-κB signaling	Inflammation	KEGG	111173
+mmu04064	NF-κB signaling	Inflammation	KEGG	117149
+mmu04064	NF-κB signaling	Inflammation	KEGG	170720
+mmu04064	NF-κB signaling	Inflammation	KEGG	171211
+mmu04064	NF-κB signaling	Inflammation	KEGG	217069
+mmu04064	NF-κB signaling	Inflammation	KEGG	225471
+mmu04064	NF-κB signaling	Inflammation	KEGG	230073
+mmu04064	NF-κB signaling	Inflammation	KEGG	234779
+mmu04064	NF-κB signaling	Inflammation	KEGG	240354
+mmu04064	NF-κB signaling	Inflammation	KEGG	245527
+mmu04064	NF-κB signaling	Inflammation	KEGG	266632
+mmu04064	NF-κB signaling	Inflammation	KEGG	330122
+mmu04064	NF-κB signaling	Inflammation	KEGG	333654
+mmu04064	NF-κB signaling	Inflammation	KEGG	432613
+mmu04064	NF-κB signaling	Inflammation	KEGG	100042493
+mmu04064	NF-κB signaling	Inflammation	KEGG	100504239
+mmu04064	NF-κB signaling	Inflammation	KEGG	100504346
+mmu04064	NF-κB signaling	Inflammation	KEGG	100862177
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	15516
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	18439
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	19200
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	22166
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	54483
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	55991
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	56338
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	66824
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	67955
+R-MMU-844456	NLRP3 inflammasome	Inflammation	Reactome	216799
+mmu04668	TNF signaling	Inflammation	KEGG	11491
+mmu04668	TNF signaling	Inflammation	KEGG	11651
+mmu04668	TNF signaling	Inflammation	KEGG	11652
+mmu04668	TNF signaling	Inflammation	KEGG	11796
+mmu04668	TNF signaling	Inflammation	KEGG	11797
+mmu04668	TNF signaling	Inflammation	KEGG	11798
+mmu04668	TNF signaling	Inflammation	KEGG	11909
+mmu04668	TNF signaling	Inflammation	KEGG	11911
+mmu04668	TNF signaling	Inflammation	KEGG	12051
+mmu04668	TNF signaling	Inflammation	KEGG	12367
+mmu04668	TNF signaling	Inflammation	KEGG	12369
+mmu04668	TNF signaling	Inflammation	KEGG	12370
+mmu04668	TNF signaling	Inflammation	KEGG	12608
+mmu04668	TNF signaling	Inflammation	KEGG	12633
+mmu04668	TNF signaling	Inflammation	KEGG	12675
+mmu04668	TNF signaling	Inflammation	KEGG	12702
+mmu04668	TNF signaling	Inflammation	KEGG	12912
+mmu04668	TNF signaling	Inflammation	KEGG	12913
+mmu04668	TNF signaling	Inflammation	KEGG	12915
+mmu04668	TNF signaling	Inflammation	KEGG	12977
+mmu04668	TNF signaling	Inflammation	KEGG	12981
+mmu04668	TNF signaling	Inflammation	KEGG	13614
+mmu04668	TNF signaling	Inflammation	KEGG	13650
+mmu04668	TNF signaling	Inflammation	KEGG	14082
+mmu04668	TNF signaling	Inflammation	KEGG	14102
+mmu04668	TNF signaling	Inflammation	KEGG	14205
+mmu04668	TNF signaling	Inflammation	KEGG	14281
+mmu04668	TNF signaling	Inflammation	KEGG	14825
+mmu04668	TNF signaling	Inflammation	KEGG	15894
+mmu04668	TNF signaling	Inflammation	KEGG	15945
+mmu04668	TNF signaling	Inflammation	KEGG	15953
+mmu04668	TNF signaling	Inflammation	KEGG	15977
+mmu04668	TNF signaling	Inflammation	KEGG	16150
+mmu04668	TNF signaling	Inflammation	KEGG	16151
+mmu04668	TNF signaling	Inflammation	KEGG	16168
+mmu04668	TNF signaling	Inflammation	KEGG	16176
+mmu04668	TNF signaling	Inflammation	KEGG	16182
+mmu04668	TNF signaling	Inflammation	KEGG	16193
+mmu04668	TNF signaling	Inflammation	KEGG	16362
+mmu04668	TNF signaling	Inflammation	KEGG	16396
+mmu04668	TNF signaling	Inflammation	KEGG	16449
+mmu04668	TNF signaling	Inflammation	KEGG	16476
+mmu04668	TNF signaling	Inflammation	KEGG	16477
+mmu04668	TNF signaling	Inflammation	KEGG	16878
+mmu04668	TNF signaling	Inflammation	KEGG	16992
+mmu04668	TNF signaling	Inflammation	KEGG	17387
+mmu04668	TNF signaling	Inflammation	KEGG	17392
+mmu04668	TNF signaling	Inflammation	KEGG	17395
+mmu04668	TNF signaling	Inflammation	KEGG	18033
+mmu04668	TNF signaling	Inflammation	KEGG	18035
+mmu04668	TNF signaling	Inflammation	KEGG	18706
+mmu04668	TNF signaling	Inflammation	KEGG	18707
+mmu04668	TNF signaling	Inflammation	KEGG	18708
+mmu04668	TNF signaling	Inflammation	KEGG	18709
+mmu04668	TNF signaling	Inflammation	KEGG	18710
+mmu04668	TNF signaling	Inflammation	KEGG	19094
+mmu04668	TNF signaling	Inflammation	KEGG	19225
+mmu04668	TNF signaling	Inflammation	KEGG	19697
+mmu04668	TNF signaling	Inflammation	KEGG	19766
+mmu04668	TNF signaling	Inflammation	KEGG	20293
+mmu04668	TNF signaling	Inflammation	KEGG	20296
+mmu04668	TNF signaling	Inflammation	KEGG	20297
+mmu04668	TNF signaling	Inflammation	KEGG	20304
+mmu04668	TNF signaling	Inflammation	KEGG	20310
+mmu04668	TNF signaling	Inflammation	KEGG	20311
+mmu04668	TNF signaling	Inflammation	KEGG	20312
+mmu04668	TNF signaling	Inflammation	KEGG	20339
+mmu04668	TNF signaling	Inflammation	KEGG	21926
+mmu04668	TNF signaling	Inflammation	KEGG	21929
+mmu04668	TNF signaling	Inflammation	KEGG	21937
+mmu04668	TNF signaling	Inflammation	KEGG	21938
+mmu04668	TNF signaling	Inflammation	KEGG	22029
+mmu04668	TNF signaling	Inflammation	KEGG	22030
+mmu04668	TNF signaling	Inflammation	KEGG	22031
+mmu04668	TNF signaling	Inflammation	KEGG	22033
+mmu04668	TNF signaling	Inflammation	KEGG	22329
+mmu04668	TNF signaling	Inflammation	KEGG	22341
+mmu04668	TNF signaling	Inflammation	KEGG	23797
+mmu04668	TNF signaling	Inflammation	KEGG	26395
+mmu04668	TNF signaling	Inflammation	KEGG	26397
+mmu04668	TNF signaling	Inflammation	KEGG	26398
+mmu04668	TNF signaling	Inflammation	KEGG	26399
+mmu04668	TNF signaling	Inflammation	KEGG	26400
+mmu04668	TNF signaling	Inflammation	KEGG	26408
+mmu04668	TNF signaling	Inflammation	KEGG	26409
+mmu04668	TNF signaling	Inflammation	KEGG	26410
+mmu04668	TNF signaling	Inflammation	KEGG	26413
+mmu04668	TNF signaling	Inflammation	KEGG	26414
+mmu04668	TNF signaling	Inflammation	KEGG	26415
+mmu04668	TNF signaling	Inflammation	KEGG	26416
+mmu04668	TNF signaling	Inflammation	KEGG	26417
+mmu04668	TNF signaling	Inflammation	KEGG	26419
+mmu04668	TNF signaling	Inflammation	KEGG	26420
+mmu04668	TNF signaling	Inflammation	KEGG	26427
+mmu04668	TNF signaling	Inflammation	KEGG	29857
+mmu04668	TNF signaling	Inflammation	KEGG	53859
+mmu04668	TNF signaling	Inflammation	KEGG	56532
+mmu04668	TNF signaling	Inflammation	KEGG	56613
+mmu04668	TNF signaling	Inflammation	KEGG	66513
+mmu04668	TNF signaling	Inflammation	KEGG	66724
+mmu04668	TNF signaling	Inflammation	KEGG	67384
+mmu04668	TNF signaling	Inflammation	KEGG	67457
+mmu04668	TNF signaling	Inflammation	KEGG	68652
+mmu04668	TNF signaling	Inflammation	KEGG	69601
+mmu04668	TNF signaling	Inflammation	KEGG	71609
+mmu04668	TNF signaling	Inflammation	KEGG	72542
+mmu04668	TNF signaling	Inflammation	KEGG	73086
+mmu04668	TNF signaling	Inflammation	KEGG	74006
+mmu04668	TNF signaling	Inflammation	KEGG	74256
+mmu04668	TNF signaling	Inflammation	KEGG	74568
+mmu04668	TNF signaling	Inflammation	KEGG	74769
+mmu04668	TNF signaling	Inflammation	KEGG	78284
+mmu04668	TNF signaling	Inflammation	KEGG	208647
+mmu04668	TNF signaling	Inflammation	KEGG	208677
+mmu04668	TNF signaling	Inflammation	KEGG	217344
+mmu04668	TNF signaling	Inflammation	KEGG	231991
+mmu04668	TNF signaling	Inflammation	KEGG	257632
+mmu04668	TNF signaling	Inflammation	KEGG	330122
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	11477
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	11479
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	11480
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	11481
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	11482
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	11705
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12145
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12154
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12155
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12156
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12159
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12160
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12161
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12162
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12163
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12164
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12165
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12166
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12167
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12168
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12458
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12504
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12765
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12766
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12767
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12768
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12769
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12770
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12771
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12772
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12773
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12774
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12775
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12776
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12777
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12778
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12803
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12804
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12977
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12978
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12981
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12982
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12983
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12984
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12985
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	12986
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	13019
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	13051
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	13607
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	13608
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	13856
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	13857
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14102
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14103
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14559
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14560
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14561
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14562
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14563
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14566
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14599
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14600
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	14825
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15945
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15962
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15964
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15965
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15967
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15968
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15969
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15970
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15972
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15974
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15975
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15976
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15977
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15978
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15979
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	15980
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16153
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16154
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16155
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16156
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16157
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16158
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16159
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16160
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16161
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16162
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16163
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16164
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16165
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16168
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16169
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16170
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16171
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16172
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16173
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16174
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16175
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16176
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16177
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16178
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16180
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16181
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16182
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16183
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16184
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16185
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16186
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16187
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16188
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16189
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16190
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16191
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16192
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16193
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16194
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16195
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16196
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16197
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16198
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16199
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16322
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16323
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16324
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16325
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16326
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16846
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16847
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16878
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16880
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16963
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16992
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	16994
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	17000
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	17082
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	17329
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	17480
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	17700
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	18048
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	18049
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	18053
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	18119
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	18383
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	18413
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	18414
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	18829
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	19109
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	19111
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	19116
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20290
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20292
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20293
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20295
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20296
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20297
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20299
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20300
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20301
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20302
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20303
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20304
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20305
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20306
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20307
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20308
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20309
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20310
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20311
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20312
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	20315
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21803
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21808
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21809
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21812
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21813
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21832
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21926
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21933
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21934
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21935
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21936
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21937
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21938
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21939
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21940
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21941
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21942
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21943
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21944
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21947
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21948
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21949
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	21950
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	22035
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	22163
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	22164
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	23832
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	23886
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	24047
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	24099
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	27279
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	28078
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	29820
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	50498
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	50905
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	50929
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	50930
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	50931
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	53603
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	54448
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	54450
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	55985
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	56066
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	56069
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	56221
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	56708
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	56744
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	56838
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	57266
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	57349
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	57890
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	57914
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	57916
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	58181
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	60504
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	60505
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	66102
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	69583
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	69677
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	72049
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	76399
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	76527
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	77125
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	80901
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	83430
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	85030
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	93672
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	94185
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100532
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	107527
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	110075
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	110542
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	116849
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	140806
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	171095
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	209590
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	213208
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	215257
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	215274
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	218624
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	225392
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	227288
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	230396
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	230398
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	230405
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	230828
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	230979
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	232983
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	234836
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	237313
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	238057
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	239114
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	240873
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	242316
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	242517
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	242519
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	242700
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	244218
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	245527
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	246779
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	252837
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	257630
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	269275
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	320100
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	326623
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	329244
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	330122
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	330496
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	338374
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	387510
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	404549
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	541307
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	621580
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100039863
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100040048
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100041579
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100042493
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100042555
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100504239
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100504346
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100862177
+mmu04060	Cytokine–receptor interaction	Inflammation	KEGG	100862247
+mmu04350	TGF-β signaling	Fibrosis	KEGG	11477
+mmu04350	TGF-β signaling	Fibrosis	KEGG	11479
+mmu04350	TGF-β signaling	Fibrosis	KEGG	11480
+mmu04350	TGF-β signaling	Fibrosis	KEGG	11481
+mmu04350	TGF-β signaling	Fibrosis	KEGG	11705
+mmu04350	TGF-β signaling	Fibrosis	KEGG	11848
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12156
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12159
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12160
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12161
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12162
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12163
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12164
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12166
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12167
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12168
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12579
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12667
+mmu04350	TGF-β signaling	Fibrosis	KEGG	12914
+mmu04350	TGF-β signaling	Fibrosis	KEGG	13179
+mmu04350	TGF-β signaling	Fibrosis	KEGG	13559
+mmu04350	TGF-β signaling	Fibrosis	KEGG	13590
+mmu04350	TGF-β signaling	Fibrosis	KEGG	13732
+mmu04350	TGF-β signaling	Fibrosis	KEGG	14118
+mmu04350	TGF-β signaling	Fibrosis	KEGG	14264
+mmu04350	TGF-β signaling	Fibrosis	KEGG	14313
+mmu04350	TGF-β signaling	Fibrosis	KEGG	14563
+mmu04350	TGF-β signaling	Fibrosis	KEGG	15182
+mmu04350	TGF-β signaling	Fibrosis	KEGG	15216
+mmu04350	TGF-β signaling	Fibrosis	KEGG	15901
+mmu04350	TGF-β signaling	Fibrosis	KEGG	15902
+mmu04350	TGF-β signaling	Fibrosis	KEGG	15903
+mmu04350	TGF-β signaling	Fibrosis	KEGG	15904
+mmu04350	TGF-β signaling	Fibrosis	KEGG	15978
+mmu04350	TGF-β signaling	Fibrosis	KEGG	16323
+mmu04350	TGF-β signaling	Fibrosis	KEGG	16324
+mmu04350	TGF-β signaling	Fibrosis	KEGG	16325
+mmu04350	TGF-β signaling	Fibrosis	KEGG	16326
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17125
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17126
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17127
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17128
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17129
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17130
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17131
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17869
+mmu04350	TGF-β signaling	Fibrosis	KEGG	17965
+mmu04350	TGF-β signaling	Fibrosis	KEGG	18007
+mmu04350	TGF-β signaling	Fibrosis	KEGG	18119
+mmu04350	TGF-β signaling	Fibrosis	KEGG	18121
+mmu04350	TGF-β signaling	Fibrosis	KEGG	18741
+mmu04350	TGF-β signaling	Fibrosis	KEGG	19052
+mmu04350	TGF-β signaling	Fibrosis	KEGG	19053
+mmu04350	TGF-β signaling	Fibrosis	KEGG	19650
+mmu04350	TGF-β signaling	Fibrosis	KEGG	19877
+mmu04350	TGF-β signaling	Fibrosis	KEGG	20185
+mmu04350	TGF-β signaling	Fibrosis	KEGG	20466
+mmu04350	TGF-β signaling	Fibrosis	KEGG	20481
+mmu04350	TGF-β signaling	Fibrosis	KEGG	20482
+mmu04350	TGF-β signaling	Fibrosis	KEGG	20683
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21402
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21781
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21803
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21808
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21809
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21812
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21813
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21815
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21825
+mmu04350	TGF-β signaling	Fibrosis	KEGG	21926
+mmu04350	TGF-β signaling	Fibrosis	KEGG	22041
+mmu04350	TGF-β signaling	Fibrosis	KEGG	22042
+mmu04350	TGF-β signaling	Fibrosis	KEGG	23892
+mmu04350	TGF-β signaling	Fibrosis	KEGG	23893
+mmu04350	TGF-β signaling	Fibrosis	KEGG	26413
+mmu04350	TGF-β signaling	Fibrosis	KEGG	26417
+mmu04350	TGF-β signaling	Fibrosis	KEGG	26965
+mmu04350	TGF-β signaling	Fibrosis	KEGG	50765
+mmu04350	TGF-β signaling	Fibrosis	KEGG	51792
+mmu04350	TGF-β signaling	Fibrosis	KEGG	55994
+mmu04350	TGF-β signaling	Fibrosis	KEGG	56438
+mmu04350	TGF-β signaling	Fibrosis	KEGG	58988
+mmu04350	TGF-β signaling	Fibrosis	KEGG	66313
+mmu04350	TGF-β signaling	Fibrosis	KEGG	66438
+mmu04350	TGF-β signaling	Fibrosis	KEGG	67653
+mmu04350	TGF-β signaling	Fibrosis	KEGG	68010
+mmu04350	TGF-β signaling	Fibrosis	KEGG	68777
+mmu04350	TGF-β signaling	Fibrosis	KEGG	68799
+mmu04350	TGF-β signaling	Fibrosis	KEGG	69585
+mmu04350	TGF-β signaling	Fibrosis	KEGG	71775
+mmu04350	TGF-β signaling	Fibrosis	KEGG	72508
+mmu04350	TGF-β signaling	Fibrosis	KEGG	73699
+mmu04350	TGF-β signaling	Fibrosis	KEGG	75788
+mmu04350	TGF-β signaling	Fibrosis	KEGG	84506
+mmu04350	TGF-β signaling	Fibrosis	KEGG	104394
+mmu04350	TGF-β signaling	Fibrosis	KEGG	110542
+mmu04350	TGF-β signaling	Fibrosis	KEGG	207596
+mmu04350	TGF-β signaling	Fibrosis	KEGG	209268
+mmu04350	TGF-β signaling	Fibrosis	KEGG	218441
+mmu04350	TGF-β signaling	Fibrosis	KEGG	224109
+mmu04350	TGF-β signaling	Fibrosis	KEGG	228839
+mmu04350	TGF-β signaling	Fibrosis	KEGG	230597
+mmu04350	TGF-β signaling	Fibrosis	KEGG	238057
+mmu04350	TGF-β signaling	Fibrosis	KEGG	242316
+mmu04350	TGF-β signaling	Fibrosis	KEGG	244058
+mmu04350	TGF-β signaling	Fibrosis	KEGG	268977
+mmu04350	TGF-β signaling	Fibrosis	KEGG	269275
+mmu04350	TGF-β signaling	Fibrosis	KEGG	320202
+mmu04350	TGF-β signaling	Fibrosis	KEGG	328572
+mmu04350	TGF-β signaling	Fibrosis	KEGG	380664
+mmu04350	TGF-β signaling	Fibrosis	KEGG	433759
+mmu04350	TGF-β signaling	Fibrosis	KEGG	434215
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11459
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11461
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11464
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11465
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11468
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11475
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11487
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11489
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11490
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11492
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11501
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11595
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11603
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	11820
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12032
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12111
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12153
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12154
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12156
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12159
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12162
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12215
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12305
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12333
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12334
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12335
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12336
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12337
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12338
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12339
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12380
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12406
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12505
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12550
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12813
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12814
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12815
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12816
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12817
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12818
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12819
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12821
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12822
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12823
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12824
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12825
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12826
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12827
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12829
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12830
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12831
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12832
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12833
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12834
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12836
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12837
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12839
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12841
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12843
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12845
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	12950
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13004
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13030
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13033
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13035
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13038
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13039
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13040
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13138
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13179
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13405
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13406
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13497
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13527
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13528
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	13717
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14115
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14118
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14119
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14161
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14173
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14218
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14268
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14563
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	14789
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	15529
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	15891
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	15894
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	15896
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	15898
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16398
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16399
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16400
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16401
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16402
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16403
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16407
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16408
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16410
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16411
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16412
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16414
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16416
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16419
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16420
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16421
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16423
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16456
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16621
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16651
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16775
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16948
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16949
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16950
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16997
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	16998
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17022
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17150
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17228
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17381
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17384
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17385
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17386
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17387
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17388
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17389
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17390
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17391
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17392
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17393
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17394
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	17395
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18073
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18074
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18214
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18453
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18542
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18550
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18613
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18750
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18815
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	18822
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	19035
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	20391
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	20392
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	20649
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	20650
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	20750
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	20969
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	20970
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	20971
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	21803
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	21808
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	21857
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	21923
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	21960
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	22072
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	22073
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	22074
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	22288
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	22370
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	22371
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	23794
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	23830
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	23876
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	23948
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	23993
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	24051
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	24052
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	24053
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	24087
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	26365
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	26432
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	26433
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	30800
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	50530
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	50701
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	50817
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	53867
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	56213
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	56401
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	56693
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	58223
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	58859
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	64706
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	66473
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	67374
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	67573
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	69543
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	69675
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	69700
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	71355
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	71753
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	72902
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	72947
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	73368
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	73647
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	76293
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	76477
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	77018
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	78369
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	81877
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	83964
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	94216
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	94352
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	99571
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	100952
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	103964
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	104099
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	107581
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	108075
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	109700
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	110135
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	114228
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	140709
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	170725
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	192897
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	210530
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	213945
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	214058
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	216725
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	232345
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	234407
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	237759
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	240047
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	240913
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	241226
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	244431
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	245026
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	246707
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	268534
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	268935
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	268958
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	268977
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	269120
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	269132
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	280635
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	320910
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	329278
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	329941
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	330119
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	373864
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	381122
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	436522
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	436523
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	665033
+R-MMU-1474244	Extracellular matrix organization	Fibrosis	Reactome	100040233
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12153
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12406
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12813
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12814
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12815
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12816
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12817
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12818
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12819
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12821
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12822
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12823
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12824
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12825
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12826
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12827
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12829
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12830
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12831
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12832
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12833
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12834
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12836
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12837
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12839
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12841
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	12843
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	13030
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	13039
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	13040
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	14789
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	16948
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	16949
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	16950
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	17386
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	17392
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	17393
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	17395
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	18453
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	18542
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	18822
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	19035
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	24087
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	26432
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	26433
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	30800
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	53867
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	56401
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	56693
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	67573
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	69675
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	69700
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	71355
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	73368
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	76477
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	77018
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	94216
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	94352
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	107581
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	140709
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	210530
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	213945
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	216725
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	234407
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	237759
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	245026
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	269132
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	329941
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	330119
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	373864
+R-MMU-1474290	Collagen formation	Fibrosis	Reactome	665033
