@@ -1,5 +1,7 @@
 # 阶段 02 结果
 
+[阶段 01–02 三张主图、源数据及九基因清单](manuscript/README.md)
+
 | 版本 | 输入文库 × 基因 | 结果 |
 |---|---:|---|
 | 六文库交集 | 6 × 1,141 | [排序](intersection_6/tables/feature_ranking.tsv) · [扰动明细](intersection_6/tables/perturbation_selections.tsv) · [图表解读](../../experiments/02_feature_selection/results.md) |

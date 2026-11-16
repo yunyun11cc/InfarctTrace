@@ -1,0 +1,9 @@
+D3 vs D0	D7 vs D0	Time LRT	Genes
+True	True	True	1139
+True	True	False	2
+True	False	True	2070
+True	False	False	174
+False	True	True	473
+False	True	False	49
+False	False	True	7798
+False	False	False	7607
