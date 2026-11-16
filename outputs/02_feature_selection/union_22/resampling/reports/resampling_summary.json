@@ -1,0 +1,49 @@
+{
+  "scikit-learn": "1.9.1",
+  "GSM": [
+    "GSM7992326",
+    "GSM7992327",
+    "GSM7992328",
+    "GSM7992329",
+    "GSM7992330",
+    "GSM7992331",
+    "GSM7992332",
+    "GSM7992333",
+    "GSM7992334",
+    "GSM7992337",
+    "GSM7992338",
+    "GSM7992339",
+    "GSM7992340",
+    "GSM7992341",
+    "GSM7992342",
+    "GSM7992343",
+    "GSM7992344",
+    "GSM7992345",
+    "GSM7992346",
+    "GSM7992347",
+    "GSM7992348",
+    "GSM7992349"
+  ],
+  "D7": [
+    "GSM7992338",
+    "GSM7992339",
+    "GSM7992340",
+    "GSM7992341"
+  ],
+  "CV_folds": 4,
+  "CV_repeats": 50,
+  "CV_splits": 200,
+  "bootstrap_repeats": 1000,
+  "bootstrap_class_sizes": {
+    "D7": 4,
+    "non_D7": 18
+  },
+  "seed": 252027,
+  "top_k": 20,
+  "top_k_ties": "keep boundary ties, exclude zero scores",
+  "CV_prediction": "refit same estimator on training-fold Top 20, then score validation fold",
+  "AUPRC": "average precision",
+  "sd": "sample SD across validation folds",
+  "candidate_pool_and_VST": "fixed full-cohort preprocessing, including validation libraries",
+  "bootstrap_Jaccard_reference": "union_22 full-library selected list, separately per method"
+}

@@ -1,0 +1,13 @@
+{
+  "species": "Mus musculus",
+  "retrieved_utc": "2026-11-16T08:24:39.168187+00:00",
+  "KEGG": {
+    "url": "https://rest.kegg.jp/link/mmu/mmu04064+mmu04668+mmu04060+mmu04350",
+    "sha256": "7865acc241ecd6f8e8dd525ba71ad47e41cf2c07ac13842930c0e04c8120528d"
+  },
+  "Reactome": {
+    "url": "https://reactome.org/download/current/NCBI2Reactome_All_Levels.txt",
+    "version": "98",
+    "sha256": "272ca73c16eb285be1698e07c81912335a1d3804e125f789f5160dff150be243"
+  }
+}
