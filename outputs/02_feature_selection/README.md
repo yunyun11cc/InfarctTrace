@@ -32,4 +32,4 @@
 
 - [逐折性能](union_22/resampling/tables/cv_fold_metrics.tsv) · [性能汇总](union_22/resampling/tables/cv_summary.tsv) · [CV 基因入选频率](union_22/resampling/tables/cv_selection_frequency.tsv)
 - [Bootstrap 基因入选概率](union_22/resampling/tables/bootstrap_selection_probability.tsv) · [逐次 Jaccard](union_22/resampling/tables/bootstrap_jaccard.tsv) · [Jaccard 箱线图与棒棒糖图](union_22/resampling/figures/03_selection_stability.png)
-- [分析方法和复现命令](../../experiments/02_feature_selection/README.md#重复分层交叉验证与-bootstrap)
+- [运行摘要与随机种子](union_22/resampling/reports/resampling_summary.json) · [分析方法和复现命令](../../experiments/02_feature_selection/README.md#重复分层交叉验证与-bootstrap)

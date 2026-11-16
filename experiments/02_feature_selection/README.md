@@ -61,6 +61,8 @@ uv run --locked python experiments/02_feature_selection/pathway_activity.py
 
 ## 重复分层交叉验证与 Bootstrap
 
+本节读取 `union_22/tables/feature_ranking.tsv`，输出写入 `union_22/resampling/`。原始八次文库扰动与重采样结果各有一套图表。
+
 22 文库并集版使用固定的 3,907 个基因，D7 为正类。采用 4 折分层交叉验证，重复 50 次。每折验证集有 1 个 D7 文库，训练集有 3 个 D7 和 13–14 个非 D7 文库。每折只用训练文库拟合标准化和模型，从训练模型取前 20 个特征，再用这些特征重新拟合后为验证文库打分。LASSO 和 Elastic Net 按绝对系数排序，随机森林按特征重要性排序。保留边界并列并排除零分数。汇报 200 折 AUROC、AUPRC（Average Precision）和准确率的均值及样本标准差。CV 入选频率为该基因在相应方法的 200 个训练折中入选的比例。
 
 Bootstrap 对 D7 和非 D7 分层，每次分别有放回抽 4 和 18 份文库，重复 1,000 次。每次重新运行 VST 均值差、LASSO、Elastic Net 和随机森林。按每种方法统计入选频率，综合选中概率取四种方法频率的算术平均。箱线图展示每次抽样的名单与对应全样本名单的 Jaccard，相邻的棒棒糖图展示综合平均概率最高的 20 个基因。

@@ -28,7 +28,7 @@ InfarctTrace/
 │   │   ├── visualize.py
 │   │   ├── protocol.md                     # 样本纳入与统计口径
 │   │   └── results.md                      # 结果、读图与阶段结论
-│   ├── 02_feature_selection/               # D3/D7 候选排序、稳定性分析与绘图
+│   ├── 02_feature_selection/               # D3/D7 筛选、ssGSEA、交叉验证与 Bootstrap
 │   ├── 03_validation/
 │   └── 04_prioritization/
 ├── outputs/                                # 与实验阶段同名的结果目录
@@ -38,6 +38,7 @@ InfarctTrace/
 │       ├── intersection_6/                # 原始六文库交集筛选
 │       ├── intersection_22/               # 全部主分析文库的交集筛选
 │       └── union_22/                       # 并集筛选与 ssGSEA 相关性
+│           └── resampling/                 # 逐折指标、入选频率和 Bootstrap 图表
 ├── provenance/                             # 数据来源、下载清单与 SHA-256
 ├── papers/                                 # 论文元数据和参考文献
 ├── docs/                                   # 实验方案、数据指南和数学原理
@@ -57,28 +58,33 @@ InfarctTrace/
 | 阶段 | 模块入口 | 交付物 | 状态 |
 |---|---|---|---|
 | 01 | [数据处理与差异分析](experiments/01_preprocessing_differential/README.md) | 样本质控、归一化矩阵、时序差异和通路富集 | Completed |
-| 02 | [特征筛选](experiments/02_feature_selection/README.md) | D3/D7 差异基因交集、候选排序与文库扰动稳定性 | Completed |
+| 02 | [特征筛选](experiments/02_feature_selection/README.md) | D3/D7 交集和并集排序、ssGSEA 相关性、交叉验证与 Bootstrap 稳定性 | Completed |
 | 03 | [候选验证](experiments/03_validation/README.md) | GSE252027 队列内的稳定性与时间趋势证据 | Pending |
 | 04 | [候选优选](experiments/04_prioritization/README.md) | 候选排序、入选依据和证据摘要 | Pending |
 
 ## 阶段 02 结果
 
-三版结果集中在同一目录。22 文库并集版另附前八基因与七条炎症及纤维化通路的 ssGSEA 相关性。 [阶段 02 输出索引](outputs/02_feature_selection/README.md) · [ssGSEA 热图](outputs/02_feature_selection/union_22/figures/04_ssgsea_correlation.png)
+22 文库并集版使用 D3 vs D0 和 D7 vs D0 的 **3,907 个差异基因**，比较 D7 的 4 份文库与其余五个时点的 18 份文库。交叉验证采用 4 折 × 50 次，每折在训练文库中筛选后重新拟合。Elastic Net 的平均 AUROC 为 **0.957 ± 0.108**。候选池与 VST 来自全队列，这组数值描述固定输入下的队列内判别表现。 [阶段 02 输出索引](outputs/02_feature_selection/README.md) · [逐折性能汇总](outputs/02_feature_selection/union_22/resampling/tables/cv_summary.tsv)
 
-22 文库并集版还提供 4 折 × 50 次分层交叉验证，以及 1,000 次分层 Bootstrap 的筛选稳定性。 [交叉验证与 Bootstrap 结果](outputs/02_feature_selection/README.md#22-文库并集的重复交叉验证与-bootstrap)
+| 分析 | 输出 |
+|---|---|
+| 并集特征筛选 | [3,907 个基因的排序](outputs/02_feature_selection/union_22/tables/feature_ranking.tsv) · [原八次文库扰动图](outputs/02_feature_selection/union_22/figures/03_selection_stability.png) |
+| ssGSEA | [前八基因与七条通路的相关性热图](outputs/02_feature_selection/union_22/figures/04_ssgsea_correlation.png) · [相关系数、P 值和校正值](outputs/02_feature_selection/union_22/tables/ssgsea_correlations.tsv) |
+| 200 折交叉验证 | [每折性能](outputs/02_feature_selection/union_22/resampling/tables/cv_fold_metrics.tsv) · [各方法的基因入选频率](outputs/02_feature_selection/union_22/resampling/tables/cv_selection_frequency.tsv) |
+| 1,000 次分层 Bootstrap | [Jaccard 箱线图和棒棒糖图](outputs/02_feature_selection/union_22/resampling/figures/03_selection_stability.png) · [逐次 Jaccard](outputs/02_feature_selection/union_22/resampling/tables/bootstrap_jaccard.tsv) · [各方法及综合入选频率](outputs/02_feature_selection/union_22/resampling/tables/bootstrap_selection_probability.tsv) |
 
-22 文库版比较 D7 的 4 份文库与其他五个时点的 18 份文库。以 D3 vs D0 和 D7 vs D0 的差异基因生成候选池，**交集含 1,141 个基因，并集含 3,907 个基因**。分别有 15 个和 14 个基因在全部 8 次扰动中进入 VST 均值差绝对值前 20。原始六文库版比较 D7 与 D3，有 8 个基因在全部扰动中进入前 20。 [版本说明与输出](experiments/02_feature_selection/README.md) · [22 文库交集排序](outputs/02_feature_selection/intersection_22/tables/feature_ranking.tsv) · [22 文库并集排序](outputs/02_feature_selection/union_22/tables/feature_ranking.tsv) · [六文库结果解读](experiments/02_feature_selection/results.md)
+交集版使用两个时点都达标的 **1,141 个基因**。六文库版比较 D7 与 D3，22 文库版比较 D7 与其余时点。 [22 文库交集排序](outputs/02_feature_selection/intersection_22/tables/feature_ranking.tsv) · [六文库图表与结果解读](experiments/02_feature_selection/results.md)
 
-- [差异基因交集](outputs/02_feature_selection/intersection_6/figures/01_candidate_intersection.png)
-- [前八基因的逐文库表达](outputs/02_feature_selection/intersection_6/figures/02_candidate_expression.png)
-- [四种方法的筛选稳定性](outputs/02_feature_selection/intersection_6/figures/03_selection_stability.png)
-- [完整基因排序](outputs/02_feature_selection/intersection_6/tables/feature_ranking.tsv) · [八次扰动明细](outputs/02_feature_selection/intersection_6/tables/perturbation_selections.tsv) · [运行摘要](outputs/02_feature_selection/intersection_6/reports/selection_summary.json)
+### 复现 22 文库并集版
 
-上方图表为原始六文库版。已有阶段 01 输出时，可在项目根目录重跑 22 文库交集版。两个命令都加 `--union` 可复跑并集版。绘图需要中文字体。
+在项目根目录运行以下命令。第一步读取已有的阶段 01 输出。若已有并集排序表，可直接运行所需的下游脚本。 [阶段 02 运行说明](experiments/02_feature_selection/README.md)
 
 ```sh
-uv run --locked python experiments/02_feature_selection/select_features.py
-uv run --locked python experiments/02_feature_selection/visualize.py
+uv run --locked python experiments/02_feature_selection/select_features.py --union
+uv run --locked python experiments/02_feature_selection/visualize.py --union
+uv run --locked python experiments/02_feature_selection/pathway_activity.py
+uv run --locked python -u experiments/02_feature_selection/resampling.py
+uv run --locked python experiments/02_feature_selection/visualize_resampling.py
 ```
 
 ## 参考与学习
