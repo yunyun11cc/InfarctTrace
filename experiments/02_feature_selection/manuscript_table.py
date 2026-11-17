@@ -5,8 +5,11 @@ from pathlib import Path
 
 import pandas as pd
 
-from manuscript_style import CORE_GENES, EXPORT_DIR
-from select_features import STAGE_ONE, UNION_OUTPUT
+from figure_data import CORE_GENES
+from select_features import STAGE_ONE, STAGE_TWO, UNION_OUTPUT
+
+
+EXPORT_DIR = STAGE_TWO / 'manuscript'
 
 
 def write_table(output):

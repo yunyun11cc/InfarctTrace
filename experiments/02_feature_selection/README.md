@@ -11,13 +11,15 @@
 ```sh
 uv run --locked python experiments/02_feature_selection/select_features.py
 uv run --locked python experiments/02_feature_selection/visualize.py
-uv run --locked python -m unittest discover -s experiments/02_feature_selection -v
 ```
 
 默认使用 **22 × 1,141** 的交集输入，并写入 `outputs/02_feature_selection/intersection_22/`。用 `--union` 运行 **22 × 3,907** 的并集版，结果写入 `outputs/02_feature_selection/union_22/`。
 
+并集绘图读取已有的 Bootstrap 结果。如果已生成 `union_22/resampling/tables/` 下的结果表，可跳过重采样命令。
+
 ```sh
 uv run --locked python experiments/02_feature_selection/select_features.py --union
+uv run --locked python -u experiments/02_feature_selection/resampling.py
 uv run --locked python experiments/02_feature_selection/visualize.py --union
 ```
 
@@ -45,7 +47,7 @@ uv run --locked python experiments/02_feature_selection/visualize.py --output-di
 按均值差排序，14 个基因在全部 8 次扰动中进入前 20，均属于原交集。稳定入选的前四是 `C1qtnf3`、`Cthrc1`、`Kif26b` 和 `Col24a1`。
 
 - [完整基因排序](../../outputs/02_feature_selection/union_22/tables/feature_ranking.tsv) · [八次扰动明细](../../outputs/02_feature_selection/union_22/tables/perturbation_selections.tsv) · [运行摘要](../../outputs/02_feature_selection/union_22/reports/selection_summary.json)
-- [差异基因并集](../../outputs/02_feature_selection/union_22/figures/01_candidate_union.png) · [六时点逐文库表达](../../outputs/02_feature_selection/union_22/figures/02_candidate_expression.png) · [筛选稳定性](../../outputs/02_feature_selection/union_22/figures/03_selection_stability.png)
+- [差异基因并集](../../outputs/02_feature_selection/union_22/figures/01_candidate_union.png) · [六时点表达轨迹](../../outputs/02_feature_selection/union_22/figures/02_candidate_expression.png) · [Bootstrap 稳定性与 EFS-RA 排名](../../outputs/02_feature_selection/union_22/figures/03_selection_stability.png)
 
 ## 核心基因与通路 ssGSEA 相关性
 
@@ -61,7 +63,7 @@ uv run --locked python experiments/02_feature_selection/pathway_activity.py
 
 ## 重复分层交叉验证与 Bootstrap
 
-本节读取 `union_22/tables/feature_ranking.tsv`，输出写入 `union_22/resampling/`。原始八次文库扰动与重采样结果各有一套图表。
+本节读取 `union_22/tables/feature_ranking.tsv`，输出写入 `union_22/resampling/`。八次文库扰动的明细仍保存在 `union_22/tables/`。
 
 22 文库并集版使用固定的 3,907 个基因，D7 为正类。采用 4 折分层交叉验证，重复 50 次。每折验证集有 1 个 D7 文库，训练集有 3 个 D7 和 13–14 个非 D7 文库。每折只用训练文库拟合标准化和模型，从训练模型取前 20 个特征，再用这些特征重新拟合后为验证文库打分。LASSO 和 Elastic Net 按绝对系数排序，随机森林按特征重要性排序。保留边界并列并排除零分数。汇报 200 折 AUROC、AUPRC（Average Precision）和准确率的均值及样本标准差。CV 入选频率为该基因在相应方法的 200 个训练折中入选的比例。
 

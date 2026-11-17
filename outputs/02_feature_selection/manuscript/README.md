@@ -45,14 +45,11 @@
 SHA-256  7f7254627a79c5db2c664cf073122089d1ee46c9c1b16eec4921b036245fdb5b
 ```
 
-## 复现
+## 分析与候选清单
 
-在仓库根目录运行，使用已有的阶段 01 输出、阶段 02 并集排序与 Bootstrap 结果。
+本页图件和源数据为归档结果。在仓库根目录运行以下命令，可重算 EFS 比较并使用已保存的源数据生成九基因清单。
 
 ```sh
-uv run --locked python experiments/02_feature_selection/manuscript_figure1.py
 uv run --locked python experiments/02_feature_selection/manuscript_efs.py
-uv run --locked python experiments/02_feature_selection/manuscript_figure2.py
-uv run --locked python experiments/02_feature_selection/manuscript_figure3.py
 uv run --locked python experiments/02_feature_selection/manuscript_table.py
 ```

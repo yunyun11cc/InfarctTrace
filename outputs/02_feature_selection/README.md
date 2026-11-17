@@ -1,12 +1,10 @@
 # 阶段 02 结果
 
-[阶段 01–02 三张主图、源数据及九基因清单](manuscript/README.md)
-
 | 版本 | 输入文库 × 基因 | 结果 |
 |---|---:|---|
 | 六文库交集 | 6 × 1,141 | [排序](intersection_6/tables/feature_ranking.tsv) · [扰动明细](intersection_6/tables/perturbation_selections.tsv) · [图表解读](../../experiments/02_feature_selection/results.md) |
 | 22 文库交集 | 22 × 1,141 | [排序](intersection_22/tables/feature_ranking.tsv) · [扰动明细](intersection_22/tables/perturbation_selections.tsv) · [筛选稳定性图](intersection_22/figures/03_selection_stability.png) |
-| 22 文库并集 | 22 × 3,907 | [排序](union_22/tables/feature_ranking.tsv) · [八次扰动图](union_22/figures/03_selection_stability.png) · [Bootstrap 稳定性图](union_22/resampling/figures/03_selection_stability.png) |
+| 22 文库并集 | 22 × 3,907 | [排序](union_22/tables/feature_ranking.tsv) · [八次扰动明细](union_22/tables/perturbation_selections.tsv) · [Bootstrap 稳定性与 EFS-RA 排名](union_22/figures/03_selection_stability.png) |
 
 ## 22 文库并集的 ssGSEA
 

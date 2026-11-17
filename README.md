@@ -68,7 +68,7 @@ InfarctTrace/
 
 | 分析 | 输出 |
 |---|---|
-| 并集特征筛选 | [3,907 个基因的排序](outputs/02_feature_selection/union_22/tables/feature_ranking.tsv) · [原八次文库扰动图](outputs/02_feature_selection/union_22/figures/03_selection_stability.png) |
+| 并集特征筛选 | [3,907 个基因的排序](outputs/02_feature_selection/union_22/tables/feature_ranking.tsv) · [八次文库扰动明细](outputs/02_feature_selection/union_22/tables/perturbation_selections.tsv) |
 | ssGSEA | [前八基因与七条通路的相关性热图](outputs/02_feature_selection/union_22/figures/04_ssgsea_correlation.png) · [相关系数、P 值和校正值](outputs/02_feature_selection/union_22/tables/ssgsea_correlations.tsv) |
 | 200 折交叉验证 | [每折性能](outputs/02_feature_selection/union_22/resampling/tables/cv_fold_metrics.tsv) · [各方法的基因入选频率](outputs/02_feature_selection/union_22/resampling/tables/cv_selection_frequency.tsv) |
 | 1,000 次分层 Bootstrap | [Jaccard 箱线图和棒棒糖图](outputs/02_feature_selection/union_22/resampling/figures/03_selection_stability.png) · [逐次 Jaccard](outputs/02_feature_selection/union_22/resampling/tables/bootstrap_jaccard.tsv) · [各方法及综合入选频率](outputs/02_feature_selection/union_22/resampling/tables/bootstrap_selection_probability.tsv) |
@@ -81,9 +81,9 @@ InfarctTrace/
 
 ```sh
 uv run --locked python experiments/02_feature_selection/select_features.py --union
+uv run --locked python -u experiments/02_feature_selection/resampling.py
 uv run --locked python experiments/02_feature_selection/visualize.py --union
 uv run --locked python experiments/02_feature_selection/pathway_activity.py
-uv run --locked python -u experiments/02_feature_selection/resampling.py
 uv run --locked python experiments/02_feature_selection/visualize_resampling.py
 ```
 

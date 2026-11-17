@@ -16,7 +16,7 @@ from resampling import METHODS, OUTPUT
 
 def visualize(output):
     detail = pd.read_csv(output / 'tables/bootstrap_jaccard.tsv', sep='\t')
-    probabilities = pd.read_csv(output / 'tables/bootstrap_selection_probability.tsv', sep='\t')
+    probabilities = pd.read_csv(output / 'tables/bootstrap_selection_probability.tsv', sep='\t', skipinitialspace=True)
     summary = json.loads((output / 'reports/resampling_summary.json').read_text())
     top = probabilities.head(20)
     labels = top['基因符号'].fillna(top['基因ID'])
