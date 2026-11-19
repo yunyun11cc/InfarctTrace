@@ -64,7 +64,7 @@ InfarctTrace/
 | 01_1 | [发现队列数据处理与差异分析](experiments/01_1_preprocessing_differential/README.md) | 样本质控、归一化矩阵、时序差异和通路富集 | Completed |
 | 01_2 | [外部验证队列清洗](experiments/01_2_validation_preprocessing/README.md) | 两套队列的表达矩阵、样本分组、质控和九基因覆盖表 | Completed |
 | 02 | [特征筛选](experiments/02_feature_selection/README.md) | D3/D7 交集和并集排序、ssGSEA 相关性、交叉验证与 Bootstrap 稳定性 | Completed |
-| 03 | [候选验证](experiments/03_validation/README.md) | 发现队列敏感性与两套独立队列的表达方向复核 | Pending |
+| 03 | [候选验证](experiments/03_validation/README.md) | 两套外部队列表达与 ROC、共表达与通路复核、单细胞定位 | Completed |
 | 04 | [候选优选](experiments/04_prioritization/README.md) | 候选排序、入选依据和证据摘要 | Pending |
 
 ## 阶段 02 结果

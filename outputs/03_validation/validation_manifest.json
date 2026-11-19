@@ -1,0 +1,28 @@
+{
+  "stage02_candidate_table_sha256_LF": "7f7254627a79c5db2c664cf073122089d1ee46c9c1b16eec4921b036245fdb5b",
+  "frozen_genes": [
+    "C1qtnf3",
+    "Cthrc1",
+    "Postn",
+    "Wisp1",
+    "Cemip",
+    "Cxadr",
+    "Kif26b",
+    "Col24a1",
+    "Mrc1"
+  ],
+  "primary_contrasts": [
+    "GSE111059: MI_D7 vs uninjured",
+    "GSE236374: MI_D7 vs sham"
+  ],
+  "gate": "two-sided Welch raw P < 0.05 and positive log2-scale mean difference in both",
+  "promoted": [
+    "C1qtnf3",
+    "Cthrc1",
+    "Postn",
+    "Wisp1",
+    "Cemip",
+    "Kif26b",
+    "Col24a1"
+  ]
+}

@@ -1,0 +1,23 @@
+Cohort	Score	Design	AUROC	CI_low	CI_high	AUPRC_AP
+GSE111059	C1qtnf3	fixed expression	1.0	1.0	1.0	1.0
+GSE111059	Cthrc1	fixed expression	1.0	1.0	1.0	1.0
+GSE111059	Postn	fixed expression	1.0	1.0	1.0	1.0
+GSE111059	Wisp1	fixed expression	1.0	1.0	1.0	1.0
+GSE111059	Cemip	fixed expression	1.0	1.0	1.0	1.0
+GSE111059	Cxadr	fixed expression	0.6666666666666667	0.0	1.0	0.6388888888888888
+GSE111059	Kif26b	fixed expression	1.0	1.0	1.0	1.0
+GSE111059	Col24a1	fixed expression	1.0	1.0	1.0	1.0
+GSE111059	Mrc1	fixed expression	1.0	1.0	1.0	1.0
+GSE111059	Frozen 9 (LOOCV)	fixed panel, within-cohort LOOCV	1.0	NA	NA	1.0
+GSE111059	Gate subset (LOOCV)	post-selection, within-cohort LOOCV	1.0	NA	NA	1.0
+GSE236374	C1qtnf3	fixed expression	1.0	1.0	1.0	1.0
+GSE236374	Cthrc1	fixed expression	1.0	1.0	1.0	1.0
+GSE236374	Postn	fixed expression	1.0	1.0	1.0	1.0
+GSE236374	Wisp1	fixed expression	1.0	1.0	1.0	1.0
+GSE236374	Cemip	fixed expression	1.0	1.0	1.0	1.0
+GSE236374	Cxadr	fixed expression	0.0	0.0	0.0	0.38333333333333336
+GSE236374	Kif26b	fixed expression	1.0	1.0	1.0	1.0
+GSE236374	Col24a1	fixed expression	1.0	1.0	1.0	1.0
+GSE236374	Mrc1	fixed expression	1.0	1.0	1.0	1.0
+GSE236374	Frozen 9 (LOOCV)	fixed panel, within-cohort LOOCV	1.0	NA	NA	1.0
+GSE236374	Gate subset (LOOCV)	post-selection, within-cohort LOOCV	1.0	NA	NA	1.0

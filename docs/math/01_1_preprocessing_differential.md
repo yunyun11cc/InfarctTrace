@@ -77,7 +77,7 @@ $$
 
 ### 2.1 log2FoldChange
 
-以 D7 对 D0 为例，$c^\mathsf{T}\hat\beta_i$ 取出两组在自然对数尺度的差，除以 $\ln 2$ 就得到结果表里的效应量。
+以 D7 对 D0 为例，$c^\mathsf{T}\hat\beta_i$  取出两组在自然对数尺度的差，除以 $\ln 2$ 就得到结果表里的效应量。
 
 $$
 \widehat{\log_2FC}_i

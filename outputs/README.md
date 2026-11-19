@@ -14,7 +14,7 @@
 | `01_1_preprocessing_differential/` | Completed | [阶段 01_1 结果与结论](../experiments/01_1_preprocessing_differential/results.md) |
 | `01_2_validation_preprocessing/` | Completed | [分队列矩阵与质控](../experiments/01_2_validation_preprocessing/README.md) · [清洗报告](01_2_validation_preprocessing/reports/cleaning_summary.json) · [九基因覆盖表](01_2_validation_preprocessing/tables/candidate_coverage.tsv) |
 | `02_feature_selection/` | Completed | [阶段 02 三版结果及 ssGSEA 热图](02_feature_selection/README.md) |
-| `03_validation/` | Pending | [阶段 03 README](../experiments/03_validation/README.md) |
+| `03_validation/` | Completed | [跨队列验证结果与图表](03_validation/README.md) |
 | `04_prioritization/` | Pending | [阶段 04 README](../experiments/04_prioritization/README.md) |
 
 ## 阶段 01_1 图表说明

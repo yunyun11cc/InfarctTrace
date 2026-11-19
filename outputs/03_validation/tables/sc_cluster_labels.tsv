@@ -1,0 +1,18 @@
+Cluster	N_cells	Suggested	Cell_type	Best_score	Second_label	Second_score	Annotation_basis
+0	2044	Macrophage	Macrophage	0.45461676	Mast cell	-0.0130328825	C1qa C1qb Csf1r Adgre1
+1	616	Unresolved	Unresolved myeloid	0.035033435	Macrophage	-0.0062851	Csf1r Adgre1 Cd68 and S100a8 mixed
+2	685	Unresolved	Unresolved myeloid	0.2376503	Macrophage	0.016232707	C1qa C1qb and S100a8 mixed
+3	918	Monocyte	Monocyte	1.0012969	Macrophage	0.091434866	Ly6c2 Ccr2 Plac8
+4	696	B cell	B cell	2.8777807	Mast cell	0.0075550843	Cd79a Cd79b Ms4a1 Cd19
+5	964	B cell	Mixed lymphoid	1.1471623	T cell	0.84943044	Cd79a Cd79b and Cd3d Trac
+6	441	NK cell	NK cell	3.5518067	Dendritic cell	0.19444458	Ncr1 Klrd1 Prf1 Nkg7
+7	892	Dendritic cell	DC-like myeloid	0.53532064	Macrophage	0.2258764	Flt3 Itgax alongside C1qa C1qb Cd68
+8	3054	Macrophage	Macrophage	0.65173703	Mast cell	-0.04812091	C1qa C1qb Cd68 Csf1r Adgre1
+9	1260	Neutrophil	Neutrophil	1.2872081	Monocyte	0.12231751	S100a8 Retnlg and granulocyte markers
+10	921	Monocyte	Monocyte	0.72350115	Macrophage	0.14664276	Ccr2 Plac8 Fcgr3 Ly6c2
+11	1124	Neutrophil	Neutrophil	0.70088106	Mast cell	-0.02767142	S100a8 Retnlg Csf3r
+12	767	T cell	T cell	2.46279	NK cell	0.45954838	Cd3d Cd3e Trac
+13	147	B cell	Mixed lymphoid	0.6804171	T cell	0.18872079	Cd79a Cd79b alongside Ly6c2 S100a8
+14	420	Fibroblast-like	Fibroblast-like	3.8278656	Dendritic cell	-0.0038343011	Dcn Lum Col1a1 Dpt Pdgfra in CD45-enriched prep
+15	60	Unresolved	Unresolved	0.020854294	Fibroblast-like	0.0130734965	Weak or mixed canonical lineage markers
+16	177	NK cell	Mixed lymphoid	2.2633471	T cell	1.3496084	Nkg7 Klrd1 alongside Cd3d Cd3e Trac

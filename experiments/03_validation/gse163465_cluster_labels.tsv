@@ -1,0 +1,18 @@
+Cluster	Cell_type	Annotation_basis
+0	Macrophage	C1qa C1qb Csf1r Adgre1
+1	Unresolved myeloid	Csf1r Adgre1 Cd68 and S100a8 mixed
+2	Unresolved myeloid	C1qa C1qb and S100a8 mixed
+3	Monocyte	Ly6c2 Ccr2 Plac8
+4	B cell	Cd79a Cd79b Ms4a1 Cd19
+5	Mixed lymphoid	Cd79a Cd79b and Cd3d Trac
+6	NK cell	Ncr1 Klrd1 Prf1 Nkg7
+7	DC-like myeloid	Flt3 Itgax alongside C1qa C1qb Cd68
+8	Macrophage	C1qa C1qb Cd68 Csf1r Adgre1
+9	Neutrophil	S100a8 Retnlg and granulocyte markers
+10	Monocyte	Ccr2 Plac8 Fcgr3 Ly6c2
+11	Neutrophil	S100a8 Retnlg Csf3r
+12	T cell	Cd3d Cd3e Trac
+13	Mixed lymphoid	Cd79a Cd79b alongside Ly6c2 S100a8
+14	Fibroblast-like	Dcn Lum Col1a1 Dpt Pdgfra in CD45-enriched prep
+15	Unresolved	Weak or mixed canonical lineage markers
+16	Mixed lymphoid	Nkg7 Klrd1 alongside Cd3d Cd3e Trac

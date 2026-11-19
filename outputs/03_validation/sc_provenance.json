@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "4ce64a86848b8af3c339a7ab645928d07fcc7344b24178b7f554f8d020243139",
+  "scanpy": "1.11.5",
+  "seed": 252027,
+  "retained_cells": 15186,
+  "highly_variable_features": 2192,
+  "Leiden_resolution": 0.65,
+  "libraries": [
+    [
+      "GSM4985022",
+      "Sham",
+      "Sham"
+    ],
+    [
+      "GSM4985023",
+      "Day_3",
+      "D3"
+    ],
+    [
+      "GSM4985024",
+      "Day_7",
+      "D7"
+    ]
+  ],
+  "inferential_unit": "GSM"
+}
