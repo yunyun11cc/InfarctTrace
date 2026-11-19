@@ -1,10 +1,10 @@
-# 阶段 01 数据处理与差异分析
+# 阶段 01_1 发现队列数据处理与差异分析
 
 **状态：Completed**
 
 本阶段对应原始实验方案的 2.2，使用 GSE252027 成纤维细胞文库，运行流程采用 Python。输入为定量归档、FB 样本表和小鼠基因注释。 [原始方案入口](../../docs/README.md) · [数据说明](../../datasets/README.md)
 
-第一次阅读可从 [阶段 01 流程说明](introduction.md) 开始，沿一个真实基因的记录理解输入、质控、差异检验和富集结果。
+第一次阅读可从 [阶段 01_1 流程说明](introduction.md) 开始，沿一个真实基因的记录理解输入、质控、差异检验和富集结果。
 
 ## 模块与运行顺序
 
@@ -19,17 +19,17 @@
 先按 [下载数据](../../scripts/README.md) 配置环境并恢复源文件，再从项目根目录按顺序执行。已有的注释快照可以复用。
 
 ```powershell
-uv run --locked python -X utf8 experiments\01_preprocessing_differential\prepare.py
-uv run --locked python -X utf8 experiments\01_preprocessing_differential\differential.py
-uv run --locked python -X utf8 experiments\01_preprocessing_differential\go_reference.py
-uv run --locked python -X utf8 experiments\01_preprocessing_differential\kegg_reference.py
-uv run --locked python -X utf8 experiments\01_preprocessing_differential\enrichment.py
-uv run --locked python -X utf8 experiments\01_preprocessing_differential\visualize.py
+uv run --locked python -X utf8 experiments\01_1_preprocessing_differential\prepare.py
+uv run --locked python -X utf8 experiments\01_1_preprocessing_differential\differential.py
+uv run --locked python -X utf8 experiments\01_1_preprocessing_differential\go_reference.py
+uv run --locked python -X utf8 experiments\01_1_preprocessing_differential\kegg_reference.py
+uv run --locked python -X utf8 experiments\01_1_preprocessing_differential\enrichment.py
+uv run --locked python -X utf8 experiments\01_1_preprocessing_differential\visualize.py
 ```
 
 ## 结果与结论
 
-当前结果在 `outputs/01_preprocessing_differential/` 下按矩阵、表格、图和报告分类。
+当前结果在 `outputs/01_1_preprocessing_differential/` 下按矩阵、表格、图和报告分类。
 
 - [结果与读图](results.md)
 - [阶段结论](results.md#6-阶段结论)
@@ -37,4 +37,4 @@ uv run --locked python -X utf8 experiments\01_preprocessing_differential\visuali
 
 ## 方法参考
 
-[样本和统计方案](protocol.md) · [数学原理与指标计算](../../docs/math/01_preprocessing_differential.md) · [中文数据阅读笔记](../../notebooks/README.md)
+[样本和统计方案](protocol.md) · [数学原理与指标计算](../../docs/math/01_1_preprocessing_differential.md) · [中文数据阅读笔记](../../notebooks/README.md)

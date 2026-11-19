@@ -1,10 +1,10 @@
-# 实验 01 数学原理与指标计算
+# 实验 01_1 数学原理与指标计算
 
-这份说明对应 InfarctTrace 阶段 01 的 **GSE252027 成纤维细胞全时段 Python 分析**。用同一条数据流理解各个数字：
+这份说明对应 InfarctTrace 阶段 01_1 的 **GSE252027 成纤维细胞全时段 Python 分析**。用同一条数据流理解各个数字：
 
 **定量结果 → 长度缩放计数 → 文库大小归一化 → 总体时间检验与逐时间点比较 → GO、KEGG、GSEA。**
 
-主分析为 D0、D1、D3、D7、D14、D28 六组，共 22 个文库。D28r4 排除敏感性分析用 21 个文库。早期 D7 对 D0 教学基线单独使用 8 个文库。以下实际数值以全时段 Python 输出为准。 [实验方案](../../experiments/01_preprocessing_differential/protocol.md) · [阶段 01 结果解读](../../experiments/01_preprocessing_differential/results.md)
+主分析为 D0、D1、D3、D7、D14、D28 六组，共 22 个文库。D28r4 排除敏感性分析用 21 个文库。早期 D7 对 D0 教学基线单独使用 8 个文库。以下实际数值以全时段 Python 输出为准。 [实验方案](../../experiments/01_1_preprocessing_differential/protocol.md) · [阶段 01_1 结果解读](../../experiments/01_1_preprocessing_differential/results.md)
 
 ## 1. TPM、计数与归一化
 
@@ -22,7 +22,7 @@ $$
 
 ### 1.2 将 TPM 转回计数尺度
 
-阶段 01 用与 `lengthScaledTPM` 相同的公式。设 $S$ 为**本次纳入**的文库集合，$G$ 为保留的基因行集合。
+阶段 01_1 用与 `lengthScaledTPM` 相同的公式。设 $S$ 为**本次纳入**的文库集合，$G$ 为保留的基因行集合。
 
 $$
 \overline L_i=\frac{1}{|S|}\sum_{j\in S}L_{ij},\qquad
@@ -45,7 +45,7 @@ $$
 \approx25.4506\ \longrightarrow\ C_{ij}=25.
 $$
 
-[项目转换代码](../../experiments/01_preprocessing_differential/prepare.py#L95) · [tximport 方法](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html)
+[项目转换代码](../../experiments/01_1_preprocessing_differential/prepare.py#L95) · [tximport 方法](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html)
 
 ### 1.3 低表达过滤和文库大小因子
 
@@ -61,7 +61,7 @@ $$
 
 实际拟合时，$s_j$ 作为模型里的已知偏移量使用。归一化矩阵用于查看表达大小等。结果表中的 `平均标准化计数`（`baseMean`）是这个基因在纳入文库中的 $C_{ij}^{\mathrm{norm}}$ 均值，和某一组的均值是两个不同的量。
 
-示例文库 `GSM7992326` 的大小因子约为 $0.99936774$，Cthrc1 的标准化计数约为 $25/0.99936774=25.01582$。Cthrc1 在 22 个文库的 `baseMean` 约为 $2386.59$。 [项目模型入口](../../experiments/01_preprocessing_differential/differential.py#L22) · [PyDESeq2 源码](https://github.com/scverse/PyDESeq2/blob/v0.5.4/pydeseq2/preprocessing.py)
+示例文库 `GSM7992326` 的大小因子约为 $0.99936774$，Cthrc1 的标准化计数约为 $25/0.99936774=25.01582$。Cthrc1 在 22 个文库的 `baseMean` 约为 $2386.59$。 [项目模型入口](../../experiments/01_1_preprocessing_differential/differential.py#L22) · [PyDESeq2 源码](https://github.com/scverse/PyDESeq2/blob/v0.5.4/pydeseq2/preprocessing.py)
 
 ## 2. 负二项模型和效应量
 
@@ -130,7 +130,7 @@ $$
 
 自由度为 $6-1=5$。LRT 的零假设是**六组表达均值相等**。结果表的 `LRT统计量` 表示增加时间组参数带来的拟合改善。若总体检验显著，再读 Wald 表定位哪一天变化及其方向。
 
-Cthrc1 的总体 LRT 统计量为 $657.9594$，原始 P 值约为 $6.03\times10^{-140}$，校正后约为 $5.77\times10^{-136}$。D7 的 Wald P 值和总体 P 值回答不同问题。 [项目 LRT 实现](../../experiments/01_preprocessing_differential/differential.py#L37) · [时间因子与 LRT](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#likelihood-ratio-test)
+Cthrc1 的总体 LRT 统计量为 $657.9594$，原始 P 值约为 $6.03\times10^{-140}$，校正后约为 $5.77\times10^{-136}$。D7 的 Wald P 值和总体 P 值回答不同问题。 [项目 LRT 实现](../../experiments/01_1_preprocessing_differential/differential.py#L37) · [时间因子与 LRT](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#likelihood-ratio-test)
 
 ## 4. Cook 距离、校正后 P 值与筛选门槛
 
@@ -156,7 +156,7 @@ $$
 
 例如 3 个 P 值 $0.010,0.040,0.045$，先乘 $m/k$ 得 $0.030,0.060,0.045$，再从右向左取最小值，得到 $0.030,0.045,0.045$。最后映射回原基因。FDR 指重复执行筛选时，发现名单中假发现比例的期望值。`padj` 是针对多重检验计算的校正值。
 
-阶段 01 使用以下校正口径：
+阶段 01_1 使用以下校正口径：
 
 | 输出 | 哪些 P 值一起校正 | 如何判定 |
 |---|---|---|
@@ -175,7 +175,7 @@ $$
 J(A,B)=\frac{|A\cap B|}{|A\cup B|}.
 $$
 
-D28 对 D0 的两份名单分别有 866 和 609 个基因，共同入选 524 个，所以 $J=524/(866+609-524)=0.551$。总体时间效应的 $J$ 约为 0.869。这个数衡量名单重合程度。要看某个候选是否受 D28r4 影响，还需同时查看两次拟合的效应量与校正后 P 值。 [敏感性结果说明](../../experiments/01_preprocessing_differential/results.md)
+D28 对 D0 的两份名单分别有 866 和 609 个基因，共同入选 524 个，所以 $J=524/(866+609-524)=0.551$。总体时间效应的 $J$ 约为 0.869。这个数衡量名单重合程度。要看某个候选是否受 D28r4 影响，还需同时查看两次拟合的效应量与校正后 P 值。 [敏感性结果说明](../../experiments/01_1_preprocessing_differential/results.md)
 
 ## 5. 标准化图、PCA、热图和火山图
 
@@ -194,7 +194,7 @@ v(x)=\log_2\!\left(
 \right).
 $$
 
-例如 Cthrc1 在 `GSM7992326` 的归一化计数为 25.01582，当前 VST 值约为 6.53641。VST 用于图 3、图 4。 [项目绘图实现](../../experiments/01_preprocessing_differential/visualize.py) · [PyDESeq2 VST 实现](https://github.com/scverse/PyDESeq2/blob/v0.5.4/pydeseq2/dds.py)
+例如 Cthrc1 在 `GSM7992326` 的归一化计数为 25.01582，当前 VST 值约为 6.53641。VST 用于图 3、图 4。 [项目绘图实现](../../experiments/01_1_preprocessing_differential/visualize.py) · [PyDESeq2 VST 实现](https://github.com/scverse/PyDESeq2/blob/v0.5.4/pydeseq2/dds.py)
 
 ## 6. GO 与 KEGG 过度富集
 
@@ -225,7 +225,7 @@ $$
 | GO 细胞外基质组织 `GO:0030198` | 14,884 | 284 | 1,169 | 54 | 22.31 | 2.42 | $8.38\times10^{-10}$ | $1.34\times10^{-7}$ |
 | KEGG 细胞外基质与受体相互作用 `mmu04512` | 6,881 | 82 | 600 | 26 | 7.15 | 3.64 | $2.57\times10^{-9}$ | $8.96\times10^{-7}$ |
 
-同一个时间比较在 GO 和 KEGG 中有各自的背景与候选数，因为两个数据库的覆盖范围不同。 [项目 ORA 实现](../../experiments/01_preprocessing_differential/enrichment.py#L55) · [SciPy 超几何分布](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.hypergeom.html)
+同一个时间比较在 GO 和 KEGG 中有各自的背景与候选数，因为两个数据库的覆盖范围不同。 [项目 ORA 实现](../../experiments/01_1_preprocessing_differential/enrichment.py#L55) · [SciPy 超几何分布](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.hypergeom.html)
 
 ## 7. GSEA 的 ES、NES、P 值与核心基因
 
@@ -243,11 +243,11 @@ $$
 
 零分布来自随机基因集的富集分数。NES 将实际 ES 除以对应方向零分布 ES 的平均绝对大小，使不同集合的分数更可比。名义 P 值衡量同方向下随机基因集得到至少同样极端 ES 的尾概率。本轮使用 GSEApy multilevel 估计该概率，集合重合大小限制为 15–500，估计下限为 $10^{-10}$。代码再按时间比较对名义 P 值作 BH 校正。
 
-例如 D7 对 D0 的 `mmu04512` 共有 **16,368 个基因参与排序**，其中 **82 个属于该通路**。`ES` 为 $0.58339$，`NES` 为 $1.97520$，说明它偏向上调端。该例名义 P 值约为 $9.01\times10^{-7}$，校正后约为 $1.68\times10^{-5}$。NES 衡量整条基因集在排序中的偏向程度。 [项目 GSEA 实现](../../experiments/01_preprocessing_differential/enrichment.py#L80) · [GSEApy prerank 文档](https://gseapy.readthedocs.io/en/latest/run.html#gseapy.prerank)
+例如 D7 对 D0 的 `mmu04512` 共有 **16,368 个基因参与排序**，其中 **82 个属于该通路**。`ES` 为 $0.58339$，`NES` 为 $1.97520$，说明它偏向上调端。该例名义 P 值约为 $9.01\times10^{-7}$，校正后约为 $1.68\times10^{-5}$。NES 衡量整条基因集在排序中的偏向程度。 [项目 GSEA 实现](../../experiments/01_1_preprocessing_differential/enrichment.py#L80) · [GSEApy prerank 文档](https://gseapy.readthedocs.io/en/latest/run.html#gseapy.prerank)
 
 ## 8. 指标与结果文件索引
 
-以下文件位于 `outputs/01_preprocessing_differential/`。
+以下文件位于 `outputs/01_1_preprocessing_differential/`。
 
 | 文件 | 主要用来回答什么 |
 |---|---|

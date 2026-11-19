@@ -1,6 +1,6 @@
-"""阶段 01 的路径常量。
+"""阶段 01_1 的路径常量。
 
-所有阶段 01 脚本都从这里取目录，不在各模块里重复拼接相对路径。
+所有阶段 01_1 脚本都从这里取目录，不在各模块里重复拼接相对路径。
 路径以本文件位置为基准、从阶段目录向上两级定位项目根目录，因此无论从项目根、
 `experiments/` 还是阶段目录启动，读写位置都一致。
 
@@ -13,11 +13,11 @@
 
 from pathlib import Path
 
-# 项目根目录：experiments/01_preprocessing_differential/paths.py 的上两级
+# 项目根目录：experiments/01_1_preprocessing_differential/paths.py 的上两级
 ROOT = Path(__file__).resolve().parents[2]
 
-# 阶段 01 输出根目录，与 experiments/ 下的阶段目录同名
-OUT = ROOT / 'outputs/01_preprocessing_differential'
+# 阶段 01_1 输出根目录，与 experiments/ 下的阶段目录同名
+OUT = ROOT / 'outputs/01_1_preprocessing_differential'
 
 # 四类输出目录，按用途分开存放，便于索引和对照
 MATRICES = OUT / 'matrices'

@@ -1,0 +1,15 @@
+GSM	Title	Group	Condition	Day	Replicate	Source_column	Platform	Tissue	Included
+GSM3021170	CF uninjured, biological rep1	uninjured	uninjured	0	1	GSM3021170	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021171	CF uninjured, biological rep2	uninjured	uninjured	0	2	GSM3021171	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021172	CF uninjured, biological rep3	uninjured	uninjured	0	3	GSM3021172	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021173	CF 3D post-MI, biological rep1	MI_D3	MI	3	1	GSM3021173	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021174	CF 3D post-MI, biological rep2	MI_D3	MI	3	2	GSM3021174	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021175	CF 3D post-MI, biological rep3	MI_D3	MI	3	3	GSM3021175	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021176	CF 7D post-MI, biological rep1	MI_D7	MI	7	1	GSM3021176	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021177	CF 7D post-MI, biological rep2	MI_D7	MI	7	2	GSM3021177	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021178	CF 7D post-MI, biological rep3	MI_D7	MI	7	3	GSM3021178	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021179	CF 2W post-MI, biological rep1	MI_D14	MI	14	1	GSM3021179	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021180	CF 2W post-MI, biological rep2	MI_D14	MI	14	2	GSM3021180	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021181	CF 4W post-MI, biological rep1	MI_D28	MI	28	1	GSM3021181	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021182	CF 4W post-MI, biological rep2	MI_D28	MI	28	2	GSM3021182	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True
+GSM3021183	CF 4W post-MI, biological rep3	MI_D28	MI	28	3	GSM3021183	GPL23038	sorted TCF21-lineage cardiac fibroblasts	True

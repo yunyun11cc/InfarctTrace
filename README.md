@@ -1,6 +1,6 @@
 # InfarctTrace
 
-InfarctTrace 使用小鼠心梗后的成纤维细胞时序转录组 **GSE252027**，筛选与炎症向纤维化转变相关的候选基因。计算分析交付候选排序和表达证据，靶向干预及纤维化表型验证由医学合作方完成。
+InfarctTrace 使用小鼠心梗后的成纤维细胞时序转录组 **GSE252027**，筛选与炎症向纤维化转变相关的候选基因。独立成纤维细胞芯片 **GSE111059** 和心脏组织 RNA-seq **GSE236374** 用于复核表达方向。计算分析交付候选排序和表达证据，靶向干预及纤维化表型验证由医学合作方完成。
 
 ## 从数据到结果
 
@@ -19,21 +19,25 @@ InfarctTrace/
 │   ├── GSE252027/
 │   │   ├── metadata/                       # 样本表、分组与归档检查
 │   │   └── original/                       # 下载后在本地生成的定量归档
+│   ├── GSE111059/                          # 成纤维细胞芯片验证集
+│   ├── GSE236374/                          # 心脏组织 RNA-seq 验证集
 │   └── annotation/                         # 本地基因与通路注释
 ├── experiments/                            # 分阶段组织分析代码和说明
-│   ├── 01_preprocessing_differential/       # 质控、归一化、差异和富集
+│   ├── 01_1_preprocessing_differential/       # 质控、归一化、差异和富集
 │   │   ├── prepare.py
 │   │   ├── differential.py
 │   │   ├── enrichment.py
 │   │   ├── visualize.py
 │   │   ├── protocol.md                     # 样本纳入与统计口径
 │   │   └── results.md                      # 结果、读图与阶段结论
+│   ├── 01_2_validation_preprocessing/      # 两套外部验证数据清洗
 │   ├── 02_feature_selection/               # D3/D7 筛选、ssGSEA、交叉验证与 Bootstrap
 │   ├── 03_validation/
 │   └── 04_prioritization/
 ├── outputs/                                # 与实验阶段同名的结果目录
 │   ├── README.md                           # 图表和文件索引
-│   ├── 01_preprocessing_differential/      # 表达矩阵、差异统计表、图片与报告
+│   ├── 01_1_preprocessing_differential/      # 表达矩阵、差异统计表、图片与报告
+│   ├── 01_2_validation_preprocessing/       # 按验证队列保存矩阵、样本和质控
 │   └── 02_feature_selection/               # 阶段 02 全部结果
 │       ├── intersection_6/                # 原始六文库交集筛选
 │       ├── intersection_22/               # 全部主分析文库的交集筛选
@@ -53,13 +57,14 @@ InfarctTrace/
 
 ## 实验框架
 
-**数据下载 → 01 数据处理与差异分析 → 02 特征筛选 → 03 队列内验证 → 04 候选优选**
+**01_1 发现队列数据处理 → 02 特征筛选 → 03 候选验证 → 04 候选优选**。01_2 独立清洗外部队列，为阶段 03 准备数据。
 
 | 阶段 | 模块入口 | 交付物 | 状态 |
 |---|---|---|---|
-| 01 | [数据处理与差异分析](experiments/01_preprocessing_differential/README.md) | 样本质控、归一化矩阵、时序差异和通路富集 | Completed |
+| 01_1 | [发现队列数据处理与差异分析](experiments/01_1_preprocessing_differential/README.md) | 样本质控、归一化矩阵、时序差异和通路富集 | Completed |
+| 01_2 | [外部验证队列清洗](experiments/01_2_validation_preprocessing/README.md) | 两套队列的表达矩阵、样本分组、质控和九基因覆盖表 | Completed |
 | 02 | [特征筛选](experiments/02_feature_selection/README.md) | D3/D7 交集和并集排序、ssGSEA 相关性、交叉验证与 Bootstrap 稳定性 | Completed |
-| 03 | [候选验证](experiments/03_validation/README.md) | GSE252027 队列内的稳定性与时间趋势证据 | Pending |
+| 03 | [候选验证](experiments/03_validation/README.md) | 发现队列敏感性与两套独立队列的表达方向复核 | Pending |
 | 04 | [候选优选](experiments/04_prioritization/README.md) | 候选排序、入选依据和证据摘要 | Pending |
 
 ## 阶段 02 结果
@@ -77,7 +82,7 @@ InfarctTrace/
 
 ### 复现 22 文库并集版
 
-在项目根目录运行以下命令。第一步读取已有的阶段 01 输出。若已有并集排序表，可直接运行所需的下游脚本。 [阶段 02 运行说明](experiments/02_feature_selection/README.md)
+在项目根目录运行以下命令。第一步读取已有的阶段 01_1 输出。若已有并集排序表，可直接运行所需的下游脚本。 [阶段 02 运行说明](experiments/02_feature_selection/README.md)
 
 ```sh
 uv run --locked python experiments/02_feature_selection/select_features.py --union

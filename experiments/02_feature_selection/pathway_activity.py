@@ -98,7 +98,7 @@ def run_analysis(output):
     days = metadata.loc[metadata['主分析纳入'].eq('是'), '时间点（天）']
     vst = pd.read_csv(STAGE_ONE / 'matrices/timecourse_vst.tsv.gz', sep='\t', index_col='基因ID')
     if days.value_counts().to_dict() != MAIN_LIBRARY_COUNTS or set(days.index) != set(vst.columns):
-        raise ValueError('VST 矩阵与阶段 01 的 22 份主分析文库不一致')
+        raise ValueError('VST 矩阵与阶段 01_1 的 22 份主分析文库不一致')
     vst = vst.loc[:, days.index]
 
     membership = pd.read_csv(HERE / 'ssgsea_pathway_membership.tsv', sep='\t')

@@ -1,10 +1,11 @@
 # 数据说明
 
-当前分析只使用 **GSE252027** 总 RNA 系列，聚焦小鼠心脏成纤维细胞。先运行 [数据下载脚本](../scripts/README.md) 恢复源文件，再用下面的说明核对分析输入。
+**GSE252027** 是小鼠心脏成纤维细胞发现队列。**GSE111059** 和 **GSE236374** 用于独立复核候选表达。发现队列源文件由 [数据下载脚本](../scripts/README.md) 恢复，验证队列由 01_2 清洗脚本下载和校验。
 
 | 数据 | 用途 |
 |---|---|
 | [GSE252027 数据手册](GSE252027/README.md) | 采样时间、FB 文库、三个 metadata CSV、定量格式、TPM 与计数、质控状态 |
+| [01_2 数据清洗说明](../experiments/01_2_validation_preprocessing/README.md) | GSE111059 的成纤维细胞芯片和 GSE236374 的心脏组织 RNA-seq，含源文件、分组、矩阵与质控 |
 | [基因注释来源](../provenance/annotation_download_2026-11-08.json) | GRCm38.87 注释的来源、校验值与使用范围 |
 | [数据与论文参考](../docs/guides/dataset-reference.md) | GEO 记录、原始论文、作者代码和引用 |
 

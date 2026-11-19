@@ -1,0 +1,10 @@
+GSM	Title	Group	Condition	Day	Replicate	Source_column	Platform	Tissue	Included
+GSM7528854	Heart, Sham, rep1	sham	Sham		1	MI_sham_1	GPL24247	bulk heart tissue	True
+GSM7528855	Heart, Sham, rep2	sham	Sham		2	MI_sham_2	GPL24247	bulk heart tissue	True
+GSM7528856	Heart, Sham, rep3	sham	Sham		3	MI_sham_3	GPL24247	bulk heart tissue	True
+GSM7528857	Heart, Myocardial infarction, 7days, rep1	MI_D7	MI	7	1	MI_7d_1	GPL24247	bulk heart tissue	True
+GSM7528858	Heart, Myocardial infarction, 7days, rep2	MI_D7	MI	7	2	MI_7d_2	GPL24247	bulk heart tissue	True
+GSM7528859	Heart, Myocardial infarction, 7days, rep3	MI_D7	MI	7	3	MI_7d_3	GPL24247	bulk heart tissue	True
+GSM7528860	Heart, Myocardial infarction, 28days, rep1	MI_D28	MI	28	1	MI_28d_1	GPL24247	bulk heart tissue	True
+GSM7528861	Heart, Myocardial infarction, 28days, rep2	MI_D28	MI	28	2	MI_28d_2	GPL24247	bulk heart tissue	True
+GSM7528862	Heart, Myocardial infarction, 28days, rep3	MI_D28	MI	28	3	MI_28d_3	GPL24247	bulk heart tissue	True

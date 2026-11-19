@@ -68,7 +68,7 @@ def main():
                 print(f'FAILED: {exc}', flush=True)
     report = dict(checked_at_utc=datetime.now(timezone.utc).isoformat(),
                   results=sorted(results, key=lambda r: r['path']), failures=failures)
-    out = ROOT / 'outputs/01_preprocessing_differential/reports/download_verification.json'
+    out = ROOT / 'outputs/01_1_preprocessing_differential/reports/download_verification.json'
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     if failures:

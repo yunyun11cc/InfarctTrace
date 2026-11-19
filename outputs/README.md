@@ -1,22 +1,23 @@
 # 输出目录
 
-实验结果随代码纳入版本控制。四个阶段与 `experiments/` 下的同名目录对应，每阶段按用途分为四类。
+实验结果随代码纳入版本控制。结果目录与 `experiments/` 下的阶段目录对应。
 
 | 子目录 | 格式和用途 |
 |---|---|
 | `matrices/` | `.tsv.gz`。表达矩阵、计数矩阵及配套基因注释 |
-| `tables/` | `.csv`、`.tsv`。样本信息、质控、差异或候选结果。表头使用中文 |
+| `tables/` | `.csv`、`.tsv`、`.tsv.gz`。样本信息、质控、差异或候选结果 |
 | `figures/` | `.png`。带中文图题、坐标、图例和必要图注的科研图 |
 | `reports/` | `.json`。参数、运行摘要和校验记录，保留稳定的字段名以便脚本读取 |
 
 | 阶段 | 状态 | 输出入口 |
 |---|---|---|
-| `01_preprocessing_differential/` | Completed | [阶段 01 结果与结论](../experiments/01_preprocessing_differential/results.md) |
+| `01_1_preprocessing_differential/` | Completed | [阶段 01_1 结果与结论](../experiments/01_1_preprocessing_differential/results.md) |
+| `01_2_validation_preprocessing/` | Completed | [分队列矩阵与质控](../experiments/01_2_validation_preprocessing/README.md) · [清洗报告](01_2_validation_preprocessing/reports/cleaning_summary.json) · [九基因覆盖表](01_2_validation_preprocessing/tables/candidate_coverage.tsv) |
 | `02_feature_selection/` | Completed | [阶段 02 三版结果及 ssGSEA 热图](02_feature_selection/README.md) |
 | `03_validation/` | Pending | [阶段 03 README](../experiments/03_validation/README.md) |
 | `04_prioritization/` | Pending | [阶段 04 README](../experiments/04_prioritization/README.md) |
 
-## 阶段 01 图表说明
+## 阶段 01_1 图表说明
 
 | 编号与标题 | 文件 | 读表和读图说明 |
 |---|---|---|
@@ -29,4 +30,4 @@
 | 图 5 心梗后各时间点相对未损伤对照的差异表达 | `figures/05_timecourse_volcano.png` | 五个 Wald 对比，虚线标记效应与校正后 P 值门槛 |
 | 图 6 心梗后第 7 天的功能与通路富集 | `figures/06_enrichment_D7.png` | GO 生物过程、KEGG 上调过度富集和正负方向 GSEA |
 
-全时段的样本取舍、差异数量、敏感性与富集表如何阅读，见 [阶段 01 结果解读](../experiments/01_preprocessing_differential/results.md)。
+全时段的样本取舍、差异数量、敏感性与富集表如何阅读，见 [阶段 01_1 结果解读](../experiments/01_1_preprocessing_differential/results.md)。

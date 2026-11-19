@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 ROOT = Path(__file__).resolve().parents[2]
-STAGE_ONE = ROOT / 'outputs/01_preprocessing_differential'
+STAGE_ONE = ROOT / 'outputs/01_1_preprocessing_differential'
 STAGE_TWO = ROOT / 'outputs/02_feature_selection'
 D3_D7_OUTPUT = STAGE_TWO / 'intersection_6'
 OUTPUT = STAGE_TWO / 'intersection_22'
@@ -109,7 +109,7 @@ def run_selection(output, d3_d7_only=False, use_union=False):
     days = days.sort_index()
     expected_counts = {3: 2, 7: 4} if d3_d7_only else MAIN_LIBRARY_COUNTS
     if days.value_counts().to_dict() != expected_counts:
-        raise ValueError(f'文库数量与阶段 01 主分析不符，预期各时点文库数为 {expected_counts}')
+        raise ValueError(f'文库数量与阶段 01_1 主分析不符，预期各时点文库数为 {expected_counts}')
 
     vst = pd.read_csv(STAGE_ONE / 'matrices/timecourse_vst.tsv.gz', sep='\t', encoding='utf-8-sig', index_col='基因ID')
     expression = vst.loc[candidates.index, days.index].T
@@ -159,8 +159,8 @@ def run_selection(output, d3_d7_only=False, use_union=False):
 
     pool = '并集' if use_union else '交集'
     summary = {
-        'scikit-learn': sklearn.__version__, '候选池': f'全队列阶段01的D3对D0和D7对D0差异基因{pool}',
-        '表达矩阵': '全队列阶段01 VST', '评估范围': '固定候选池内文库扰动的描述性稳定性',
+        'scikit-learn': sklearn.__version__, '候选池': f'全队列阶段01_1的D3对D0和D7对D0差异基因{pool}',
+        '表达矩阵': '全队列阶段01_1 VST', '评估范围': '固定候选池内文库扰动的描述性稳定性',
         '文库': {str(day): days.index[days.eq(day)].tolist() for day in sorted(days.unique())},
         f'{pool}基因数': len(ranking), '方向计数': ranking['相对D0方向'].value_counts().to_dict(),
         '每次目标入选数': TOP_K, '并列规则': '保留边界并列的正分数（用绝对值排序）',
