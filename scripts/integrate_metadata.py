@@ -45,7 +45,7 @@ tpm_final = tpm_df[valid_samples]
 metadata_final = metadata_df.loc[valid_samples]
 
 # 5. 为 PyDESeq2 准备数据
-# PyDESeq2 要求输入是：行是样本，列是基因！
+# PyDESeq2 要求输入是：行是样本，列是基因
 # 所以我们要把它们转置 (.T)
 counts_for_deseq = counts_final.T
 counts_for_deseq.index.name = 'SampleID'

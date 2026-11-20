@@ -8,6 +8,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
+from matplotlib.colors import LinearSegmentedColormap
 from matplotlib.ticker import MaxNLocator
 import numpy as np
 import pandas as pd
@@ -246,22 +247,68 @@ def plot_expression_auc(scores_by_cohort, metrics):
         plt.close(fig)
 
 
-def heatmap(tables, name):
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5.5), layout='constrained')
-    for ax, table in zip(axes, tables):
-        mat = table.pivot(index='Gene', columns='Target', values='Spearman_rho').reindex(GENES)
-        im = ax.imshow(mat, cmap='RdBu_r', vmin=-1, vmax=1, aspect='auto')
-        ax.set(xticks=range(len(mat.columns)), xticklabels=mat.columns,
-               yticks=range(len(GENES)), yticklabels=GENES, title=table.Cohort.iat[0])
-        ax.tick_params(axis='x', rotation=30)
-        for i, j in np.ndindex(mat.shape):
-            value = mat.iloc[i, j]
-            ax.text(j, i, f'{value:.2f}' if np.isfinite(value) else 'NA', ha='center', va='center',
-                    color='white' if abs(value) > .7 else 'black', fontsize=8)
-    fig.colorbar(im, ax=axes, label='Spearman rho', shrink=.8)
-    fig.suptitle('Pooled across time points within each cohort')
-    fig.savefig(OUT / 'figures' / f'{name}.png', dpi=200)
-    plt.close(fig)
+def plot_correlation_dots(tables, name):
+    """并排呈现两个外部队列的 Spearman 相关系数和 BH 校正显著性。"""
+    available = {f.name for f in font_manager.fontManager.ttflist}
+    font = next((f for f in ('Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', 'SimHei')
+                 if f in available), None)
+    ink, muted = '#172b3a', '#4a565f'
+    cmap = LinearSegmentedColormap.from_list('correlation', ['#256080', '#f3f3f3', '#a6492e'])
+    is_pathway = name == 'pathway_correlations'
+    targets = tables[0].Target.drop_duplicates().tolist()
+    pathway_labels = {
+        'NLRP3 inflammasome': 'NLRP3 炎性小体' if font else 'NLRP3 inflammasome',
+        'Extracellular matrix organization': '细胞外基质组织' if font else 'Extracellular matrix\norganization',
+        'Collagen formation': '胶原形成' if font else 'Collagen formation',
+    }
+    labels = [pathway_labels.get(target, target) for target in targets]
+    title = ('候选基因与 ssGSEA 通路活性的相关性' if is_pathway else '候选基因与经典标志物的共表达')
+    if not font:
+        title = 'Candidate genes and ssGSEA pathway activity' if is_pathway else 'Candidate gene and marker co-expression'
+    family = ['DejaVu Sans', font] if font else ['DejaVu Sans']
+    with plt.rc_context({'font.family': family, 'text.color': ink, 'xtick.color': ink, 'ytick.color': ink}):
+        fig, axes = plt.subplots(1, 2, figsize=(12, 6.6), sharey=True, facecolor='white')
+        fig.subplots_adjust(left=.125, right=.96, bottom=.19, top=.76, wspace=.18)
+        fig.text(.125, .94, title, fontsize=20, fontweight='bold')
+        fig.text(.125, .885, '外部队列内合并各采样日计算 Spearman 相关系数' if font
+                 else 'Spearman correlations across all sampling days within each external cohort',
+                 fontsize=11, color=muted)
+        for ax, table in zip(axes, tables):
+            rho = table.pivot(index='Gene', columns='Target', values='Spearman_rho').reindex(
+                index=GENES, columns=targets).to_numpy()
+            q = table.pivot(index='Gene', columns='Target', values='BH_q').reindex(
+                index=GENES, columns=targets).to_numpy()
+            rows, columns = np.where(np.isfinite(rho))
+            values = rho[rows, columns]
+            # 用同一色标和面积比例比较两个队列，保留零相关的小圆点。
+            dots = ax.scatter(columns, rows, s=16 + 132 * np.abs(values), c=values, cmap=cmap,
+                              vmin=-1, vmax=1, edgecolor='#7b8790', linewidth=.45)
+            for i, j in np.ndindex(rho.shape):
+                value = rho[i, j]
+                stars = '**' if q[i, j] < .01 else '*' if q[i, j] < .05 else ''
+                if np.isfinite(value):
+                    ax.annotate(f'{value:.2f}{stars}', (j, i), xytext=(0, -7), textcoords='offset points',
+                                ha='center', va='top', fontsize=9)
+                else:
+                    ax.text(j, i, 'NA', ha='center', va='center', fontsize=9, color=muted)
+            ax.set(xlim=(-.5, len(targets) - .5), ylim=(len(GENES) - .33, -.58))
+            ax.set_xticks(range(len(targets)), labels)
+            ax.set_yticks(range(len(GENES)), GENES, fontstyle='italic')
+            ax.xaxis.tick_top()
+            ax.tick_params(axis='both', length=0, labelsize=10, pad=8)
+            ax.set_title(table.Cohort.iat[0], y=1.095, fontsize=13, fontweight='bold')
+            ax.spines[:].set_visible(False)
+            ax.spines['top'].set_visible(True)
+            ax.spines['top'].set_color('#909da6')
+        cax = fig.add_axes((.125, .125, .36, .026))
+        fig.colorbar(dots, cax=cax, orientation='horizontal', ticks=[-1, -.5, 0, .5, 1])
+        cax.tick_params(labelsize=9)
+        fig.text(.51, .138, 'Spearman ρ  |  圆点越大，相关越强' if font
+                 else 'Spearman ρ  |  Dot area increases with |ρ|', fontsize=10, va='center')
+        fig.text(.125, .038, '* BH q < 0.05，** BH q < 0.01' if font
+                 else '* BH q < 0.05, ** BH q < 0.01', fontsize=10, color=muted)
+        fig.savefig(OUT / 'figures' / f'{name}.png', dpi=240)
+        plt.close(fig)
 
 
 def main():
@@ -306,8 +353,8 @@ def main():
     save(pd.concat(pathway, ignore_index=True), 'pathway_correlations')
     save(pd.concat(align, ignore_index=True), 'pathway_coverage')
     plot_expression_auc(results, roc)
-    heatmap(marker, 'marker_correlations')
-    heatmap(pathway, 'pathway_correlations')
+    plot_correlation_dots(marker, 'marker_correlations')
+    plot_correlation_dots(pathway, 'pathway_correlations')
 
 
 if __name__ == '__main__':

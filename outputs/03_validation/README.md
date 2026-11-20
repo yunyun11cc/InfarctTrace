@@ -3,7 +3,7 @@
 阶段 02 的九个候选均在两个外部矩阵中检出。D7 对各自对照的双侧 Welch 检验按原始 P < 0.05、log₂ 尺度均值差 > 0 判定双队列晋级。 [方法与复现](../../experiments/03_validation/README.md)
 
 | 基因 | GSE111059 均值差 | P | GSE236374 均值差 | P | 晋级 |
-|---|---:|---:|---:|---:|---|
+| ---     | --- | --- | ---:| ---:| ---|
 | C1qtnf3 | +5.86 | 0.00153 | +5.90 | 0.000791 | 是 |
 | Cthrc1 | +9.05 | 0.00000589 | +6.54 | 0.0000102 | 是 |
 | Postn | +2.61 | 0.00261 | +5.64 | 0.000432 | 是 |
@@ -28,7 +28,7 @@
 | 九基因切片与映射 | [GSE111059 切片](tables/GSE111059_frozen_expression.tsv) · [GSE236374 切片](tables/GSE236374_frozen_expression.tsv) · [ID 核对](tables/bulk_gene_mapping.tsv) |
 | 外部表达箱线图与全部对比 | [芯片图](figures/GSE111059_expression.png) · [全心 RNA-seq 图](figures/GSE236374_expression.png) · [Welch 与 BH 结果](tables/bulk_expression_tests.tsv) |
 | D7 外部表达分布与判别指标 | [九基因箱线图、散点及单基因 AUC](figures/bulk_roc.png) · [单基因和联合模型的 AUROC、区间与 AUPRC](tables/bulk_roc_metrics.tsv) |
-| 经典标志物共表达及 ssGSEA | [标志物图](figures/marker_correlations.png) · [通路图](figures/pathway_correlations.png) · [标志物统计](tables/marker_correlations.tsv) · [通路统计](tables/pathway_correlations.tsv) |
+| 经典标志物共表达及 ssGSEA | [标志物相关点图](figures/marker_correlations.png) · [通路相关点图](figures/pathway_correlations.png) · [标志物统计](tables/marker_correlations.tsv) · [通路统计](tables/pathway_correlations.tsv) |
 | 单细胞定位与时间变化 | [UMAP 特征图](figures/single_cell_umap_features.png) · [气泡图](figures/single_cell_dotplot.png) · [逐文库表达](tables/sc_expression_by_group.tsv) · [对 Sham 的描述性变化](tables/sc_time_deltas.tsv) |
 | 单细胞质控与标注 | [文库质控](tables/sc_library_qc.tsv) · [簇注释](tables/sc_cluster_labels.tsv) · [独立标志物表达](tables/sc_cluster_marker_expression.tsv) |
 
