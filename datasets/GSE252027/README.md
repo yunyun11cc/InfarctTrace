@@ -64,7 +64,7 @@ GSE252027 是小鼠心肌梗死后心脏细胞的总 RNA 表达数据。本项�
 
 ## 4 整理后到哪一步
 
-阶段 01_1 生成了 `FB_TPM.tsv.gz`、`FB_NumReads.tsv.gz`、`FB_EffectiveLength.tsv.gz` 三张 **51,029 个基因 × 24 个文库**的矩阵。它们的基因行与 GSM 列一致，格子分别存相对丰度、估计片段数和有效长度。基因注释文件 `gene_annotation.tsv.gz` 给出基因符号和类型。结果位置见 [输出索引](../../outputs/README.md)。
+阶段 01 生成了 `FB_TPM.tsv.gz`、`FB_NumReads.tsv.gz`、`FB_EffectiveLength.tsv.gz` 三张 **51,029 个基因 × 24 个文库**的矩阵。它们的基因行与 GSM 列一致，格子分别存相对丰度、估计片段数和有效长度。基因注释文件 `gene_annotation.tsv.gz` 给出基因符号和类型。结果位置见 [输出索引](../../docs/outputs.md)。
 
 | 步骤 | 全时段分析进度 |
 |---|---|
@@ -73,6 +73,6 @@ GSE252027 是小鼠心肌梗死后心脏细胞的总 RNA 表达数据。本项�
 | 差异分析 | 19,312 个基因进入 Python 全时段模型。总体时间效应达门槛 11,480 个，另有五个时间点与 D0 的 PyDESeq2 Wald 对比结果 |
 | GO、KEGG、GSEA | 已对五个时间对比分别完成 GO、KEGG 过度富集与 KEGG GSEA |
 
-全时段差异模型读取 **长度缩放后的整数计数矩阵和六组样本分组表**。代码使用 TPM、平均有效长度和估计片段总量生成计数，再由模型进行文库大小归一化。`timecourse_length_scaled_counts.tsv.gz` 保存模型输入，`timecourse_normalized_counts.tsv.gz` 保存拟合后的归一化计数。此前 D7 对 D0 的 Python 教学基线仍保留，文件名以 `D0_D7` 开头。TPM 时间图用于阅读相对表达。 [工程分析方案](../../experiments/01_1_preprocessing_differential/protocol.md) · [全时段结果解读](../../experiments/01_1_preprocessing_differential/results.md) · [tximport 文档](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html)
+全时段差异模型读取 **长度缩放后的整数计数矩阵和六组样本分组表**。代码使用 TPM、平均有效长度和估计片段总量生成计数，再由模型进行文库大小归一化。`timecourse_length_scaled_counts.tsv.gz` 保存模型输入，`timecourse_normalized_counts.tsv.gz` 保存拟合后的归一化计数。此前 D7 对 D0 的 Python 教学基线仍保留，文件名以 `D0_D7` 开头。TPM 时间图用于阅读相对表达。 [工程分析方案](../../experiments/01_preprocessing_differential/docs/protocol.md) · [全时段结果解读](../../experiments/01_preprocessing_differential/docs/results.md) · [tximport 文档](https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html)
 
 筛选时先核对样本和基因 ID，再看各组重复、变化幅度、校正后 P 值以及变化发生的时间。完整时间分析应区分早期升高后回落、持续变化和后期变化。阶段 02 的机器学习输入会在明确筛选目标后选择并处理。 [工程阶段总览](../../experiments/README.md)

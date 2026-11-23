@@ -2,8 +2,10 @@
 import concurrent.futures
 import csv
 import hashlib
+from importlib import import_module
 import json
 import subprocess
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -47,6 +49,9 @@ def download(row):
 
 
 def main():
+    if not __package__:
+        sys.path.insert(0, str(ROOT))
+    reports = import_module('experiments.01_preprocessing_differential.config').REPORTS
     with (ROOT / 'provenance/download_manifest.csv').open(encoding='utf-8-sig', newline='') as stream:
         rows = list(csv.DictReader(stream))
     # 论文 PDF 等历史记录保留用于追溯，这里只恢复实验输入及相关说明。
@@ -68,7 +73,7 @@ def main():
                 print(f'FAILED: {exc}', flush=True)
     report = dict(checked_at_utc=datetime.now(timezone.utc).isoformat(),
                   results=sorted(results, key=lambda r: r['path']), failures=failures)
-    out = ROOT / 'outputs/01_1_preprocessing_differential/reports/download_verification.json'
+    out = reports / 'download_verification.json'
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     if failures:

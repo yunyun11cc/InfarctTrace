@@ -1,6 +1,7 @@
 {
   "python-envs.defaultEnvManager": "ms-python.python:venv",
-  "python-envs.defaultPackageManager": "ms-python.python:pip",
+  "python-envs.defaultPackageManager": "ms-python.python:uv",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
@@ -57,12 +58,5 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "python-envs.pythonProjects": [
-    {
-      "path": "experiments",
-      "envManager": "ms-python.python:venv",
-      "packageManager": "ms-python.python:pip"
-    }
-  ]
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }
